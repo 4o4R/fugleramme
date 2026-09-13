@@ -117,6 +117,20 @@ docker compose up -d
 
 See **[Container](docs/container.md)** for more info.
 
+## Contributing
+
+Contributions are very welcome and encouraged - fixes, docs and artwork most of all. Thanks to
+[everyone who has contributed](https://github.com/arnegiacomo/fugleramme/graphs/contributors)
+so far ❤️
+
+- **Something is broken** - a [bug report](https://github.com/arnegiacomo/fugleramme/issues/new/choose)
+- **A question, an idea, or a frame you have built** - the
+  [FAQ](https://arnegiacomo.dev/fugleramme/faq/) first, then
+  [Discussions](https://github.com/arnegiacomo/fugleramme/discussions)
+- **A fix, a doc change, or a bird you have cut** - open a PR, no issue needed
+
+See **[Contributing](CONTRIBUTING.md)** for more info.
+
 ## License
 
 - Code: MIT - see [`LICENSE`](LICENSE).

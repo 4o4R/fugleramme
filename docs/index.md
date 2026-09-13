@@ -33,6 +33,7 @@ For more display options see [Display](display.md).
 
 ## Docs
 
+- **[FAQ](faq.md)** - Frequently asked questions
 - **[Hardware](hardware.md)** - the parts list with alternatives
 - **[Install](install.md)** - from a blank SD card to a running frame
 - **[Configuring BirdNET-Go](birdnetgo-config.md)** - the mic, your location, and

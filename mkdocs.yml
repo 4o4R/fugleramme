@@ -34,6 +34,7 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - FAQ: faq.md
   - Hardware: hardware.md
   - Install: install.md
   - Container: container.md
