@@ -1635,6 +1635,10 @@
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVLong-legged_Plover.jpg"
   },
+  "birds/hippolais-icterina-2.webp": {
+    "source": "desmurs",
+    "url": "https://commons.wikimedia.org/wiki/File:Hippolais_polyglotta_%26_Hippolais_icterina_1849.jpg"
+  },
   "birds/hippolais-icterina.webp": {
     "source": "vonwright",
     "url": "https://commons.wikimedia.org/wiki/File:Bird_illustration_from_Svenska_F%C3%A5glar_(Swedish_Birds)_by_the_von_Wright_brothers_from_rawpixel%27s_original_edition_of_the_publication_00205.jpg"
@@ -1646,6 +1650,10 @@
   "birds/hippolais-olivetorum.webp": {
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIIOlive_Tree_Salicaria.jpg"
+  },
+  "birds/hippolais-polyglotta.webp": {
+    "source": "desmurs",
+    "url": "https://commons.wikimedia.org/wiki/File:Hippolais_polyglotta_%26_Hippolais_icterina_1849.jpg"
   },
   "birds/hirundo-rustica-2.webp": {
     "source": "vonwright",
