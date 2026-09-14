@@ -61,3 +61,5 @@ by **F. G. Dutton**, plates by **A. F. Lydon**, engraved and printed by
 **Benjamin Fawcett**, from the Commons category
 [Parrots in captivity](https://commons.wikimedia.org/wiki/Category:Parrots_in_captivity).
 Public domain (PD-scan / PD-old-70-expired). Manifest key: `greene`.
+
+**d'Orbigny** - *Dictionnaire Universel D'histoire Naturelle* by **Charles Henry Dessalines d'Orbigny** (1841-1849), from the Biodiversity Heritage Library [scan on Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Bird_illustrations_from_Dictionnaire_universel_d%E2%80%99histoire_naturelle). rawpixel plate (CC BY-SA 4.0). Manifest key: `dorbigny`.
