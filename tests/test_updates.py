@@ -124,7 +124,7 @@ def test_admin_buttons_drive_the_status_object(tmp_path):
         status,
     )
     httpd = ThreadingHTTPServer(("127.0.0.1", 0), handler)
-    threading.Thread(target=httpd.serve_forever, daemon=True).start()
+    threading.Thread(target=lambda: httpd.serve_forever(poll_interval=0.01), daemon=True).start()
     url = f"http://127.0.0.1:{httpd.server_address[1]}/admin"
     try:
         with patch.object(server.updates, "available", return_value="v0.2.0") as check:

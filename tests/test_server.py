@@ -40,7 +40,7 @@ def _serve(tmp_path, source, store=None):
         Status(),
     )
     httpd = ThreadingHTTPServer(("127.0.0.1", 0), handler)
-    threading.Thread(target=httpd.serve_forever, daemon=True).start()
+    threading.Thread(target=lambda: httpd.serve_forever(poll_interval=0.01), daemon=True).start()
     try:
         yield f"http://127.0.0.1:{httpd.server_address[1]}"
     finally:

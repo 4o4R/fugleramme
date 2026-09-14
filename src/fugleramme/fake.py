@@ -384,7 +384,9 @@ def serve(
     """Start the fake on a daemon thread. Port 0 asks the OS for one - read it
     back from `server_address[1]`."""
     httpd = ThreadingHTTPServer((host, port), make_handler(rows, password, down, private))
-    threading.Thread(target=httpd.serve_forever, daemon=True).start()
+    # `shutdown()` blocks until the loop next comes round, so the default half second
+    # is half a second per fake the tests start and stop.
+    threading.Thread(target=lambda: httpd.serve_forever(poll_interval=0.01), daemon=True).start()
     return httpd
 
 

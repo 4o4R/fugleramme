@@ -173,7 +173,10 @@ def test_the_birdnet_link_only_substitutes_this_host_for_a_loopback_one(url, exp
     assert admin.birdnet_link(url) == expected
 
 
-def test_the_page_carries_the_link_for_a_detector_on_another_machine(tmp_path, source):
+def test_the_page_carries_the_link_for_a_detector_on_another_machine(tmp_path, source, monkeypatch):
+    # The page probes whatever detector it is pointed at, and a name nothing on
+    # this network answers to is seconds of resolver timeout per run.
+    monkeypatch.setattr(admin.hostinfo, "detector", lambda url: ("down", ""))
     blob = _config(_page(tmp_path, source(), detector_url="http://birdnet.local:8080"))
     assert blob["birdnetUrl"] == "http://birdnet.local:8080"
     assert blob["birdnetPort"] is None
