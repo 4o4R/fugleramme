@@ -2,6 +2,48 @@
 
 <!-- version list -->
 
+## v0.21.3 (2026-09-14)
+
+### Bug Fixes
+
+- Trigger patch-release
+  ([`eb0a503`](https://github.com/arnegiacomo/fugleramme/commit/eb0a50399532d9984682a5d311b281ce4d2a83c3))
+
+### Chores
+
+- **assets**: #44 add Cyanopica cyanus
+  ([`0c5be6f`](https://github.com/arnegiacomo/fugleramme/commit/0c5be6f7fd7c6fee8e95d3118a2685082719e663))
+
+- **assets**: #44 add Galerida cristata
+  ([`6c9bffc`](https://github.com/arnegiacomo/fugleramme/commit/6c9bffcfd906d0a8932486222e26280ae071ea69))
+
+- **assets**: #44 add Hippolais polyglotta and icterina
+  ([`ecd992e`](https://github.com/arnegiacomo/fugleramme/commit/ecd992ecfd973a59535e29cdf086c5602f07dfbd))
+
+- **assets**: #44 add Larus michahellis ([#80](https://github.com/arnegiacomo/fugleramme/pull/80),
+  [`d8e1e2c`](https://github.com/arnegiacomo/fugleramme/commit/d8e1e2ceb3693016c29e687e08a8696d84c8e039))
+
+- **assets**: #44 add Remiz pendulinus ([#79](https://github.com/arnegiacomo/fugleramme/pull/79),
+  [`256d9af`](https://github.com/arnegiacomo/fugleramme/commit/256d9af64e3fa4d8d9cf62822734fd8a1fed4a5b))
+
+- **assets**: Drop duplicate snow goose plate
+  ([`c36630b`](https://github.com/arnegiacomo/fugleramme/commit/c36630b9adeda4291a630c877bd437d87810bf46))
+
+- **assets**: Even out scan paper under 233 classic plates
+  ([`64bf919`](https://github.com/arnegiacomo/fugleramme/commit/64bf9199f2a379bcb27165b05f4c370a7774b5c5))
+
+- **assets**: Repull and recut 18 classic plates
+  ([`f0575e3`](https://github.com/arnegiacomo/fugleramme/commit/f0575e36b46014304f8c47d909c6e3499c2d3767))
+
+- **assets**: Repull and recut 5 more classic plates
+  ([`7c7f347`](https://github.com/arnegiacomo/fugleramme/commit/7c7f347455c0fe7a6ed116496c48b97d926026dd))
+
+### Testing
+
+- Stop waiting out the serve loop's poll interval and a dead mDNS name
+  ([`171d2cd`](https://github.com/arnegiacomo/fugleramme/commit/171d2cd3d6c06778a9c2381e5236335238061f63))
+
+
 ## v0.21.2 (2026-09-14)
 
 ### Bug Fixes
