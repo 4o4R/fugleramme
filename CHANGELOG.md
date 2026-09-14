@@ -2,6 +2,45 @@
 
 <!-- version list -->
 
+## v0.21.2 (2026-09-14)
+
+### Bug Fixes
+
+- **assets**: Add Aix galericulata ([#78](https://github.com/arnegiacomo/fugleramme/pull/78),
+  [`3ba6fb3`](https://github.com/arnegiacomo/fugleramme/commit/3ba6fb3b81452e429db74e943195efc20a24ae2b))
+
+### Chores
+
+- **assets**: Add Aix galericulata ([#78](https://github.com/arnegiacomo/fugleramme/pull/78),
+  [`3ba6fb3`](https://github.com/arnegiacomo/fugleramme/commit/3ba6fb3b81452e429db74e943195efc20a24ae2b))
+
+- **assets**: Attribute works, not single plates
+  ([`a08685c`](https://github.com/arnegiacomo/fugleramme/commit/a08685c41166de1737276af1cdbe26a2e124c673))
+
+- **ci**: Gate the release on ci
+  ([`7f48b10`](https://github.com/arnegiacomo/fugleramme/commit/7f48b103cd7faa0b29db25b4552dd658da9c78fd))
+
+### Documentation
+
+- #32 recommend the EM272Z1 and add a frame-only parts list
+  ([`4313da2`](https://github.com/arnegiacomo/fugleramme/commit/4313da2c58d4a79f569e00d6a3dbecc2512bafd5))
+
+- Add FAQ + contribution notice
+  ([`712ec08`](https://github.com/arnegiacomo/fugleramme/commit/712ec08082247188fe3618373ccddd82678e72f4))
+
+- Cut the repeated README sections and add status badges
+  ([`9bcec87`](https://github.com/arnegiacomo/fugleramme/commit/9bcec875c490c8633a189feddbb711ca436d6c0d))
+
+- Keep badge links from rendering a blue gap between them
+  ([`42c2dd2`](https://github.com/arnegiacomo/fugleramme/commit/42c2dd2baddba39f89228c62ce4d7a92deb84d5b))
+
+- Lead with what the frame actually is
+  ([`e2d7af8`](https://github.com/arnegiacomo/fugleramme/commit/e2d7af8fcf64e4c95302f8fd4c1c6fbfd6c07bf9))
+
+- Put the artwork numbers up front and fix the docs index
+  ([`85a029b`](https://github.com/arnegiacomo/fugleramme/commit/85a029bd38b63be5e1f8fcdf853d42b9d2811265))
+
+
 ## v0.21.1 (2026-09-11)
 
 ### Bug Fixes
