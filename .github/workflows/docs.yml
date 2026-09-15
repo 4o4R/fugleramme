@@ -8,6 +8,7 @@ on:
       - hooks/**
       - mkdocs.yml
       - .github/workflows/docs.yml
+      - assets/artwork/**  # the badge counts
   # Build on the PR too, so a broken link fails before it is deployed.
   pull_request:
     paths:
@@ -15,6 +16,7 @@ on:
       - hooks/**
       - mkdocs.yml
       - .github/workflows/docs.yml
+      - assets/artwork/**  # the badge counts
   workflow_dispatch:
 
 permissions:

@@ -17,6 +17,9 @@ E-ink bird frame for Raspberry Pi - real-time bird detection by audio, fully loc
   <a href="https://github.com/arnegiacomo/fugleramme/stargazers"><img src="https://img.shields.io/github/stars/arnegiacomo/fugleramme?style=flat-square&color=yellow" alt="Stars"></a>
   <a href="https://github.com/arnegiacomo/fugleramme/graphs/contributors"><img src="https://img.shields.io/github/contributors/arnegiacomo/fugleramme?style=flat-square&color=orange" alt="Contributors"></a>
   <a href="#license"><img src="https://img.shields.io/badge/license-MIT%20%2B%20art%20CC--BY--SA-green?style=flat-square" alt="License: MIT, artwork CC BY-SA 4.0"></a>
+  <br>
+  <a href="#art"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Farnegiacomo.dev%2Ffugleramme%2Fbadges%2Fartwork.json&style=flat-square" alt="Artwork"></a>
+  <a href="#art"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Farnegiacomo.dev%2Ffugleramme%2Fbadges%2Fspecies.json&style=flat-square" alt="Species"></a>
 </p>
 
 > [!NOTE]

@@ -25,6 +25,7 @@ theme:
 # share one callout syntax.
 hooks:
   - hooks/callouts.py
+  - hooks/badges.py
 
 markdown_extensions:
   - tables
