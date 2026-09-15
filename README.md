@@ -67,6 +67,20 @@ See [Adding artwork](docs/adding-artwork.md) for manual cutout steps.
 | :---: | :---: | :---: |
 | ![No birds detected](docs/assets/empty.png) | ![A few garden birds](docs/assets/few.png) | ![Many garden birds](docs/assets/many.png) |
 
+## Inspiration and related projects
+
+The look came from a [WWF Verdens naturfond poster by Axel Thorenfeldt](https://www.axelthorenfeldt.com/news/wwf-verdens-naturfonds-fugleskole)
+hanging on my wall, the live-frame idea from [AvianVisitors](https://theodore.net/projects/AvianVisitors/) that I saw on Instagram,
+and the detection from [BirdNET-Go](https://github.com/tphakala/birdnet-go) - I wanted a version of that poster showing the actual birds in my garden.
+
+Similar projects:
+
+- [AvianVisitors](https://github.com/Twarner491/AvianVisitors) - BirdNET-Pi, AI-generated illustrations
+- [inky-bird-frame](https://github.com/veteranbv/inky-bird-frame) - BirdNET, field-journal illustrations on an Inky panel
+- [HABirdDashboard](https://github.com/adamoberley/HABirdDashboard) - BirdNET-Go, a collage card for Home Assistant
+
+Fugleramme shares no code or art with them.
+
 ## Run locally (for development)
 
 ```bash
