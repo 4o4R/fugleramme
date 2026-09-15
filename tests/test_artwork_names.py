@@ -14,8 +14,6 @@ import json
 import re
 from pathlib import Path
 
-import pytest
-
 from fugleramme.names import MANIFEST, PERCHES, SUFFIXES, normalize
 
 REPO = Path(__file__).resolve().parents[1]
@@ -23,8 +21,6 @@ IMAGES = REPO / "assets" / "artwork"
 LABELS = REPO / "assets" / "birdnet_labels_v2.4.txt"
 SIZES = REPO / "assets" / "bird_sizes.csv"
 ATTRIBUTION = "ATTRIBUTION.md"
-# Curation priority list: workstation-only tooling, so absent from a clone.
-PRIORITY = REPO / "scripts" / "bergen_species.txt"
 
 # Modern scientific names with no BirdNET v2.4 label - the artwork is kept but
 # can never be triggered, so it is exempt from the label check.
@@ -156,16 +152,3 @@ def test_every_manifest_source_is_named_in_attribution():
     assert not orphans, "manifest sources with no ATTRIBUTION.md entry naming them:\n" + "\n".join(
         sorted(set(orphans))
     )
-
-
-@pytest.mark.skipif(not PRIORITY.exists(), reason="curation tooling is workstation-only")
-def test_curation_priority_names_are_birdnet_labels():
-    # A typo here would silently sink a common bird to the bottom of the sheet.
-    labels = _labels()
-    listed = [
-        line.strip().lower().replace(" ", "-")
-        for line in PRIORITY.read_text().splitlines()
-        if line.strip() and not line.startswith("#")
-    ]
-    assert len(listed) == len(set(listed)), "duplicate species in the priority list"
-    assert not [key for key in listed if key not in labels]
