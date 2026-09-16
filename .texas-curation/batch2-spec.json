@@ -1,0 +1,22 @@
+[
+  {"common":"White-winged Dove","box_frac":[0.20,0.20,0.70,0.80]},
+  {"common":"Mourning Dove","box_frac":[0.26,0.12,0.68,0.52]},
+  {"common":"Carolina Chickadee","box_frac":[0.25,0.03,0.76,0.37]},
+  {"common":"Black-crested Titmouse","box_frac":[0.30,0.10,0.75,0.43]},
+  {"common":"Common Grackle","box_frac":[0.26,0.16,0.74,0.55]},
+  {"common":"Brown-headed Cowbird","box_frac":[0.40,0.30,0.78,0.62]},
+  {"common":"American Goldfinch","box_frac":[0.40,0.20,0.66,0.48]},
+  {"common":"Cedar Waxwing","box_frac":[0.33,0.30,0.68,0.64]},
+  {"common":"Black Vulture","box_frac":[0.18,0.12,0.72,0.62]},
+  {"common":"Turkey Vulture","box_frac":[0.08,0.05,0.84,0.50]},
+  {"common":"Red-tailed Hawk","box_frac":[0.10,0.03,0.80,0.53]},
+  {"common":"Red-shouldered Hawk","box_frac":[0.10,0.08,0.86,0.43]},
+  {"common":"Mississippi Kite","box_frac":[0.20,0.15,0.80,0.47]},
+  {"common":"American Kestrel","box_frac":[0.28,0.10,0.70,0.47]},
+  {"common":"Eastern Screech-Owl","box_frac":[0.18,0.10,0.58,0.52]},
+  {"common":"Great Horned Owl","box_frac":[0.12,0.07,0.63,0.76]},
+  {"common":"Cave Swallow","box_frac":[0.14,0.18,0.91,0.58]},
+  {"common":"Tree Swallow","box_frac":[0.20,0.20,0.61,0.52]},
+  {"common":"Northern Rough-winged Swallow","box_frac":[0.14,0.34,0.91,0.86]},
+  {"common":"Ruby-throated Hummingbird","box_frac":[0.10,0.18,0.43,0.55]}
+]
