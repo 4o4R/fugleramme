@@ -1,0 +1,75 @@
+name: Publish approved alternate-source artwork to fork main
+on:
+  push:
+    branches: [texas-artwork-coverage]
+    paths:
+      - .github/workflows/texas-alternate-main-batch.yml
+      - .texas-curation/alternate-approved-1.json
+      - .texas-curation/finalize_alternate_approved.py
+permissions:
+  actions: read
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: texas-artwork-coverage
+          path: curation
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          path: project
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: astral-sh/setup-uv@v6
+      - uses: actions/download-artifact@v4
+        with:
+          name: texas-alternate-candidates-1
+          run-id: 35148850185
+          github-token: ${{ github.token }}
+          path: inputs
+      - name: Install project environment
+        working-directory: project
+        run: uv sync --locked
+      - name: Add approved alternate-source artwork
+        run: |
+          project/.venv/bin/python curation/.texas-curation/finalize_alternate_approved.py \
+            --repo project --inputs inputs \
+            --approved curation/.texas-curation/alternate-approved-1.json \
+            --output final-output
+      - name: Validate fork main candidate
+        working-directory: project
+        run: |
+          uv run ruff format --check
+          uv run ruff check
+          uv run mypy
+          uv run pytest -q --junitxml=../final-output/pytest.xml
+          shellcheck install.sh run.sh
+      - name: Commit directly to fork main
+        working-directory: project
+        run: |
+          git config user.name '4o4R'
+          git config user.email '120294988+4o4R@users.noreply.github.com'
+          git add assets/artwork/classic/ATTRIBUTION.md assets/artwork/classic/manifest.json assets/artwork/classic/birds
+          COUNT=$(python - <<'PY'
+          import json
+          from pathlib import Path
+          print(len(json.loads(Path('../final-output/asset-provenance.json').read_text())))
+          PY
+          )
+          git commit -m "chore(assets): add ${COUNT} reviewed alternate-source bird illustrations"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: texas-alternate-main-batch-${{ github.run_number }}
+          path: final-output/
+          if-no-files-found: warn
+          retention-days: 30
