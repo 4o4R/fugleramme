@@ -88,9 +88,22 @@ def _local() -> tzinfo:
     return datetime.now().astimezone().tzinfo or UTC
 
 
+def _aware(stamp: datetime) -> datetime:
+    """A stamp with no offset is read in the frame's own zone, as the feed's wall
+    clock is. BirdNET-Go before 20260712 stamped the summary bare (upstream #3793)."""
+    return stamp if stamp.tzinfo else stamp.replace(tzinfo=_local())
+
+
+def _bare(value: str) -> bool:
+    try:
+        return bool(value) and datetime.fromisoformat(value).tzinfo is None
+    except ValueError:
+        return False
+
+
 def _time(value: str) -> datetime | None:
     try:
-        return datetime.fromisoformat(value) if value else None
+        return _aware(datetime.fromisoformat(value)) if value else None
     except ValueError:
         return None
 
@@ -196,6 +209,7 @@ class ApiSource:
         self._lock = threading.RLock()
         self._cache: dict[tuple, tuple[float, Any]] = {}
         self._not_birds: set[str] = set()
+        self._bare_clock = False
 
     def _is_bird(self, name: str, common: str = "") -> bool:
         """`taxa.is_bird`, naming what it drops the first time it sees it. Once
@@ -303,16 +317,25 @@ class ApiSource:
             return value
 
     def _summary(self, start: str = "", end: str = "") -> list[dict]:
-        return self._cached(
-            ("summary", start, end),
-            lambda: [
+        def fetch() -> list[dict]:
+            rows = [
                 row
                 for row in _merged(
                     self._get("/analytics/species/summary", start_date=start, end_date=end)
                 )
                 if self._is_bird(row["scientific_name"], row.get("common_name") or "")
-            ],
-        )
+            ]
+            if not self._bare_clock and any(_bare(row.get("last_heard") or "") for row in rows):
+                self._bare_clock = True
+                log.warning(
+                    "%s stamps its summary without a UTC offset (BirdNET-Go before "
+                    "20260712); reading it as %s",
+                    self.base_url,
+                    _local(),
+                )
+            return rows
+
+        return self._cached(("summary", start, end), fetch)
 
     def _feed(self, limit: int) -> list[dict]:
         return self._cached(("recent", limit), lambda: self._get("/detections/recent", limit=limit))
@@ -374,7 +397,7 @@ class ApiSource:
     def life_list(self) -> list[Species]:
         try:
             species = [
-                Species(row["scientific_name"], datetime.fromisoformat(row["first_heard"]))
+                Species(row["scientific_name"], _aware(datetime.fromisoformat(row["first_heard"])))
                 for row in self._summary()
                 if row.get("first_heard")
             ]

@@ -169,6 +169,31 @@ def test_a_day_window_drops_a_bird_heard_before_the_cutoff(detector):
     assert ApiSource(url).species_since(0) == [(TIT, 1), (BLACKBIRD, 1)]  # all time keeps it
 
 
+def test_a_summary_stamped_without_an_offset_is_read_in_the_frames_zone(
+    detector, monkeypatch, caplog
+):
+    """BirdNET-Go before 20260712 stamped the summary bare. Compared against an
+    aware cutoff that raised, and the service died before its first render."""
+    dated = fake.summary
+
+    def bare(rows, start="", end="", limit=0):
+        return [
+            {**row, "first_heard": row["first_heard"][:19], "last_heard": row["last_heard"][:19]}
+            for row in dated(rows, start, end, limit)
+        ]
+
+    monkeypatch.setattr(fake, "summary", bare)
+    heard = datetime.now().astimezone().replace(microsecond=0) - timedelta(hours=1)
+    url, _httpd = detector(rows=[_row(1, heard, BLACKBIRD)])
+    source = ApiSource(url)
+
+    with caplog.at_level(logging.WARNING):
+        assert source.species_since(24) == [(BLACKBIRD, 1)]
+        assert source.life_list()[0].first_seen == heard
+        assert source.stats()["last_24h"] == 1
+    assert caplog.text.count("without a UTC offset") == 1
+
+
 def test_a_window_the_feed_cannot_reach_falls_back_to_the_summary(detector, monkeypatch, caplog):
     """A busy feeder can fill the feed inside the window. Counting what came
     back would drop the species below the cut without saying so, and the
