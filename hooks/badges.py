@@ -27,7 +27,8 @@ def _plates() -> list[str]:
 
 def counts() -> dict[str, str]:
     plates = _plates()
-    species = {re.sub(r"-\d+$", "", stem) for stem in plates}
+    # Hybrids are plates, not species; the species page skips them too.
+    species = {key for stem in plates if "-x-" not in (key := re.sub(r"-\d+$", "", stem))}
     return {"artwork": str(len(plates)), "species": str(len(species))}
 
 

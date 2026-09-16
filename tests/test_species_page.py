@@ -52,3 +52,12 @@ def test_art_without_a_label_is_marked_undetectable():
     rows = {row["name"]: row for row in species.rows()}
     assert rows["Alle alle"]["detectable"] is False
     assert "detectable" not in rows["Turdus merula"]
+
+
+def test_badge_species_count_matches_the_page():
+    spec = importlib.util.spec_from_file_location("badges", REPO / "hooks" / "badges.py")
+    assert spec and spec.loader
+    badges = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(badges)
+    with_art = sum(1 for row in species.rows() if row["plates"])
+    assert badges.counts()["species"] == str(with_art)
