@@ -1,0 +1,43 @@
+# .github/workflows/texas-review-export.yml
+# Fork-only review helper. It does not publish or approve artwork.
+name: Export Texas review inputs
+on:
+  push:
+    branches: [texas-artwork-coverage]
+    paths: [.github/workflows/texas-review-export.yml]
+permissions:
+  contents: read
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit exact cached inputs and create a small source snapshot
+        run: |
+          python .texas-curation/audit_inventory.py
+          mkdir -p /tmp/texas-review-inputs
+          python - <<'PY'
+          from pathlib import Path
+          import shutil
+          import subprocess
+          root = Path('.')
+          out = Path('/tmp/texas-review-inputs')
+          allowed = {'.py', '.toml', '.lock', '.json', '.csv', '.txt', '.md', '.yml', '.sh'}
+          for name in subprocess.check_output(['git', 'ls-files'], text=True).splitlines():
+              p = Path(name)
+              if p.suffix not in allowed or 'fonts' in p.parts:
+                  continue
+              dest = out / p
+              dest.parent.mkdir(parents=True, exist_ok=True)
+              shutil.copy2(p, dest)
+          shutil.copytree('.texas-curation/audit', out / '.texas-curation/audit', dirs_exist_ok=True)
+          (out / 'EXPORT_COMMIT.txt').write_text(subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: texas-review-inputs-${{ github.run_number }}
+          path: /tmp/texas-review-inputs/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 7
