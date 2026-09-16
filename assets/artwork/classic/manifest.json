@@ -303,6 +303,10 @@
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIITree_Pipit.jpg"
   },
+  "birds/antrostomus-carolinensis.webp": {
+    "source": "audubon-pittsburgh",
+    "url": "https://commons.wikimedia.org/wiki/File:52_Chuck-will%27s_Widow.jpg"
+  },
   "birds/apus-apus.webp": {
     "source": "vonwright",
     "url": "https://commons.wikimedia.org/wiki/File:Bird_illustration_from_Svenska_F%C3%A5glar_(Swedish_Birds)_by_the_von_Wright_brothers_from_rawpixel%27s_original_edition_of_the_publication_00010.jpg"
@@ -1014,6 +1018,10 @@
   "birds/columba-palumbus.webp": {
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVWood_Pigeon.jpg"
+  },
+  "birds/contopus-virens.webp": {
+    "source": "audubon-pittsburgh",
+    "url": "https://commons.wikimedia.org/wiki/File:115_Wood_Pewee.jpg"
   },
   "birds/coracias-garrulus-2.webp": {
     "source": "vonwright",
@@ -2919,6 +2927,10 @@
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIIStonechat.jpg"
   },
+  "birds/sayornis-phoebe.webp": {
+    "source": "audubon-pittsburgh",
+    "url": "https://commons.wikimedia.org/wiki/File:120_Pewit_Flycatcher.jpg"
+  },
   "birds/scolopax-rusticola-2.webp": {
     "source": "vonwright",
     "url": "https://commons.wikimedia.org/wiki/File:Bird_illustration_from_Svenska_F%C3%A5glar_(Swedish_Birds)_by_the_von_Wright_brothers_from_rawpixel%27s_original_edition_of_the_publication_00126.jpg"
@@ -2934,6 +2946,10 @@
   "birds/serinus-serinus.webp": {
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIIISerin_Finch.jpg"
+  },
+  "birds/setophaga-petechia.webp": {
+    "source": "ann-lee-ramm",
+    "url": "https://commons.wikimedia.org/wiki/File:Setophaga_petechia_(Linnaeus)_yellow_warbler_-_Ann_Lee_-_107-1973-13.jpg"
   },
   "birds/sitta-carolinensis.webp": {
     "source": "audubon",
@@ -3430,6 +3446,10 @@
   "birds/vanellus-vanellus.webp": {
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVLapwing.jpg"
+  },
+  "birds/vireo-griseus.webp": {
+    "source": "audubon-pittsburgh",
+    "url": "https://commons.wikimedia.org/wiki/File:63_White-eyed_Flycatcher_or_Vireo.jpg"
   },
   "birds/xema-sabini.webp": {
     "source": "gould",
