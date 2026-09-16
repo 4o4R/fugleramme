@@ -1,0 +1,7 @@
+[
+  {"common":"Black-chinned Hummingbird","mask_index":0,"source_key":"gould-trochilidae"},
+  {"common":"Downy Woodpecker","mask_index":0,"source_key":"audubon-pittsburgh"},
+  {"common":"Ladder-backed Woodpecker","mask_index":1,"source_key":"emory-boundary-birds"},
+  {"common":"Red-eyed Vireo","mask_index":0,"source_key":"audubon-pittsburgh"},
+  {"common":"Blue-gray Gnatcatcher","mask_index":0,"source_key":"audubon-pittsburgh"}
+]
