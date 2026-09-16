@@ -1,0 +1,17 @@
+{
+  "issue": "https://github.com/arnegiacomo/fugleramme/issues/33",
+  "reason": "Temporarily avoid new work on species another contributor explicitly volunteered to cover in the issue thread; revisit only if their scope changes or the maintainer requests it.",
+  "species": [
+    "Carolina Chickadee",
+    "Carolina Wren",
+    "Brown-headed Nuthatch",
+    "Red-bellied Woodpecker",
+    "Black Vulture",
+    "Fish Crow",
+    "Summer Tanager",
+    "Blue Grosbeak",
+    "Mississippi Kite",
+    "Yellow-throated Warbler",
+    "Swainson's Warbler"
+  ]
+}
