@@ -1,0 +1,119 @@
+name: Consolidate reviewed artwork into fork main
+on:
+  push:
+    branches: [texas-artwork-coverage]
+    paths: [.github/workflows/consolidate-reviewed-to-main.yml]
+permissions:
+  contents: write
+jobs:
+  consolidate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Sync fork main to upstream and fetch reviewed branches
+        run: |
+          git remote add upstream https://github.com/arnegiacomo/fugleramme.git
+          git fetch upstream main
+          git merge --ff-only upstream/main
+          git fetch origin \
+            texas-reviewed-artwork-20260916-r2 \
+            texas-reviewed-artwork-batch2-20260916 \
+            texas-reviewed-artwork-refined-20260916 \
+            texas-reviewed-artwork-historical-20260916
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: astral-sh/setup-uv@v6
+      - name: Merge reviewed assets and provenance
+        run: |
+          python - <<'PY'
+          import json
+          import re
+          import subprocess
+          from pathlib import Path
+
+          branches = [
+              'texas-reviewed-artwork-20260916-r2',
+              'texas-reviewed-artwork-batch2-20260916',
+              'texas-reviewed-artwork-refined-20260916',
+              'texas-reviewed-artwork-historical-20260916',
+          ]
+          root = Path('.')
+          birds = root / 'assets/artwork/classic/birds'
+          manifest_path = root / 'assets/artwork/classic/manifest.json'
+          attribution_path = root / 'assets/artwork/classic/ATTRIBUTION.md'
+          manifest = json.loads(manifest_path.read_text())
+          attribution = attribution_path.read_text()
+          copied = []
+          skipped = []
+          needed_sources = {}
+
+          def show(ref, path, binary=False):
+              return subprocess.check_output(['git', 'show', f'{ref}:{path}'], text=not binary)
+
+          for branch in branches:
+              ref = f'origin/{branch}'
+              parent = subprocess.check_output(['git','rev-parse',f'{ref}^'], text=True).strip()
+              names = subprocess.check_output([
+                  'git','diff','--diff-filter=A','--name-only',parent,ref,'--','assets/artwork/classic/birds'
+              ], text=True).splitlines()
+              branch_manifest = json.loads(show(ref, 'assets/artwork/classic/manifest.json'))
+              branch_attr = show(ref, 'assets/artwork/classic/ATTRIBUTION.md')
+              for path in names:
+                  rel = path.removeprefix('assets/artwork/classic/')
+                  dest = root / path
+                  if dest.exists():
+                      skipped.append(path)
+                      continue
+                  dest.parent.mkdir(parents=True, exist_ok=True)
+                  dest.write_bytes(show(ref, path, binary=True))
+                  entry = branch_manifest[rel]
+                  manifest[rel] = entry
+                  copied.append(path)
+                  source = entry.get('source')
+                  if source:
+                      needed_sources[source] = branch_attr
+
+          # Add only missing attribution paragraphs required by copied assets.
+          for source, branch_attr in needed_sources.items():
+              marker = f'Manifest key: `{source}`'
+              if marker in attribution:
+                  continue
+              paragraphs = re.split(r'\n\s*\n', branch_attr)
+              match = next((p.strip() for p in paragraphs if marker in p), None)
+              if match:
+                  attribution = attribution.rstrip() + '\n\n' + match + '\n'
+              else:
+                  raise RuntimeError(f'Missing attribution paragraph for source {source}')
+
+          manifest_path.write_text(json.dumps(dict(sorted(manifest.items())), indent=2) + '\n')
+          attribution_path.write_text(attribution)
+          Path('consolidation-summary.json').write_text(json.dumps({
+              'copied_count': len(copied), 'copied': copied,
+              'skipped_existing_count': len(skipped), 'skipped_existing': skipped,
+          }, indent=2) + '\n')
+          print(Path('consolidation-summary.json').read_text())
+          PY
+      - name: Validate consolidated fork
+        run: |
+          uv sync --locked
+          uv run ruff format --check
+          uv run ruff check
+          uv run mypy
+          uv run pytest -q
+          shellcheck install.sh run.sh
+      - name: Commit consolidated artwork to fork main
+        run: |
+          git config user.name '4o4R'
+          git config user.email '120294988+4o4R@users.noreply.github.com'
+          git add assets/artwork/classic/ATTRIBUTION.md assets/artwork/classic/manifest.json assets/artwork/classic/birds
+          if git diff --cached --quiet; then
+            echo 'No reviewed artwork remained to add.'
+            exit 0
+          fi
+          git commit -m 'chore(assets): consolidate reviewed Texas artwork'
+          git push origin HEAD:main
