@@ -1,0 +1,33 @@
+name: Search remaining Texas public-domain sources
+on:
+  push:
+    branches: [texas-artwork-coverage]
+    paths: [.github/workflows/texas-remaining-source-search.yml]
+permissions:
+  actions: read
+  contents: read
+jobs:
+  search:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.13'}
+      - uses: actions/download-artifact@v4
+        with:
+          name: texas-source-evidence-1
+          run-id: 35131216249
+          github-token: ${{ github.token }}
+          path: inputs/evidence
+      - run: python -m pip install pillow requests
+      - run: python .texas-curation/remaining_source_search.py --evidence inputs/evidence --output /tmp/remaining-sources
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: texas-remaining-sources-${{ github.run_number }}
+          path: /tmp/remaining-sources/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30
+          compression-level: 3
