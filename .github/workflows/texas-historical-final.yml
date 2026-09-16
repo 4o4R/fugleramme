@@ -1,0 +1,77 @@
+name: Validate exact historical Texas artwork
+on:
+  push:
+    branches: [texas-artwork-coverage]
+    paths: [.github/workflows/texas-historical-final.yml]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    env:
+      CLEAN_BRANCH: texas-reviewed-artwork-historical-20260916
+    steps:
+      - uses: actions/checkout@v4
+        with: {path: curation}
+      - uses: actions/checkout@v4
+        with:
+          repository: arnegiacomo/fugleramme
+          ref: main
+          path: project
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.13'}
+      - uses: astral-sh/setup-uv@v6
+      - uses: actions/download-artifact@v4
+        with:
+          name: texas-historical-final-candidates-1
+          run-id: 35147294045
+          github-token: ${{ github.token }}
+          path: inputs/historical
+      - name: Install application environment
+        working-directory: project
+        run: uv sync --locked
+      - name: Assemble reviewed artwork only
+        run: |
+          project/.venv/bin/python curation/.texas-curation/finalize_historical.py \
+            --repo project --candidates inputs/historical \
+            --approved curation/.texas-curation/historical-final-approved.json \
+            --output final-output
+      - name: Validate clean tree
+        working-directory: project
+        run: |
+          uv run ruff format --check
+          uv run ruff check
+          uv run mypy
+          uv run pytest -q --junitxml=../final-output/pytest.xml
+          shellcheck install.sh run.sh
+      - name: Publish isolated clean branch
+        working-directory: project
+        run: |
+          git remote set-url origin https://github.com/4o4R/fugleramme.git
+          if [ -n "$(git ls-remote --heads origin "refs/heads/$CLEAN_BRANCH")" ]; then echo 'Ref exists; refusing overwrite.' >&2; exit 1; fi
+          git checkout -b "$CLEAN_BRANCH"; git add assets/artwork/classic
+          python - <<'PY'
+          import json,subprocess
+          from pathlib import Path
+          ledger=json.loads(Path('../final-output/asset-provenance.json').read_text())
+          allowed={'assets/artwork/classic/manifest.json','assets/artwork/classic/ATTRIBUTION.md'}|{'assets/artwork/classic/birds/'+r['asset'] for r in ledger}
+          actual=set(subprocess.check_output(['git','diff','--cached','--name-only'],text=True).splitlines()); assert actual==allowed
+          PY
+          COUNT=$(python - <<'PY'
+          import json
+          from pathlib import Path
+          print(len(json.loads(Path('../final-output/asset-provenance.json').read_text())))
+          PY
+          )
+          git config user.name '4o4R'; git config user.email '120294988+4o4R@users.noreply.github.com'
+          git commit -m "chore(assets): add ${COUNT} reviewed North American bird illustrations"
+          git push origin "HEAD:refs/heads/$CLEAN_BRANCH"; git rev-parse HEAD > ../final-output/COMMIT.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: texas-reviewed-historical-${{ github.run_number }}
+          path: final-output/
+          if-no-files-found: error
+          retention-days: 30
