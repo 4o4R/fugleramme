@@ -335,6 +335,10 @@
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:Aquila_Imperialis_by_John_Gould.jpg"
   },
+  "birds/archilochus-alexandri.webp": {
+    "source": "gould-trochilidae",
+    "url": "https://commons.wikimedia.org/wiki/File:MonographTrochi3Goul_0072.jpg"
+  },
   "birds/ardea-alba.webp": {
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVGreat_Egret.jpg"
@@ -1250,6 +1254,14 @@
   "birds/dryobates-minor.webp": {
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIIILesser_Spotted_Woodpecker.jpg"
+  },
+  "birds/dryobates-pubescens.webp": {
+    "source": "audubon-pittsburgh",
+    "url": "https://commons.wikimedia.org/wiki/File:112_Downy_Woodpecker.jpg"
+  },
+  "birds/dryobates-scalaris.webp": {
+    "source": "emory-boundary-birds",
+    "url": "https://commons.wikimedia.org/wiki/File:Picoides_scalaris_nuttalliiAQBIP03CA.jpg"
   },
   "birds/dryocopus-martius-2.webp": {
     "source": "vonwright",
@@ -2743,6 +2755,10 @@
     "source": "vonwright-rawpixel",
     "url": "https://www.rawpixel.com/image/8865063/marsh-tit-1829-wilhelm-von-wright"
   },
+  "birds/polioptila-caerulea.webp": {
+    "source": "audubon-pittsburgh",
+    "url": "https://commons.wikimedia.org/wiki/File:84_Blue-Grey_Fly-catcher.jpg"
+  },
   "birds/polysticta-stelleri-2.webp": {
     "source": "vonwright",
     "url": "https://commons.wikimedia.org/wiki/File:Bird_illustration_from_Svenska_F%C3%A5glar_(Swedish_Birds)_by_the_von_Wright_brothers_from_rawpixel%27s_original_edition_of_the_publication_00174.jpg"
@@ -3430,6 +3446,10 @@
   "birds/vanellus-vanellus.webp": {
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVLapwing.jpg"
+  },
+  "birds/vireo-olivaceus.webp": {
+    "source": "audubon-pittsburgh",
+    "url": "https://commons.wikimedia.org/wiki/File:150_Red-eyed_Vireo.jpg"
   },
   "birds/xema-sabini.webp": {
     "source": "gould",
