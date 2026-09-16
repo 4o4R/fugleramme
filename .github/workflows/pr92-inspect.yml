@@ -1,0 +1,74 @@
+name: pr92 artwork inspect
+
+on:
+  push:
+    branches: [fix-pr-92-twig-cuts]
+    paths:
+      - .github/workflows/pr92-inspect.yml
+
+permissions:
+  contents: read
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install pillow
+      - name: Inspect alpha silhouette and edge contacts
+        shell: bash
+        run: |
+          python - <<'PY'
+          # .github/workflows/pr92-inspect.yml
+          # One-off diagnostic for PR #92. It reads the submitted WebP only;
+          # it does not alter repository files.
+          from pathlib import Path
+          from PIL import Image
+
+          path = Path('assets/artwork/classic/birds/dryobates-pubescens.webp')
+          img = Image.open(path).convert('RGBA')
+          alpha = img.getchannel('A')
+          bbox = alpha.getbbox()
+          print(f'IMAGE size={img.size} alpha_bbox={bbox}')
+
+          w, h = img.size
+          pix = alpha.load()
+
+          def side_stats(side: str, band: int = 160) -> None:
+              xs = range(0, min(band, w)) if side == 'left' else range(max(0, w-band), w)
+              coords = [(x, y) for x in xs for y in range(h) if pix[x, y] > 8]
+              if not coords:
+                  print(f'{side.upper()} no alpha in first {band}px')
+                  return
+              minx = min(x for x, _ in coords)
+              maxx = max(x for x, _ in coords)
+              miny = min(y for _, y in coords)
+              maxy = max(y for _, y in coords)
+              edge_x = 0 if side == 'left' else w - 1
+              edge_ys = [y for y in range(h) if pix[edge_x, y] > 8]
+              print(
+                  f'{side.upper()} band_bbox=({minx},{miny})-({maxx},{maxy}) '
+                  f'edge_pixels={len(edge_ys)} '
+                  f'edge_y_range={((min(edge_ys), max(edge_ys)) if edge_ys else None)}'
+              )
+
+          side_stats('left')
+          side_stats('right')
+
+          # Print a downsampled alpha silhouette. Two characters per sampled
+          # point keeps branches legible in monospace workflow logs.
+          cols = 100
+          rows = max(1, round(h / w * cols * 0.48))
+          small = alpha.resize((cols, rows))
+          chars = ' .:-=+*#%@'
+          print(f'ASCII alpha {cols}x{rows}:')
+          for y in range(rows):
+              line = []
+              for x in range(cols):
+                  a = small.getpixel((x, y))
+                  line.append(chars[min(len(chars)-1, a * len(chars) // 256)])
+              print(''.join(line))
+          PY
