@@ -8,6 +8,14 @@ from pathlib import Path
 from PIL import Image
 
 
+ATTRIBUTION_BLOCKS = {
+    'audubon-pittsburgh': "\n\n**Audubon (Pittsburgh)** - *The Birds of America* (1827-1838), by **John James Audubon**, engraved and coloured by **Robert Havell**. [University of Pittsburgh scans](https://digital.library.pitt.edu/collection/audubons-birds-america), via the Wikimedia Commons file pages linked in the manifest. Public-domain originals and scans (Commons PD-Art / PD-old); these cutouts retain source pixels without generative repainting. Manifest key: `audubon-pittsburgh`.\n",
+    'sharpe-hirundinidae': "\n\n**Sharpe (Hirundinidae)** - *A Monograph of the Hirundinidae, or Family of Swallows* by **Richard Bowdler Sharpe** and **Claude W. Wyatt** (1885-1894), from public-domain scans on Wikimedia Commons. Exact file pages are linked in the manifest. Manifest key: `sharpe-hirundinidae`.\n",
+    'baird-boundary': "\n\n**Baird / U.S.-Mexico Boundary Survey** - bird plates from *Report on the United States and Mexican Boundary Survey*, the bird volume edited by **Spencer Fullerton Baird** for the U.S. Department of the Interior. Public-domain scan on Wikimedia Commons; the exact file page is linked in the manifest. Manifest key: `baird-boundary`.\n",
+    'ramm-ann-lee': "\n\n**Ann Lee / RAMM** - public-domain bird illustration by **Ann Lee**, from the **Royal Albert Memorial Museum & Art Gallery** collection on Wikimedia Commons. The exact collection file page is linked in the manifest. Manifest key: `ramm-ann-lee`.\n",
+}
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument('--repo', type=Path, required=True)
@@ -39,7 +47,7 @@ def main() -> None:
         row = by_choice[(item['common'], int(item['mask_index']))]
         key = row['key']
         assert normalize(row['scientific']) == key
-        # Do not overwrite a species that landed upstream while this batch was reviewed.
+        assert row['license'].lower() in {'public domain', 'cc0', 'cc0 1.0', 'pdm', 'public domain mark'}
         if any(p.exists() for p in [birds / f'{key}.webp', birds / f'{key}-2.webp']):
             print('Already covered upstream; skipping:', key, flush=True)
             continue
@@ -59,10 +67,12 @@ def main() -> None:
         })
         print('Added reviewed asset:', key, flush=True)
 
-    if any(r['source_key'] == 'audubon-pittsburgh' for r in shipped) and '`audubon-pittsburgh`' not in attribution:
-        attribution += "\n\n**Audubon (Pittsburgh)** - *The Birds of America* (1827-1838), by **John James Audubon**, engraved and coloured by **Robert Havell**. [University of Pittsburgh scans](https://digital.library.pitt.edu/collection/audubons-birds-america), via the Wikimedia Commons file pages linked in the manifest. Public-domain originals and scans (Commons PD-Art / PD-old); these cutouts retain source pixels without generative repainting. Manifest key: `audubon-pittsburgh`.\n"
-    if any(r['source_key'] == 'sharpe-hirundinidae' for r in shipped) and '`sharpe-hirundinidae`' not in attribution:
-        attribution += "\n\n**Sharpe (Hirundinidae)** - *A Monograph of the Hirundinidae, or Family of Swallows* by **Richard Bowdler Sharpe** and **Claude W. Wyatt** (1885-1894), from public-domain scans on Wikimedia Commons. Exact file pages are linked in the manifest. Manifest key: `sharpe-hirundinidae`.\n"
+    for source_key in sorted({r['source_key'] for r in shipped}):
+        marker = f'`{source_key}`'
+        if marker not in attribution:
+            if source_key not in ATTRIBUTION_BLOCKS:
+                raise ValueError(f'Missing attribution block for source key: {source_key}')
+            attribution += ATTRIBUTION_BLOCKS[source_key]
 
     manifest_path.write_text(json.dumps(dict(sorted(manifest.items())), indent=2) + '\n')
     attr_path.write_text(attribution)
