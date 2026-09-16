@@ -169,7 +169,9 @@ See **[Contributing](CONTRIBUTING.md)** for more info.
   [OpenFauna](https://github.com/tphakala/openfauna)'s compiled taxonomic alias
   map, CC BY-SA 4.0 - see [`assets/ATTRIBUTION.md`](assets/ATTRIBUTION.md).
 
-## Prebuilt frames
+## Contact
 
-I've built a few of these. If you'd like one rather than building it yourself,
-please [get in touch](https://arnegiacomo.dev/).
+Questions and ideas about the project belong in
+[Discussions](https://github.com/arnegiacomo/fugleramme/discussions). For anything
+else, you can reach me through [arnegiacomo.dev](https://arnegiacomo.dev/). I've built
+a few of these frames, but I currently don't have the capacity to build them for others.

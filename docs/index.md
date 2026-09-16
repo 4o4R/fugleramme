@@ -50,10 +50,12 @@ For more display options see [Display](display.md).
 > over the USB cable, that differ. If you set yours up from Linux or Windows, a
 > PR extending them is very welcome.
 
-## Prebuilt frames
+## Contact
 
-I've built a few of these. If you'd like one rather than building it yourself,
-please [get in touch](https://arnegiacomo.dev/).
+Questions and ideas about the project belong in
+[Discussions](https://github.com/arnegiacomo/fugleramme/discussions). For anything
+else, you can reach me through [arnegiacomo.dev](https://arnegiacomo.dev/). I've built
+a few of these frames, but I currently don't have the capacity to build them for others.
 
 ---
 
