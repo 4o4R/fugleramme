@@ -1,4 +1,4 @@
-name: Validate Texas artwork batch 3
+name: Validate refined Texas artwork batch 3
 on:
   push:
     branches: [texas-artwork-coverage]
@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 35
     env:
-      CLEAN_BRANCH: texas-reviewed-artwork-batch3-20260916
+      CLEAN_BRANCH: texas-reviewed-artwork-batch3-20260916-r2
     steps:
       - uses: actions/checkout@v4
         with:
@@ -27,16 +27,16 @@ jobs:
       - uses: astral-sh/setup-uv@v6
       - uses: actions/download-artifact@v4
         with:
-          name: texas-batch3-candidates-1
-          run-id: 35145647584
+          name: texas-batch3-refined-1
+          run-id: 35146477153
           github-token: ${{ github.token }}
           path: inputs/batch3
       - name: Install application environment
         working-directory: project
         run: uv sync --locked
-      - name: Assemble reviewed artwork only
+      - name: Assemble only the visually approved refined artwork
         run: |
-          project/.venv/bin/python curation/.texas-curation/finalize_batch3.py \
+          project/.venv/bin/python curation/.texas-curation/finalize_batch2.py \
             --repo project --candidates inputs/batch3 \
             --approved curation/.texas-curation/batch3-approved.json \
             --output final-output
@@ -81,7 +81,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: texas-reviewed-batch3-${{ github.run_number }}
+          name: texas-reviewed-batch3-refined-${{ github.run_number }}
           path: final-output/
           if-no-files-found: error
           retention-days: 30
