@@ -1,0 +1,10 @@
+[
+  {"common":"Turkey Vulture","mask_index":2,"source_key":"audubon-pittsburgh"},
+  {"common":"Red-tailed Hawk","mask_index":1,"source_key":"audubon-pittsburgh"},
+  {"common":"Red-shouldered Hawk","mask_index":1,"source_key":"audubon-pittsburgh"},
+  {"common":"Eastern Screech-Owl","mask_index":0,"source_key":"audubon-pittsburgh"},
+  {"common":"Great Horned Owl","mask_index":0,"source_key":"audubon-pittsburgh"},
+  {"common":"Cave Swallow","mask_index":1,"source_key":"sharpe-hirundinidae"},
+  {"common":"Tree Swallow","mask_index":1,"source_key":"audubon-pittsburgh"},
+  {"common":"Northern Rough-winged Swallow","mask_index":0,"source_key":"sharpe-hirundinidae"}
+]
