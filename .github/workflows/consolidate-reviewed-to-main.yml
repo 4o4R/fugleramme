@@ -18,7 +18,9 @@ jobs:
         run: |
           git remote add upstream https://github.com/arnegiacomo/fugleramme.git
           git fetch upstream main
-          git merge --ff-only upstream/main
+          if git merge-base --is-ancestor HEAD upstream/main; then
+            git merge --ff-only upstream/main
+          fi
           git fetch origin \
             texas-reviewed-artwork-20260916-r2 \
             texas-reviewed-artwork-batch2-20260916 \
@@ -31,11 +33,8 @@ jobs:
       - name: Merge reviewed assets and provenance
         run: |
           python - <<'PY'
-          import json
-          import re
-          import subprocess
+          import json, re, subprocess
           from pathlib import Path
-
           branches = [
               'texas-reviewed-artwork-20260916-r2',
               'texas-reviewed-artwork-batch2-20260916',
@@ -43,26 +42,21 @@ jobs:
               'texas-reviewed-artwork-historical-20260916',
           ]
           root = Path('.')
-          birds = root / 'assets/artwork/classic/birds'
           manifest_path = root / 'assets/artwork/classic/manifest.json'
           attribution_path = root / 'assets/artwork/classic/ATTRIBUTION.md'
           manifest = json.loads(manifest_path.read_text())
           attribution = attribution_path.read_text()
-          copied = []
-          skipped = []
-          needed_sources = {}
-
+          copied, skipped, needed_sources = [], [], {}
           def show(ref, path, binary=False):
-              return subprocess.check_output(['git', 'show', f'{ref}:{path}'], text=not binary)
-
+              return subprocess.check_output(['git','show',f'{ref}:{path}'], text=not binary)
           for branch in branches:
               ref = f'origin/{branch}'
               parent = subprocess.check_output(['git','rev-parse',f'{ref}^'], text=True).strip()
               names = subprocess.check_output([
                   'git','diff','--diff-filter=A','--name-only',parent,ref,'--','assets/artwork/classic/birds'
               ], text=True).splitlines()
-              branch_manifest = json.loads(show(ref, 'assets/artwork/classic/manifest.json'))
-              branch_attr = show(ref, 'assets/artwork/classic/ATTRIBUTION.md')
+              branch_manifest = json.loads(show(ref,'assets/artwork/classic/manifest.json'))
+              branch_attr = show(ref,'assets/artwork/classic/ATTRIBUTION.md')
               for path in names:
                   rel = path.removeprefix('assets/artwork/classic/')
                   dest = root / path
@@ -70,33 +64,23 @@ jobs:
                       skipped.append(path)
                       continue
                   dest.parent.mkdir(parents=True, exist_ok=True)
-                  dest.write_bytes(show(ref, path, binary=True))
+                  dest.write_bytes(show(ref,path,binary=True))
                   entry = branch_manifest[rel]
                   manifest[rel] = entry
                   copied.append(path)
-                  source = entry.get('source')
-                  if source:
-                      needed_sources[source] = branch_attr
-
-          # Add only missing attribution paragraphs required by copied assets.
+                  if entry.get('source'):
+                      needed_sources[entry['source']] = branch_attr
           for source, branch_attr in needed_sources.items():
               marker = f'Manifest key: `{source}`'
               if marker in attribution:
                   continue
-              paragraphs = re.split(r'\n\s*\n', branch_attr)
-              match = next((p.strip() for p in paragraphs if marker in p), None)
-              if match:
-                  attribution = attribution.rstrip() + '\n\n' + match + '\n'
-              else:
+              paragraph = next((p.strip() for p in re.split(r'\n\s*\n', branch_attr) if marker in p), None)
+              if paragraph is None:
                   raise RuntimeError(f'Missing attribution paragraph for source {source}')
-
+              attribution = attribution.rstrip() + '\n\n' + paragraph + '\n'
           manifest_path.write_text(json.dumps(dict(sorted(manifest.items())), indent=2) + '\n')
           attribution_path.write_text(attribution)
-          Path('consolidation-summary.json').write_text(json.dumps({
-              'copied_count': len(copied), 'copied': copied,
-              'skipped_existing_count': len(skipped), 'skipped_existing': skipped,
-          }, indent=2) + '\n')
-          print(Path('consolidation-summary.json').read_text())
+          print(json.dumps({'copied_count':len(copied),'copied':copied,'skipped_existing_count':len(skipped),'skipped_existing':skipped},indent=2))
           PY
       - name: Validate consolidated fork
         run: |
@@ -116,4 +100,8 @@ jobs:
             exit 0
           fi
           git commit -m 'chore(assets): consolidate reviewed Texas artwork'
+          # main may move while tests run (e.g. semantic-release). Rebase the
+          # asset-only commit onto the newest fork head before pushing.
+          git fetch origin main
+          git rebase origin/main
           git push origin HEAD:main
