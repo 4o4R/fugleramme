@@ -2,6 +2,73 @@
 
 <!-- version list -->
 
+## v0.21.4 (2026-09-16)
+
+### Bug Fixes
+
+- **api**: #89 read a species summary stamped without a UTC offset
+  ([`859fd4f`](https://github.com/arnegiacomo/fugleramme/commit/859fd4f15cd7be20819db4f15e3a6189fde2028e))
+
+### Chores
+
+- **assets**: #44 add Apus pallidus
+  ([`f86a04f`](https://github.com/arnegiacomo/fugleramme/commit/f86a04f4aa74f0ca4ef85c0c25077380bdd7c6fa))
+
+- **assets**: #44 add Certhia brachydactyla
+  ([#90](https://github.com/arnegiacomo/fugleramme/pull/90),
+  [`770f5e4`](https://github.com/arnegiacomo/fugleramme/commit/770f5e48db4f34115c64a8930d4dc3f1329d983e))
+
+- **assets**: #44 add Corvus corone ([#81](https://github.com/arnegiacomo/fugleramme/pull/81),
+  [`39a6461`](https://github.com/arnegiacomo/fugleramme/commit/39a6461fd1e644ba9b3b97c81e43f47121dcf886))
+
+- **assets**: #44 add Emberiza cirlus ([#83](https://github.com/arnegiacomo/fugleramme/pull/83),
+  [`44191f2`](https://github.com/arnegiacomo/fugleramme/commit/44191f233bc34a65e01c32b6a08e50a7893ae533))
+
+- **assets**: #44 add Galerida theklae ([#82](https://github.com/arnegiacomo/fugleramme/pull/82),
+  [`ca0c496`](https://github.com/arnegiacomo/fugleramme/commit/ca0c4969abc44f2702419414d00bc34e0e11dfcb))
+
+- **assets**: #44 add Iduna pallida and Iduna opaca
+  ([`15331b6`](https://github.com/arnegiacomo/fugleramme/commit/15331b628c048720a53738e4d33220a347331411))
+
+- **assets**: #44 split 16 stacked pairs into single-bird plates
+  ([`a08e2e4`](https://github.com/arnegiacomo/fugleramme/commit/a08e2e4c808e99220e126f905794aa841e40c026))
+
+- **assets**: Add Cyanocitta cristata ([#86](https://github.com/arnegiacomo/fugleramme/pull/86),
+  [`2688e41`](https://github.com/arnegiacomo/fugleramme/commit/2688e4133d3039b7e9fe713e2830147a5e9e3366))
+
+- **assets**: Add Melanerpes carolinus ([#88](https://github.com/arnegiacomo/fugleramme/pull/88),
+  [`eed3927`](https://github.com/arnegiacomo/fugleramme/commit/eed39270841afc8299b5bfd613a68a1e45ca7047))
+
+- **assets**: Add Sitta carolinensis ([#87](https://github.com/arnegiacomo/fugleramme/pull/87),
+  [`043a0a5`](https://github.com/arnegiacomo/fugleramme/commit/043a0a55b4b6b240dbac2c507ee4dfacf20623a3))
+
+### Documentation
+
+- Add artwork and species count badges
+  ([`12b4d91`](https://github.com/arnegiacomo/fugleramme/commit/12b4d9110b70749c194d4e9b40994e01cbcd9c84))
+
+- Add Audubon Birds of America attribution
+  ([#85](https://github.com/arnegiacomo/fugleramme/pull/85),
+  [`e0cb10b`](https://github.com/arnegiacomo/fugleramme/commit/e0cb10bbf42e625ea7e278e4cd0411455a0cb280))
+
+- Add featherframe and birdframe to similar projects
+  ([`b6661f5`](https://github.com/arnegiacomo/fugleramme/commit/b6661f5e21142965a4e148a4131345812b4ed1b6))
+
+- Credit inspirations and link related projects
+  ([`b227896`](https://github.com/arnegiacomo/fugleramme/commit/b227896d5b926f3fc77e244d2e3caefae0ab5517))
+
+- Link belkins-birdnet and note AvianVisitors' photo fallback
+  ([`04a9503`](https://github.com/arnegiacomo/fugleramme/commit/04a950378f5821d9ad6019c790aa26bde4fbbad9))
+
+- Update contact section
+  ([`861933d`](https://github.com/arnegiacomo/fugleramme/commit/861933d1dbe8617b794e153a6203a94a17be7bd4))
+
+### Testing
+
+- Remove workstation-only priority list check
+  ([`f77a975`](https://github.com/arnegiacomo/fugleramme/commit/f77a975bc53fe0bab779bc1ede69482db3ed2ebd))
+
+
 ## v0.21.3 (2026-09-14)
 
 ### Bug Fixes
