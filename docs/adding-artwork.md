@@ -2,7 +2,7 @@
 
 ## Find what is missing
 
-The admin page marks a bird the current style cannot draw with "no art". The
+See [Species coverage](species.md). The admin page marks a bird the current style cannot draw with "no art". The
 frame logs the same list whenever re-renders:
 
 ```bash

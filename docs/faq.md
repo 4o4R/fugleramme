@@ -34,7 +34,7 @@ The panel is most of it. Here are some rough ranges (prices fluctuate a lot at t
 
 ## Will it work where I live?
 
-BirdNET works basically everywhere. The artwork is the limiting factor. Northern/Central Europe is covered the best right now, but wider support is in the works.
+BirdNET works basically everywhere. The artwork is the limiting factor. Northern/Central Europe is covered the best right now, but wider support is in the works. See [Species coverage](species.md).
 
 If your local regulars never show up, open a [Missing bird](https://github.com/arnegiacomo/fugleramme/issues/new/choose) issue - that is how the list grows. Better still, [cut one yourself](adding-artwork.md) and open a PR.
 

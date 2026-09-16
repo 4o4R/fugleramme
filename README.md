@@ -64,7 +64,7 @@ The plates are Scandinavian, British and central European, so the Nordics, the B
 are best covered. Elsewhere not so much (yet). Broader European and North American
 coverage is in the works!
 
-See [Adding artwork](docs/adding-artwork.md) for manual cutout steps.
+[Species coverage](https://arnegiacomo.dev/fugleramme/species/) has a searchable list of all currently supported species. See [Adding artwork](docs/adding-artwork.md) for manual cutout steps.
 
 | No detections | A few visitors | A full garden |
 | :---: | :---: | :---: |

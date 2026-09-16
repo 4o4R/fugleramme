@@ -77,7 +77,7 @@ bird isn't a new version of the software, so it is added to the next release rat
 Half the point of this project is showing off amazing public-domain natural-history illustration, so every bird has to be cut from a real plate. Nothing AI-generated.
 Retouching a scan with AI is fair game - e.g. the `classic` perches were tidied up that way.
 
-**A bird missing from `classic`** is the usual one. Cut it and open a PR. If
+**A bird missing from `classic`** is the usual one - [Species coverage](https://arnegiacomo.dev/fugleramme/species/) shows the current coverage. Cut it and open a PR. If
 you'd rather point at a plate than cut it yourself, open a
 [Missing bird](https://github.com/arnegiacomo/fugleramme/issues/new/choose)
 issue instead.

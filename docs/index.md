@@ -41,6 +41,7 @@ For more display options see [Display](display.md).
 - **[Display](display.md)** - modes, settings and names
 - **[Operations](operations.md)** - buttons, services, logs and updates
 - **[Container](container.md)** - running Fugleramme with Docker
+- **[Species coverage](species.md)** - searchable list of currently supported species
 - **[Adding artwork](adding-artwork.md)** - cutting a bird the frame can't draw yet
 - **[Troubleshooting](troubleshooting.md)** - symptom to cause
 

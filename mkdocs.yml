@@ -26,6 +26,7 @@ theme:
 hooks:
   - hooks/callouts.py
   - hooks/badges.py
+  - hooks/species.py
 
 markdown_extensions:
   - tables
@@ -40,6 +41,7 @@ nav:
   - Install: install.md
   - Container: container.md
   - Display: display.md
+  - Species coverage: species.md
   - Adding artwork: adding-artwork.md
   - Operations: operations.md
   - Configuring BirdNET-Go: birdnetgo-config.md
