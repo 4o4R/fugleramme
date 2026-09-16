@@ -1,0 +1,12 @@
+[
+  {"common":"Black-chinned Hummingbird","box_frac":[0.23,0.12,0.55,0.38]},
+  {"common":"Downy Woodpecker","box_frac":[0.34,0.30,0.64,0.55]},
+  {"common":"Ladder-backed Woodpecker","box_frac":[0.42,0.02,0.96,0.55]},
+  {"common":"Pileated Woodpecker","box_frac":[0.08,0.12,0.58,0.38]},
+  {"common":"Eastern Phoebe","box_frac":[0.34,0.28,0.67,0.47]},
+  {"common":"Red-eyed Vireo","box_frac":[0.34,0.37,0.70,0.58]},
+  {"common":"Eastern Kingbird","box_frac":[0.35,0.25,0.77,0.48]},
+  {"common":"Blue-gray Gnatcatcher","box_frac":[0.42,0.20,0.70,0.41]},
+  {"common":"Gray Catbird","box_frac":[0.27,0.25,0.72,0.50]},
+  {"common":"Yellow Warbler","box_frac":[0.17,0.20,0.73,0.52]}
+]
