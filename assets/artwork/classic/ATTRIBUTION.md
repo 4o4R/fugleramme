@@ -73,3 +73,9 @@ Public domain (PD-scan / PD-old-70-expired). Manifest key: `greene`.
 **Audubon** - *Birds of America* by **John James Audubon** (1829-1838), engraved, printed, and colored by **R. Havell**, [Courtesy of the John James Audubon Center at Mill Grove, Montgomery County Audubon Collection, and Zebra Publishing](https://www.audubon.org/art/birds-of-america). Public domain (PD-scan / PD-old-70-expired). Manifest key: `audubon`.
 
 **Naumann** - *Naturgeschichte der Vögel Mitteleuropas* by **Johann Friedrich Naumann**, revised and edited by **Carl R. Hennicke** (1897-1905), chromolithographs by **J. G. Keulemans** and others, lithographed and printed by **Fr. Eugen Köhler** in Gera-Untermhaus, Internet Archive scans from the Commons category [Naturgeschichte der Vögel Mitteleuropas](https://commons.wikimedia.org/wiki/Category:Naturgeschichte_der_V%C3%B6gel_Mitteleuropas). Public domain (PD-scan / PD-old-70-expired). Manifest key: `naumann`.
+
+
+**Baird (Smithsonian)** - North American bird illustration by **Spencer Fullerton Baird**, from the Smithsonian Libraries image record linked through the exact Wikimedia Commons file page in the manifest. Public domain. Manifest key: `baird-smithsonian`.
+
+
+**Smit (Proceedings of the Zoological Society of London)** - bird plate by **Joseph Smit**, from the *Proceedings of the Zoological Society of London* (1867), via the exact Wikimedia Commons file page linked in the manifest. Public domain. Manifest key: `smit-pzs`.

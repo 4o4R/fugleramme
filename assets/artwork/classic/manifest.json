@@ -2299,6 +2299,10 @@
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIISpotted_Flycatcher.jpg"
   },
+  "birds/mustelirallus-erythrops.webp": {
+    "source": "smit-pzs",
+    "url": "https://commons.wikimedia.org/wiki/File:PorzanaErythropsSmit.jpg"
+  },
   "birds/myiopsitta-monachus.webp": {
     "source": "greene",
     "url": "https://commons.wikimedia.org/wiki/File:Parrots_in_captivity_(Vol._3._PL._07)_Quaker_Grey_Breasted_or_Monte_Video_Parrakeet_(8527254257).jpg"
@@ -2482,6 +2486,10 @@
   "birds/pernis-apivorus.webp": {
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIHoney_Buzzard.jpg"
+  },
+  "birds/peucaea-cassinii.webp": {
+    "source": "baird-smithsonian",
+    "url": "https://commons.wikimedia.org/wiki/File:Peucaea_cassinii.png"
   },
   "birds/phalacrocorax-carbo-2.webp": {
     "source": "vonwright",
@@ -2999,6 +3007,10 @@
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVGargany_Teal.jpg"
   },
+  "birds/spermestes-cucullata.webp": {
+    "source": "keulemans",
+    "url": "https://commons.wikimedia.org/wiki/File:Keulemans_Onze_vogels_1_43.jpg"
+  },
   "birds/spinus-spinus-2.webp": {
     "source": "vonwright",
     "url": "https://commons.wikimedia.org/wiki/File:Bird_illustration_from_Svenska_F%C3%A5glar_(Swedish_Birds)_by_the_von_Wright_brothers_from_rawpixel%27s_original_edition_of_the_publication_00071.jpg"
@@ -3238,6 +3250,10 @@
   "birds/thalasseus-sandvicensis.webp": {
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVSandwich_Tern.jpg"
+  },
+  "birds/thectocercus-acuticaudatus.webp": {
+    "source": "desmurs",
+    "url": "https://commons.wikimedia.org/wiki/File:Aratinga_acuticaudata_1849.jpg"
   },
   "birds/thinornis-dubius-2.webp": {
     "source": "vonwright",
