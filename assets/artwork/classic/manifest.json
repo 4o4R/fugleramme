@@ -823,6 +823,10 @@
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVBlack_Tern.jpg"
   },
+  "birds/chloris-chloris-2.webp": {
+    "source": "vonwright",
+    "url": "https://commons.wikimedia.org/wiki/File:Bird_illustration_from_Svenska_F%C3%A5glar_(Swedish_Birds)_by_the_von_Wright_brothers_from_rawpixel%27s_original_edition_of_the_publication_00226.jpg"
+  },
   "birds/chloris-chloris.webp": {
     "source": "vonwright",
     "url": "https://commons.wikimedia.org/wiki/File:Bird_illustration_from_Svenska_F%C3%A5glar_(Swedish_Birds)_by_the_von_Wright_brothers_from_rawpixel%27s_original_edition_of_the_publication_00226.jpg"
@@ -1091,13 +1095,25 @@
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIIGarden_Warbler.jpg"
   },
+  "birds/curruca-hortensis-3.webp": {
+    "source": "gould",
+    "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIIOrpheus_Warbler.jpg"
+  },
   "birds/curruca-hortensis.webp": {
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIIOrpheus_Warbler.jpg"
   },
+  "birds/curruca-iberiae-2.webp": {
+    "source": "gould",
+    "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIISubalpine_Warbler.jpg"
+  },
   "birds/curruca-iberiae.webp": {
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIISubalpine_Warbler.jpg"
+  },
+  "birds/curruca-melanocephala-2.webp": {
+    "source": "gould",
+    "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIISardinian_Warbler.jpg"
   },
   "birds/curruca-melanocephala.webp": {
     "source": "gould",
@@ -1114,6 +1130,10 @@
   "birds/curruca-ruppeli.webp": {
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIRuppells_Warbler.jpg"
+  },
+  "birds/curruca-undata-2.webp": {
+    "source": "gould",
+    "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIIDartford_Warbler.jpg"
   },
   "birds/curruca-undata.webp": {
     "source": "gould",
@@ -1274,6 +1294,10 @@
   "birds/emberiza-citrinella-4.webp": {
     "source": "vonwright",
     "url": "https://commons.wikimedia.org/wiki/File:Bird_illustration_from_Svenska_F%C3%A5glar_(Swedish_Birds)_by_the_von_Wright_brothers_from_rawpixel%27s_original_edition_of_the_publication_00068.jpg"
+  },
+  "birds/emberiza-citrinella-5.webp": {
+    "source": "gould",
+    "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIIIYellow_Bunting.jpg"
   },
   "birds/emberiza-citrinella.webp": {
     "source": "gould",
@@ -1471,6 +1495,10 @@
     "source": "vonwright-rawpixel",
     "url": "https://www.rawpixel.com/image/8865040/female-chaffinch-1828-1838-wilhelm-von-wright"
   },
+  "birds/fringilla-coelebs-4.webp": {
+    "source": "vonwright",
+    "url": "https://commons.wikimedia.org/wiki/File:Bird_illustration_from_Svenska_F%C3%A5glar_(Swedish_Birds)_by_the_von_Wright_brothers_from_rawpixel%27s_original_edition_of_the_publication_00223.jpg"
+  },
   "birds/fringilla-coelebs.webp": {
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIIIChaffinch.jpg"
@@ -1482,6 +1510,10 @@
   "birds/fringilla-montifringilla-3.webp": {
     "source": "vonwright",
     "url": "https://commons.wikimedia.org/wiki/File:Bird_illustration_from_Svenska_F%C3%A5glar_(Swedish_Birds)_by_the_von_Wright_brothers_from_rawpixel%27s_original_edition_of_the_publication_00221.jpg"
+  },
+  "birds/fringilla-montifringilla-4.webp": {
+    "source": "vonwright",
+    "url": "https://commons.wikimedia.org/wiki/File:Bird_illustration_from_Svenska_F%C3%A5glar_(Swedish_Birds)_by_the_von_Wright_brothers_from_rawpixel%27s_original_edition_of_the_publication_00222.jpg"
   },
   "birds/fringilla-montifringilla.webp": {
     "source": "gould",
@@ -2367,6 +2399,10 @@
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:The_birds_of_Europe_(1837)_(14771793513).jpg"
   },
+  "birds/passer-domesticus-2.webp": {
+    "source": "vonwright",
+    "url": "https://commons.wikimedia.org/wiki/File:Bird_illustration_from_Svenska_F%C3%A5glar_(Swedish_Birds)_by_the_von_Wright_brothers_from_rawpixel%27s_original_edition_of_the_publication_00220.jpg"
+  },
   "birds/passer-domesticus.webp": {
     "source": "vonwright",
     "url": "https://commons.wikimedia.org/wiki/File:Bird_illustration_from_Svenska_F%C3%A5glar_(Swedish_Birds)_by_the_von_Wright_brothers_from_rawpixel%27s_original_edition_of_the_publication_00220.jpg"
@@ -2655,6 +2691,10 @@
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVEared_Grebe.jpg"
   },
+  "birds/poecile-cinctus-2.webp": {
+    "source": "gould",
+    "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIIISombre_Tit_Siberian_Tit.jpg"
+  },
   "birds/poecile-cinctus.webp": {
     "source": "vonwright",
     "url": "https://commons.wikimedia.org/wiki/File:Parus_cinctus.jpg"
@@ -2666,6 +2706,10 @@
   "birds/poecile-montanus.webp": {
     "source": "vonwright",
     "url": "https://commons.wikimedia.org/wiki/File:Bird_illustration_from_Svenska_F%C3%A5glar_(Swedish_Birds)_by_the_von_Wright_brothers_from_rawpixel%27s_original_edition_of_the_publication_00217.jpg"
+  },
+  "birds/poecile-palustris-2.webp": {
+    "source": "vonwright",
+    "url": "https://commons.wikimedia.org/wiki/File:Bird_illustration_from_Svenska_F%C3%A5glar_(Swedish_Birds)_by_the_von_Wright_brothers_from_rawpixel%27s_original_edition_of_the_publication_00087.jpg"
   },
   "birds/poecile-palustris.webp": {
     "source": "vonwright-rawpixel",
@@ -2740,8 +2784,8 @@
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIIIChough.jpg"
   },
   "birds/pyrrhula-pyrrhula-2.webp": {
-    "source": "vonwright",
-    "url": "https://commons.wikimedia.org/wiki/File:Bird_illustration_from_Svenska_F%C3%A5glar_(Swedish_Birds)_by_the_von_Wright_brothers_from_rawpixel%27s_original_edition_of_the_publication_00230.jpg"
+    "source": "gould",
+    "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIIIBullfinch.jpg"
   },
   "birds/pyrrhula-pyrrhula-3.webp": {
     "source": "vonwright",
@@ -2754,6 +2798,14 @@
   "birds/pyrrhula-pyrrhula-5.webp": {
     "source": "vonwright-rawpixel",
     "url": "https://www.rawpixel.com/image/8863889/male-bullfinch-1829-magnus-von-wright"
+  },
+  "birds/pyrrhula-pyrrhula-6.webp": {
+    "source": "vonwright",
+    "url": "https://commons.wikimedia.org/wiki/File:Bird_illustration_from_Svenska_F%C3%A5glar_(Swedish_Birds)_by_the_von_Wright_brothers_from_rawpixel%27s_original_edition_of_the_publication_00230.jpg"
+  },
+  "birds/pyrrhula-pyrrhula-7.webp": {
+    "source": "vonwright",
+    "url": "https://commons.wikimedia.org/wiki/File:Bird_illustration_from_Svenska_F%C3%A5glar_(Swedish_Birds)_by_the_von_Wright_brothers_from_rawpixel%27s_original_edition_of_the_publication_00230.jpg"
   },
   "birds/pyrrhula-pyrrhula.webp": {
     "source": "gould",
@@ -2823,9 +2875,17 @@
     "source": "vonwright-rawpixel",
     "url": "https://www.rawpixel.com/image/8864962/female-whinchat-1828-1838-magnus-von-wright"
   },
+  "birds/saxicola-rubetra-4.webp": {
+    "source": "vonwright",
+    "url": "https://commons.wikimedia.org/wiki/File:Bird_illustration_from_Svenska_F%C3%A5glar_(Swedish_Birds)_by_the_von_Wright_brothers_from_rawpixel%27s_original_edition_of_the_publication_00200.jpg"
+  },
   "birds/saxicola-rubetra.webp": {
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIIWhinchat.jpg"
+  },
+  "birds/saxicola-rubicola-2.webp": {
+    "source": "gould",
+    "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIIStonechat.jpg"
   },
   "birds/saxicola-rubicola.webp": {
     "source": "gould",
@@ -2918,6 +2978,10 @@
   "birds/spinus-spinus-3.webp": {
     "source": "vonwright-rawpixel",
     "url": "https://www.rawpixel.com/image/8865153/eurasian-siskin-female-1828-magnus-von-wright"
+  },
+  "birds/spinus-spinus-4.webp": {
+    "source": "vonwright",
+    "url": "https://commons.wikimedia.org/wiki/File:Bird_illustration_from_Svenska_F%C3%A5glar_(Swedish_Birds)_by_the_von_Wright_brothers_from_rawpixel%27s_original_edition_of_the_publication_00071.jpg"
   },
   "birds/spinus-spinus.webp": {
     "source": "gould",
