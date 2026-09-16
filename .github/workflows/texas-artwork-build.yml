@@ -1,96 +1,64 @@
-name: Build Texas artwork assets
+# .github/workflows/texas-artwork-build.yml
+# Fork-only curation workflow. Sources are not automatically approved as artwork.
+name: Audit Texas artwork sources
 
 on:
   push:
-    branches:
-      - texas-artwork-coverage
+    branches: [texas-artwork-coverage]
     paths:
       - .github/workflows/texas-artwork-build.yml
+      - .texas-curation/collect.py
 
 permissions:
   contents: write
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    timeout-minutes: 330
+concurrency:
+  group: texas-curation
+  cancel-in-progress: false
 
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
-      - name: Check out fork branch
+      - name: Check out contribution branch
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: pip
-
-      - name: Install artwork build dependencies
-        run: |
-          python -m pip install --upgrade pip
-          python -m pip install pillow numpy requests rapidfuzz opencv-python-headless rembg onnxruntime
-
-      - name: Fetch reproducible Texas builder input
-        run: |
-          mkdir -p .texas-builder
-          curl -fL --retry 3 \
-            https://raw.githubusercontent.com/4o4R/samples/fugleramme-texas-assets-build-20260916/fugleramme-texas-build/build.py \
-            -o .texas-builder/build.py
-          curl -fL --retry 3 \
-            https://raw.githubusercontent.com/4o4R/samples/fugleramme-texas-assets-build-20260916/fugleramme-texas-build/texas_species.txt \
-            -o .texas-builder/texas_species.txt
-          # The fork was just created from upstream and is the exact code/assets base
-          # the builder needs. Avoid cloning the 1+ GB repository a second time.
-          ln -s "$GITHUB_WORKSPACE" .texas-builder/fugleramme-upstream
-
-      - name: Generate Texas artwork set
-        run: python .texas-builder/build.py
-
-      - name: Normalize Commons provenance and stage patch
-        run: |
-          python - <<'PY'
-          import csv, json
-          from pathlib import Path
-
-          root = Path('.texas-builder/output')
-          manifest_path = root / 'patch/assets/artwork/classic/manifest.json'
-          ledger_path = root / 'reports/source_ledger.csv'
-          manifest = json.loads(manifest_path.read_text())
-          with ledger_path.open(newline='', encoding='utf-8') as f:
-              for row in csv.DictReader(f):
-                  if row.get('status') == 'generated' and row.get('asset'):
-                      key = 'birds/' + row['asset']
-                      if key in manifest:
-                          # All new files in this build are selected from Wikimedia
-                          # Commons and explicitly restricted to PD/CC0-class metadata.
-                          # Keep one accurate terms key instead of guessing at a
-                          # historical work from an artist name alone.
-                          manifest[key]['source'] = 'commons-pd'
-          manifest_path.write_text(json.dumps(manifest, indent=2, sort_keys=True) + '\n')
-          PY
-
-          rsync -a .texas-builder/output/patch/assets/artwork/classic/ assets/artwork/classic/
-          rm -rf .texas-build-reports
-          mkdir -p .texas-build-reports
-          cp -a .texas-builder/output/reports/. .texas-build-reports/
-          cp .texas-builder/output/README.md .texas-build-reports/README.md
-          cp .texas-builder/texas_species.txt .texas-build-reports/texas_species.txt
-
-      - name: Commit generated branch state
+      - name: Install acquisition dependencies
+        run: python -m pip install 'Pillow==11.3.0' 'requests==2.32.5'
+      - name: Restore source cache
+        uses: actions/cache@v4
+        with:
+          path: .texas-curation/cache
+          key: texas-sources-v2-${{ github.run_id }}
+          restore-keys: texas-sources-v2-
+      - name: Inventory sources and quarantine unreviewed cutouts
+        run: python .texas-curation/collect.py
+      - name: Commit review data, not unapproved images
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add assets/artwork/classic .texas-build-reports
-          git status --short
-          git commit -m 'chore(assets): add Texas bird artwork coverage' || true
-          git push origin HEAD:texas-artwork-coverage
-
-      - name: Upload complete build and QA artifact
+          git add assets/artwork/classic/manifest.json assets/artwork/classic/birds
+          git add .texas-curation/quarantine .texas-curation/initial-review.csv
+          git add .texas-curation/output/*.csv .texas-curation/output/*.json .texas-curation/output/README.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore(assets): inventory Audubon sources and quarantine unreviewed Texas cutouts'
+            git push origin HEAD:texas-artwork-coverage
+          fi
+      - name: Upload source images and review evidence
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: fugleramme-texas-assets
-          path: .texas-builder/output/
-          compression-level: 6
-          retention-days: 14
+          name: texas-source-inventory-${{ github.run_number }}
+          path: |
+            .texas-curation/output/
+            .texas-curation/initial-review.csv
+            .texas-curation/quarantine/
+          include-hidden-files: true
+          retention-days: 30
+          compression-level: 3
