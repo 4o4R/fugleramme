@@ -1467,6 +1467,10 @@
     "source": "eaton-birds-ny",
     "url": "https://commons.wikimedia.org/wiki/File:Birds_of_New_York_(Plate_68)_(7047586155).jpg"
   },
+  "birds/empidonax-flaviventris.webp": {
+    "source": "eaton-birds-ny",
+    "url": "https://commons.wikimedia.org/wiki/File:Birds_of_New_York_(Plate_68)_(7047586155).jpg"
+  },
   "birds/eremophila-alpestris.webp": {
     "source": "vonwright",
     "url": "https://commons.wikimedia.org/wiki/File:Bird_illustration_from_Svenska_F%C3%A5glar_(Swedish_Birds)_by_the_von_Wright_brothers_from_rawpixel%27s_original_edition_of_the_publication_00139.jpg"
@@ -1482,6 +1486,10 @@
   "birds/estrilda-astrild.webp": {
     "source": "keulemans",
     "url": "https://archive.org/details/onzevogelsinhuis01keul/page/n299/mode/1up"
+  },
+  "birds/estrilda-melpoda.webp": {
+    "source": "keulemans",
+    "url": "https://commons.wikimedia.org/wiki/File:Estrilda_melpoda_1876.jpg"
   },
   "birds/eudromias-morinellus-2.webp": {
     "source": "vonwright",
@@ -1770,6 +1778,10 @@
   "birds/geokichla-sibirica.webp": {
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIISiberianThrush.jpg"
+  },
+  "birds/geothlypis-philadelphia.webp": {
+    "source": "audubon-pittsburgh",
+    "url": "https://commons.wikimedia.org/wiki/File:399_I._Mourning_Warbler_(cropped).jpg"
   },
   "birds/glareola-pratincola.webp": {
     "source": "gould",
@@ -2335,6 +2347,10 @@
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIIICalandra_Lark.jpg"
   },
+  "birds/melopsittacus-undulatus.webp": {
+    "source": "lear-parrots",
+    "url": "https://commons.wikimedia.org/wiki/File:Melopsittacus_undulatus_-Nanodes_undulatus_Undulated_parrakeet_-by_Edward_Lear_1812-1888.jpg"
+  },
   "birds/mergellus-albellus-2.webp": {
     "source": "vonwright",
     "url": "https://commons.wikimedia.org/wiki/File:Bird_illustration_from_Svenska_F%C3%A5glar_(Swedish_Birds)_by_the_von_Wright_brothers_from_rawpixel%27s_original_edition_of_the_publication_00257.jpg"
@@ -2527,6 +2543,10 @@
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:Numenius_tenuirostris.jpg"
   },
+  "birds/numida-meleagris.webp": {
+    "source": "keulemans",
+    "url": "https://commons.wikimedia.org/wiki/File:Numida_meleagris_1869.jpg"
+  },
   "birds/nycticorax-nycticorax.webp": {
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVCommon_Night_Heron.jpg"
@@ -2690,6 +2710,10 @@
   "birds/peucaea-cassinii.webp": {
     "source": "baird-smithsonian",
     "url": "https://commons.wikimedia.org/wiki/File:Peucaea_cassinii.png"
+  },
+  "birds/phaethon-aethereus.webp": {
+    "source": "smit-british-museum",
+    "url": "https://commons.wikimedia.org/wiki/File:PhaethonIndicusSmit.jpg"
   },
   "birds/phalacrocorax-carbo-2.webp": {
     "source": "vonwright",
@@ -3034,6 +3058,10 @@
   "birds/pycnonotus-cafer.webp": {
     "source": "keulemans-ibis",
     "url": "https://commons.wikimedia.org/wiki/File:MolpastesKeulemans.jpg"
+  },
+  "birds/pyrocephalus-rubinus.webp": {
+    "source": "gould-beagle",
+    "url": "https://commons.wikimedia.org/wiki/File:PyrocephalusParvirostrisDarwin.jpg"
   },
   "birds/pyrrhocorax-graculus.webp": {
     "source": "gould",
@@ -3734,6 +3762,10 @@
   "birds/vanellus-vanellus.webp": {
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVLapwing.jpg"
+  },
+  "birds/vidua-macroura.webp": {
+    "source": "keulemans",
+    "url": "https://commons.wikimedia.org/wiki/File:Vidua_macroura_1869.jpg"
   },
   "birds/vireo-atricapilla.webp": {
     "source": "cassin-illustrations",

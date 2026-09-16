@@ -123,3 +123,7 @@ Public domain (PD-scan / PD-old-70-expired). Manifest key: `greene`.
 **Studer (Birds of North America)** - *The Birds of North America* associated with **Jacob H. Studer**, with plates credited on the linked source record, from Biodiversity Heritage Library scans on Wikimedia Commons. Public domain. Manifest key: `studer-birds-na`.
 
 **Swainson (Brazil and Mexico)** - *A Selection of the Birds of Brazil and Mexico* by **William Swainson** (1841), from Biodiversity Heritage Library scans on Wikimedia Commons. Public domain. Manifest key: `swainson-brazil-mexico`.
+
+**Gould (Voyage of the Beagle)** - bird plate by **John Gould** from the zoological results of **Charles Darwin's** voyage of H.M.S. *Beagle* (19th century), via the exact public-domain Wikimedia Commons file page linked in the manifest. Manifest key: `gould-beagle`.
+
+**Smit (British Museum catalogue)** - bird plate by **Joseph Smit** from the *Catalogue of the Birds in the British Museum*, via the exact public-domain Wikimedia Commons file page linked in the manifest. Manifest key: `smit-british-museum`.
