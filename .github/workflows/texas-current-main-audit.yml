@@ -37,6 +37,7 @@ jobs:
             'covered_unique_keys': len({r['key'] for r in covered}),
             'uncovered_unique_keys': len({r['key'] for r in uncovered}),
             'unresolved_requested': [r['requested'] for r in unresolved],
+            'audited_main_commit': __import__('subprocess').check_output(['git','-C','project','rev-parse','HEAD'], text=True).strip(),
           }
           Path('audit-output').mkdir()
           Path('audit-output/summary.json').write_text(json.dumps(out,indent=2)+'\n')
