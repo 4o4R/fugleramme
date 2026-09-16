@@ -1,0 +1,13 @@
+{
+  "requested_rows": 534,
+  "resolved_rows": 526,
+  "unique_resolved_keys": 526,
+  "unresolved_rows": 8,
+  "existing_upstream_rows": 104,
+  "catalog_candidate_rows": 162,
+  "downloaded_source_rows": 123,
+  "download_errors": 0,
+  "new_approved_assets": 0,
+  "quarantined_initial_assets": 10,
+  "scope": "Broad Central Texas and Harris County planning list, not 534 common ZIP-code birds or a local abundance ranking."
+}
