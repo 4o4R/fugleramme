@@ -99,20 +99,6 @@ if (document.getElementById("bar")) {
   })();
 }
 
-// Save stays disabled until a form differs from what the server served. An
-// untouched password placeholder serializes the same both times, so it needs no
-// case of its own. The action forms (Check, Install) are not settings and stay out.
-const serialize = (f) => new URLSearchParams(new FormData(f)).toString();
-const changed = new Map();
-for (const f of document.querySelectorAll("form.settings, form.block")) {
-  const button = f.querySelector("button[type=submit]");
-  const served = serialize(f);
-  const dirty = () => serialize(f) !== served;
-  changed.set(f, dirty);
-  f.addEventListener("input", () => { button.disabled = !dirty(); });
-  button.disabled = true;
-}
-
 // Tests the values in the form, not the saved ones, so a fix can be tried first.
 const test = document.getElementById("test");
 if (test) {
@@ -233,6 +219,23 @@ form.addEventListener("input", (e) => {
   queueRender();
 }, true);
 
+syncMode();
+
+// Save stays disabled until a form differs from what the server served. An
+// untouched password placeholder serializes the same both times, so it needs no
+// case of its own. The action forms (Check, Install) are not settings and stay out.
+// Snapshot after syncMode - dimmed fields are already out of the form data.
+const serialize = (f) => new URLSearchParams(new FormData(f)).toString();
+const changed = new Map();
+for (const f of document.querySelectorAll("form.settings, form.block")) {
+  const button = f.querySelector("button[type=submit]");
+  const served = serialize(f);
+  const dirty = () => serialize(f) !== served;
+  changed.set(f, dirty);
+  f.addEventListener("input", () => { button.disabled = !dirty(); });
+  button.disabled = true;
+}
+
 // An untouched form is never dirty, so this only fires over edits the user
 // would actually lose - a typed password among them.
 window.addEventListener("beforeunload", (e) => {
@@ -241,6 +244,5 @@ window.addEventListener("beforeunload", (e) => {
   e.returnValue = "";
 });
 
-syncMode();
 loadPreview();
 if (scrolled !== null) window.scrollTo(0, Number(scrolled));
