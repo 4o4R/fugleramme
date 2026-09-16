@@ -1,0 +1,10 @@
+[
+  {"rank":67,"key":"pyrocephalus-rubinus","variant":0,"source_key":"gould-beagle"},
+  {"rank":263,"key":"empidonax-flaviventris","variant":0,"source_key":"eaton-birds-ny"},
+  {"rank":329,"key":"geothlypis-philadelphia","variant":0,"source_key":"audubon-pittsburgh"},
+  {"rank":481,"key":"numida-meleagris","variant":2,"source_key":"keulemans"},
+  {"rank":493,"key":"phaethon-aethereus","variant":1,"source_key":"smit-british-museum"},
+  {"rank":504,"key":"melopsittacus-undulatus","variant":0,"source_key":"lear-parrots"},
+  {"rank":526,"key":"estrilda-melpoda","variant":1,"source_key":"keulemans"},
+  {"rank":528,"key":"vidua-macroura","variant":1,"source_key":"keulemans"}
+]
