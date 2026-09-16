@@ -1,0 +1,22 @@
+[
+  {"common":"Black-chinned Hummingbird","box_frac":[0.14,0.10,0.66,0.56]},
+  {"common":"Buff-bellied Hummingbird","box_frac":[0.12,0.10,0.72,0.58]},
+  {"common":"Common Nighthawk","box_frac":[0.10,0.08,0.82,0.72]},
+  {"common":"Chuck-will's-widow","box_frac":[0.08,0.08,0.78,0.56]},
+  {"common":"Eastern Whip-poor-will","box_frac":[0.08,0.08,0.78,0.58]},
+  {"common":"Downy Woodpecker","box_frac":[0.10,0.10,0.78,0.62]},
+  {"common":"Ladder-backed Woodpecker","box_frac":[0.08,0.05,0.92,0.94]},
+  {"common":"Pileated Woodpecker","box_frac":[0.10,0.03,0.84,0.60]},
+  {"common":"Northern Flicker","box_frac":[0.10,0.04,0.82,0.62]},
+  {"common":"Yellow-bellied Sapsucker","box_frac":[0.22,0.12,0.78,0.70]},
+  {"common":"Eastern Phoebe","box_frac":[0.18,0.18,0.78,0.64]},
+  {"common":"Eastern Wood-Pewee","box_frac":[0.18,0.18,0.78,0.66]},
+  {"common":"Eastern Kingbird","box_frac":[0.20,0.12,0.78,0.76]},
+  {"common":"White-eyed Vireo","box_frac":[0.14,0.12,0.82,0.72]},
+  {"common":"Red-eyed Vireo","box_frac":[0.18,0.18,0.82,0.70]},
+  {"common":"Yellow-throated Vireo","box_frac":[0.18,0.12,0.82,0.72]},
+  {"common":"Blue-gray Gnatcatcher","box_frac":[0.16,0.08,0.82,0.72]},
+  {"common":"Gray Catbird","box_frac":[0.16,0.10,0.82,0.70]},
+  {"common":"Brown Thrasher","box_frac":[0.10,0.05,0.85,0.72]},
+  {"common":"Yellow Warbler","box_frac":[0.10,0.08,0.88,0.86]}
+]
