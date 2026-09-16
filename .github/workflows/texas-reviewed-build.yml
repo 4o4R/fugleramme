@@ -1,0 +1,55 @@
+# .github/workflows/texas-reviewed-build.yml
+# Fork-only workflow. This builds REVIEW CANDIDATES, not approved shipping art.
+name: Build selected Texas bird cutouts
+on:
+  push:
+    branches: [texas-artwork-coverage]
+    paths:
+      - .github/workflows/texas-reviewed-build.yml
+      - .texas-curation/selections.json
+      - .texas-curation/build_reviewed.py
+permissions:
+  contents: write
+concurrency:
+  group: texas-reviewed-build
+  cancel-in-progress: false
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+      - name: Install pinned project environment
+        run: uv sync --frozen
+      - name: Build and technically validate selected cutouts
+        run: uv run --with opencv-python-headless --with requests python .texas-curation/build_reviewed.py
+      - name: Check application formatting, lint and types
+        run: |
+          uv run ruff format --check src tools tests hooks
+          uv run ruff check src tools tests hooks
+          uv run mypy
+      - name: Run full upstream tests
+        run: uv run pytest -q --junitxml=.texas-curation/review-build/pytest.xml
+      - name: Commit candidates and their source evidence for final review
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add .texas-curation/review-build/images .texas-curation/review-build/previews
+          git add .texas-curation/review-build/source-proof .texas-curation/review-build/*.csv
+          git add .texas-curation/review-build/*.json .texas-curation/review-build/*.jpg .texas-curation/review-build/pytest.xml
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore(assets): stage 18 selected cutouts with previews and test evidence for review'
+            git push origin HEAD:texas-artwork-coverage
+          fi
+      - name: Upload exact cutouts, previews and proof sheets
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: texas-reviewed-candidates-${{ github.run_number }}
+          path: .texas-curation/review-build/
+          include-hidden-files: true
+          retention-days: 30
+          compression-level: 3
