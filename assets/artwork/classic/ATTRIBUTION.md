@@ -85,3 +85,41 @@ Public domain (PD-scan / PD-old-70-expired). Manifest key: `greene`.
 **Smit (Proceedings of the Zoological Society of London)** - bird plate by **Joseph Smit**, from the *Proceedings of the Zoological Society of London* (1867), via the exact Wikimedia Commons file page linked in the manifest. Public domain. Manifest key: `smit-pzs`.
 
 **Baird (Smithsonian)** - North American bird illustration by **Spencer Fullerton Baird**, from the Smithsonian Libraries image record linked through the exact Wikimedia Commons file page in the manifest. Public domain. Manifest key: `baird-smithsonian`.
+
+**Audubon (octavo edition)** - *The Birds of America, from Drawings Made in the United States and Their Territories* by **John James Audubon** (octavo edition, 1840-1844), lithographed principally by **J. T. Bowen**, from Biodiversity Heritage Library scans on Wikimedia Commons. Public domain. Manifest key: `audubon-octavo`.
+
+**Bailey (western U.S.)** - *Handbook of Birds of the Western United States* by **Florence Merriam Bailey** (1902), from Biodiversity Heritage Library scans on Wikimedia Commons. Public domain. Manifest key: `bailey-handbook`.
+
+**Carlsbad Cavern survey** - bird illustration from *Animal Life of the Carlsbad Cavern* (1928), from an Internet Archive scan made available through Wikimedia Commons. Public domain. Manifest key: `carlsbad-cavern`.
+
+**Cassin (western North America)** - *Illustrations of the Birds of California, Texas, Oregon, British and Russian America* by **John Cassin** (1850s), with lithographic work including **John T. Bowen**, from Biodiversity Heritage Library scans on Wikimedia Commons. Public domain. Manifest key: `cassin-illustrations`.
+
+**Chapman / Reed (Color Key)** - *Color Key to North American Birds* by **Frank M. Chapman**, with illustrations credited in the source to **Chester A. Reed** and others (early 20th century), from Biodiversity Heritage Library scans on Wikimedia Commons. Public domain. Manifest key: `chapman-color-key`.
+
+**Eaton (Birds of New York)** - *Birds of New York* by **Elon Howard Eaton** (early 20th century), from Biodiversity Heritage Library scans on Wikimedia Commons. Public domain. Manifest key: `eaton-birds-ny`.
+
+**Gosse (Jamaica)** - *Illustrations of the Birds of Jamaica* by **Philip Henry Gosse** (1849), from Biodiversity Heritage Library scans on Wikimedia Commons. Public domain. Manifest key: `gosse-jamaica`.
+
+**Grønvold (Birds of South America)** - plate by **Henrik Grønvold** from *The Birds of South America*, from Biodiversity Heritage Library scans on Wikimedia Commons. Public domain. Manifest key: `gronvold-south-america`.
+
+**Keulemans (The Ibis)** - bird plates by **John Gerrard Keulemans** published in *The Ibis*, from public-domain scans on Wikimedia Commons. Exact file pages are linked in the manifest. Public domain. Manifest key: `keulemans-ibis`.
+
+**Birds of the World for Young People** - plate from the public-domain work *Birds of the World for Young People*, with artist credits recorded on the linked Wikimedia Commons/Biodiversity Heritage Library source page. Public domain. Manifest key: `knight-birds-world`.
+
+**Lear (Parrots)** - parrot illustrations by **Edward Lear**, from his 19th-century ornithological work including *Illustrations of the Family of Psittacidae, or Parrots*, via the exact Wikimedia Commons file page linked in the manifest. Public domain. Manifest key: `lear-parrots`.
+
+**Martinet / Planches enluminées** - plates from *Planches enluminées d'histoire naturelle* associated with **Georges-Louis Leclerc de Buffon**, **Edme-Louis Daubenton**, and illustrator **François-Nicolas Martinet** (18th century), from Biodiversity Heritage Library scans on Wikimedia Commons. Public domain. Manifest key: `martinet-planches`.
+
+**Miller (Second Book of Birds)** - *The Second Book of Birds* by **Harriet Mann Miller** (Olive Thorne Miller), from Biodiversity Heritage Library scans on Wikimedia Commons. Public domain. Manifest key: `miller-second-book`.
+
+**Pearson Scott Foresman** - educational bird illustration from the **Pearson Scott Foresman** archive donated to Wikimedia Commons and marked public domain there. Exact file page is linked in the manifest. Manifest key: `pearson-scott-foresman`.
+
+**Prêtre (Magasin de Zoologie)** - 19th-century bird plate by **Jean-Gabriel Prêtre** from *Magasin de Zoologie*, via the exact Wikimedia Commons file page linked in the manifest. Public domain. Manifest key: `pretre-magasin`.
+
+**Seligmann / Edwards (Recueil)** - plates from *Recueil de divers oiseaux étrangers et peu communs*, associated with **George Edwards** and **Johann Michael Seligmann** (18th century), from Biodiversity Heritage Library scans on Wikimedia Commons. Public domain. Manifest key: `seligmann-recueil`.
+
+**Smit (National Gallery of Art)** - bird illustration by **Joseph Smit**, released through the **National Gallery of Art Open Access** program and supplied on Wikimedia Commons under **CC0**. Exact file page is linked in the manifest. Manifest key: `smit-nga`.
+
+**Studer (Birds of North America)** - *The Birds of North America* associated with **Jacob H. Studer**, with plates credited on the linked source record, from Biodiversity Heritage Library scans on Wikimedia Commons. Public domain. Manifest key: `studer-birds-na`.
+
+**Swainson (Brazil and Mexico)** - *A Selection of the Birds of Brazil and Mexico* by **William Swainson** (1841), from Biodiversity Heritage Library scans on Wikimedia Commons. Public domain. Manifest key: `swainson-brazil-mexico`.
