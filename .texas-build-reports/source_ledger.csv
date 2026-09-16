@@ -1,0 +1,525 @@
+artist,asset,candidate,candidate_score,common,credit,key,license,rank,scientific,source,status,url
+John James Audubon,cardinalis-cardinalis.webp,File:159 Cardinal Grosbeak.jpg,460,Northern Cardinal,University of Pittsburgh,cardinalis-cardinalis,Public domain,1,Cardinalis cardinalis,audubon,generated,https://commons.wikimedia.org/wiki/File:159_Cardinal_Grosbeak.jpg
+John James Audubon,mimus-polyglottos.webp,File:21 Mocking Bird.jpg,460,Northern Mockingbird,University of Pittsburgh,mimus-polyglottos,Public domain,2,Mimus polyglottos,audubon,generated,https://commons.wikimedia.org/wiki/File:21_Mocking_Bird.jpg
+Gerhard Heilmann,zenaida-asiatica.webp,File:Heilmann fig140.jpg,210,White-winged Dove,The Danish book Vor Nuvaerende Viden om Fuglenes Afstamming,zenaida-asiatica,Public domain,3,Zenaida asiatica,commons-pd,generated,https://commons.wikimedia.org/wiki/File:Heilmann_fig140.jpg
+John James Audubon,zenaida-macroura.webp,File:Zenaida macrouraAWP17AA.jpg,540,Mourning Dove,Scan of modern reproduction of The Birds of America (edited and color-corrected),zenaida-macroura,Public domain,4,Zenaida macroura,audubon,generated,https://commons.wikimedia.org/wiki/File:Zenaida_macrouraAWP17AA.jpg
+,columba-livia.webp,,,Rock Pigeon,,columba-livia,,5,Columba livia,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVRock_Dove.jpg
+,streptopelia-decaocto.webp,,,Eurasian Collared-Dove,,streptopelia-decaocto,,6,Streptopelia decaocto,keulemans,existing,https://commons.wikimedia.org/wiki/File:Onze_vogels_in_huis_en_tuin_(12238985825).jpg
+,cyanocitta-cristata.webp,,,Blue Jay,,cyanocitta-cristata,,7,Cyanocitta cristata,audubon,existing,https://media.audubon.org/boa_illustration/plate-102-blue-jay.jpg
+,,,,Carolina Chickadee,,poecile-carolinensis,,8,Poecile carolinensis,,missing-source,
+John James Audubon,thryothorus-ludovicianus.webp,File:78 Great Carolina Wren.jpg,540,Carolina Wren,University of Pittsburgh,thryothorus-ludovicianus,Public domain,9,Thryothorus ludovicianus,audubon,generated,https://commons.wikimedia.org/wiki/File:78_Great_Carolina_Wren.jpg
+John James Audubon,troglodytes-aedon.webp,File:83 House Wren.jpg,540,House Wren,University of Pittsburgh,troglodytes-aedon,Public domain,10,Troglodytes aedon,audubon,generated,https://commons.wikimedia.org/wiki/File:83_House_Wren.jpg
+John James Audubon,thryomanes-bewickii.webp,File:18 Bewick's Wren.jpg,540,Bewick's Wren,University of Pittsburgh,thryomanes-bewickii,Public domain,11,Thryomanes bewickii,audubon,generated,https://commons.wikimedia.org/wiki/File:18_Bewick's_Wren.jpg
+John James Audubon,baeolophus-bicolor.webp,File:39 Crested Titmouse.jpg,460,Tufted Titmouse,University of Pittsburgh,baeolophus-bicolor,Public domain,12,Baeolophus bicolor,audubon,generated,https://commons.wikimedia.org/wiki/File:39_Crested_Titmouse.jpg
+,,,,Black-crested Titmouse,,baeolophus-atricristatus,,13,Baeolophus atricristatus,,missing-source,
+,,,,Great-tailed Grackle,,quiscalus-mexicanus,,14,Quiscalus mexicanus,,missing-source,
+,,,,Common Grackle,,quiscalus-quiscula,,15,Quiscalus quiscula,,missing-source,
+,,,,Brown-headed Cowbird,,molothrus-ater,,16,Molothrus ater,,missing-source,
+,,,,Red-winged Blackbird,,agelaius-phoeniceus,,17,Agelaius phoeniceus,,missing-source,
+,passer-domesticus.webp,,,House Sparrow,,passer-domesticus,,18,Passer domesticus,vonwright,existing,https://commons.wikimedia.org/wiki/File:Bird_illustration_from_Svenska_F%C3%A5glar_(Swedish_Birds)_by_the_von_Wright_brothers_from_rawpixel%27s_original_edition_of_the_publication_00220.jpg
+,,,,House Finch,,haemorhous-mexicanus,,19,Haemorhous mexicanus,,missing-source,
+,,,,American Goldfinch,,spinus-tristis,,20,Spinus tristis,,missing-source,
+,,,,Lesser Goldfinch,,spinus-psaltria,,21,Spinus psaltria,,missing-source,
+,,,,Cedar Waxwing,,bombycilla-cedrorum,,22,Bombycilla cedrorum,,missing-source,
+,turdus-migratorius.webp,,,American Robin,,turdus-migratorius,,23,Turdus migratorius,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIIMigratory_Ouzel.jpg
+,,,,Eastern Bluebird,,sialia-sialis,,24,Sialia sialis,,missing-source,
+,sturnus-vulgaris.webp,,,European Starling,,sturnus-vulgaris,,25,Sturnus vulgaris,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIIIStarling.jpg
+,,,,Black Vulture,,coragyps-atratus,,26,Coragyps atratus,,missing-source,
+,,,,Turkey Vulture,,cathartes-aura,,27,Cathartes aura,,missing-source,
+,,,,Red-tailed Hawk,,buteo-jamaicensis,,28,Buteo jamaicensis,,missing-source,
+,,,,Red-shouldered Hawk,,buteo-lineatus,,29,Buteo lineatus,,missing-source,
+,,,,Cooper's Hawk,,astur-cooperii,,30,Astur cooperii,,missing-source,
+,,,,Mississippi Kite,,ictinia-mississippiensis,,31,Ictinia mississippiensis,,missing-source,
+,,,,Swainson's Hawk,,buteo-swainsoni,,32,Buteo swainsoni,,missing-source,
+,,,,Crested Caracara,,caracara-plancus,,33,Caracara plancus,,missing-source,
+,,,,American Kestrel,,falco-sparverius,,34,Falco sparverius,,missing-source,
+,,,,Eastern Screech-Owl,,megascops-asio,,35,Megascops asio,,missing-source,
+,,,,Great Horned Owl,,bubo-virginianus,,36,Bubo virginianus,,missing-source,
+,strix-varia.webp,,,Barred Owl,,strix-varia,,37,Strix varia,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIBarred_Owl.jpg
+,,,,Chimney Swift,,chaetura-pelagica,,38,Chaetura pelagica,,missing-source,
+,,,,Purple Martin,,progne-subis,,39,Progne subis,,missing-source,
+,hirundo-rustica.webp,,,Barn Swallow,,hirundo-rustica,,40,Hirundo rustica,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIIChimney_Swallow.jpg
+,,,,Cliff Swallow,,petrochelidon-pyrrhonota,,41,Petrochelidon pyrrhonota,,missing-source,
+,,,,Cave Swallow,,petrochelidon-fulva,,42,Petrochelidon fulva,,missing-source,
+,,,,Tree Swallow,,tachycineta-bicolor,,43,Tachycineta bicolor,,missing-source,
+,,,,Northern Rough-winged Swallow,,stelgidopteryx-serripennis,,44,Stelgidopteryx serripennis,,missing-source,
+,,,,Ruby-throated Hummingbird,,archilochus-colubris,,45,Archilochus colubris,,missing-source,
+,,,,Black-chinned Hummingbird,,archilochus-alexandri,,46,Archilochus alexandri,,missing-source,
+,,,,Buff-bellied Hummingbird,,amazilia-yucatanensis,,47,Amazilia yucatanensis,,missing-source,
+,,,,Rufous Hummingbird,,selasphorus-rufus,,48,Selasphorus rufus,,missing-source,
+,coccyzus-americanus.webp,,,Yellow-billed Cuckoo,,coccyzus-americanus,,49,Coccyzus americanus,gould,existing,https://commons.wikimedia.org/wiki/File:Coccyzus_Americanus_by_John_Gould.jpg
+,,,,Greater Roadrunner,,geococcyx-californianus,,50,Geococcyx californianus,,missing-source,
+,,,,Common Nighthawk,,chordeiles-minor,,51,Chordeiles minor,,missing-source,
+,,,,Chuck-will's-widow,,antrostomus-carolinensis,,52,Antrostomus carolinensis,,missing-source,
+,,,,Eastern Whip-poor-will,,antrostomus-vociferus,,53,Antrostomus vociferus,,missing-source,
+,melanerpes-carolinus.webp,,,Red-bellied Woodpecker,,melanerpes-carolinus,,54,Melanerpes carolinus,audubon,existing,https://media.audubon.org/boa_illustration/plate-416-hairy-woodpecker.jpg
+,,,,Golden-fronted Woodpecker,,melanerpes-aurifrons,,55,Melanerpes aurifrons,,missing-source,
+,,,,Downy Woodpecker,,dryobates-pubescens,,56,Dryobates pubescens,,missing-source,
+,,,,Ladder-backed Woodpecker,,dryobates-scalaris,,57,Dryobates scalaris,,missing-source,
+,,,,Pileated Woodpecker,,dryocopus-pileatus,,58,Dryocopus pileatus,,missing-source,
+,,,,Northern Flicker,,colaptes-auratus,,59,Colaptes auratus,,missing-source,
+,,,,Yellow-bellied Sapsucker,,sphyrapicus-varius,,60,Sphyrapicus varius,,missing-source,
+,,,,Eastern Phoebe,,sayornis-phoebe,,61,Sayornis phoebe,,missing-source,
+,,,,Eastern Wood-Pewee,,contopus-virens,,62,Contopus virens,,missing-source,
+,,,,Great Crested Flycatcher,,myiarchus-crinitus,,63,Myiarchus crinitus,,missing-source,
+,,,,Scissor-tailed Flycatcher,,tyrannus-forficatus,,64,Tyrannus forficatus,,missing-source,
+,,,,Western Kingbird,,tyrannus-verticalis,,65,Tyrannus verticalis,,missing-source,
+,,,,Eastern Kingbird,,tyrannus-tyrannus,,66,Tyrannus tyrannus,,missing-source,
+,,,,Vermilion Flycatcher,,pyrocephalus-rubinus,,67,Pyrocephalus rubinus,,missing-source,
+,,,,White-eyed Vireo,,vireo-griseus,,68,Vireo griseus,,missing-source,
+,,,,Red-eyed Vireo,,vireo-olivaceus,,69,Vireo olivaceus,,missing-source,
+,,,,Yellow-throated Vireo,,vireo-flavifrons,,70,Vireo flavifrons,,missing-source,
+,,,,Blue-gray Gnatcatcher,,polioptila-caerulea,,71,Polioptila caerulea,,missing-source,
+,,,,Ruby-crowned Kinglet,,corthylio-calendula,,72,Corthylio calendula,,missing-source,
+,,,,Golden-crowned Kinglet,,regulus-satrapa,,73,Regulus satrapa,,missing-source,
+,,,,Brown Creeper,,certhia-americana,,74,Certhia americana,,missing-source,
+,,,,Gray Catbird,,dumetella-carolinensis,,75,Dumetella carolinensis,,missing-source,
+,,,,Brown Thrasher,,toxostoma-rufum,,76,Toxostoma rufum,,missing-source,
+,,,,Orange-crowned Warbler,,leiothlypis-celata,,77,Leiothlypis celata,,missing-source,
+,,,,Yellow-rumped Warbler,,setophaga-coronata,,78,Setophaga coronata,,missing-source,
+,,,,Yellow Warbler,,setophaga-petechia,,79,Setophaga petechia,,missing-source,
+,,,,Common Yellowthroat,,geothlypis-trichas,,80,Geothlypis trichas,,missing-source,
+,,,,Northern Parula,,setophaga-americana,,81,Setophaga americana,,missing-source,
+,,,,Black-and-white Warbler,,mniotilta-varia,,82,Mniotilta varia,,missing-source,
+,,,,American Redstart,,setophaga-ruticilla,,83,Setophaga ruticilla,,missing-source,
+,,,,Pine Warbler,,setophaga-pinus,,84,Setophaga pinus,,missing-source,
+,,,,Yellow-throated Warbler,,setophaga-dominica,,85,Setophaga dominica,,missing-source,
+,,,,Summer Tanager,,piranga-rubra,,86,Piranga rubra,,missing-source,
+,,,,Painted Bunting,,passerina-ciris,,87,Passerina ciris,,missing-source,
+,,,,Indigo Bunting,,passerina-cyanea,,88,Passerina cyanea,,missing-source,
+,,,,Blue Grosbeak,,passerina-caerulea,,89,Passerina caerulea,,missing-source,
+,,,,Dickcissel,,spiza-americana,,90,Spiza americana,,missing-source,
+,,,,Chipping Sparrow,,spizella-passerina,,91,Spizella passerina,,missing-source,
+,,,,Lark Sparrow,,chondestes-grammacus,,92,Chondestes grammacus,,missing-source,
+,,,,White-throated Sparrow,,zonotrichia-albicollis,,93,Zonotrichia albicollis,,missing-source,
+,,,,Lincoln's Sparrow,,melospiza-lincolnii,,94,Melospiza lincolnii,,missing-source,
+,,,,Savannah Sparrow,,passerculus-sandwichensis,,95,Passerculus sandwichensis,,missing-source,
+,,,,Eastern Meadowlark,,sturnella-magna,,96,Sturnella magna,,missing-source,
+,,,,Orchard Oriole,,icterus-spurius,,97,Icterus spurius,,missing-source,
+,,,,Baltimore Oriole,,icterus-galbula,,98,Icterus galbula,,missing-source,
+,,,,Black-bellied Whistling-Duck,,dendrocygna-autumnalis,,99,Dendrocygna autumnalis,,missing-source,
+,,,,Wood Duck,,aix-sponsa,,100,Aix sponsa,,missing-source,
+,anas-platyrhynchos.webp,,,Mallard,,anas-platyrhynchos,,101,Anas platyrhynchos,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVCommon_Wild_Duck.jpg
+,,,,Mottled Duck,,anas-fulvigula,,102,Anas fulvigula,,missing-source,
+,,,,Blue-winged Teal,,spatula-discors,,103,Spatula discors,,missing-source,
+,spatula-clypeata.webp,,,Northern Shoveler,,spatula-clypeata,,104,Spatula clypeata,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVShoveller_Duck.jpg
+,mareca-strepera.webp,,,Gadwall,,mareca-strepera,,105,Mareca strepera,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVGadwall.jpg
+,,,,American Wigeon,,mareca-americana,,106,Mareca americana,,missing-source,
+,anas-crecca.webp,,,Green-winged Teal,,anas-crecca,,107,Anas crecca,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVCommon_Teal.jpg
+,,,,Pied-billed Grebe,,podilymbus-podiceps,,108,Podilymbus podiceps,,missing-source,
+,,,,Neotropic Cormorant,,nannopterum-brasilianum,,109,Nannopterum brasilianum,,missing-source,
+,,,,Double-crested Cormorant,,nannopterum-auritum,,110,Nannopterum auritum,,missing-source,
+,,,,Great Blue Heron,,ardea-herodias,,111,Ardea herodias,,missing-source,
+,ardea-alba.webp,,,Great Egret,,ardea-alba,,112,Ardea alba,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVGreat_Egret.jpg
+,,,,Snowy Egret,,egretta-thula,,113,Egretta thula,,missing-source,
+,,,,Green Heron,,butorides-virescens,,114,Butorides virescens,,missing-source,
+,,,,Yellow-crowned Night-Heron,,nyctanassa-violacea,,115,Nyctanassa violacea,,missing-source,
+,,,,White Ibis,,eudocimus-albus,,116,Eudocimus albus,,missing-source,
+,,,,Roseate Spoonbill,,platalea-ajaja,,117,Platalea ajaja,,missing-source,
+,,,,American White Pelican,,pelecanus-erythrorhynchos,,118,Pelecanus erythrorhynchos,,missing-source,
+,,,,Brown Pelican,,pelecanus-occidentalis,,119,Pelecanus occidentalis,,missing-source,
+,,,,Killdeer,,charadrius-vociferus,,120,Charadrius vociferus,,missing-source,
+,actitis-macularius.webp,,,Spotted Sandpiper,,actitis-macularius,,121,Actitis macularius,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVSpotted_Sandpiper.jpg
+,,,,American Coot,,fulica-americana,,122,Fulica americana,,missing-source,
+,,,,Common Gallinule,,gallinula-galeata,,123,Gallinula galeata,,missing-source,
+,,,,Sora,,porzana-carolina,,124,Porzana carolina,,missing-source,
+,,,,Belted Kingfisher,,megaceryle-alcyon,,125,Megaceryle alcyon,,missing-source,
+,,,,Loggerhead Shrike,,lanius-ludovicianus,,126,Lanius ludovicianus,,missing-source,
+,myiopsitta-monachus.webp,,,Monk Parakeet,,myiopsitta-monachus,,127,Myiopsitta monachus,greene,existing,https://commons.wikimedia.org/wiki/File:Parrots_in_captivity_(Vol._3._PL._07)_Quaker_Grey_Breasted_or_Monte_Video_Parrakeet_(8527254257).jpg
+,,,,Red-vented Bulbul,,pycnonotus-cafer,,128,Pycnonotus cafer,,missing-source,
+,,,,Scaly-breasted Munia,,lonchura-punctulata,,129,Lonchura punctulata,,missing-source,
+,,,,Pacific Loon,,gavia-pacifica,,130,Gavia pacifica,,missing-source,
+,gavia-immer.webp,,,Common Loon,,gavia-immer,,131,Gavia immer,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVNorthern_Diver.jpg
+,,,,Least Grebe,,tachybaptus-dominicus,,132,Tachybaptus dominicus,,missing-source,
+,podiceps-auritus.webp,,,Horned Grebe,,podiceps-auritus,,133,Podiceps auritus,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVHorned_Grebe.jpg
+,podiceps-nigricollis.webp,,,Eared Grebe,,podiceps-nigricollis,,134,Podiceps nigricollis,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVEared_Grebe.jpg
+,,,,Western Grebe,,aechmophorus-occidentalis,,135,Aechmophorus occidentalis,,missing-source,
+,,,,Anhinga,,anhinga-anhinga,,136,Anhinga anhinga,,missing-source,
+,,,,Magnificent Frigatebird,,fregata-magnificens,,137,Fregata magnificens,,missing-source,
+,botaurus-lentiginosus.webp,,,American Bittern,,botaurus-lentiginosus,,138,Botaurus lentiginosus,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVAmerican_Bittern.jpg
+,,,,Least Bittern,,botaurus-exilis,,139,Botaurus exilis,,missing-source,
+,,,,Little Blue Heron,,egretta-caerulea,,140,Egretta caerulea,,missing-source,
+,,,,Tricolored Heron,,egretta-tricolor,,141,Egretta tricolor,,missing-source,
+,,,,Reddish Egret,,egretta-rufescens,,142,Egretta rufescens,,missing-source,
+,nycticorax-nycticorax.webp,,,Black-crowned Night-Heron,,nycticorax-nycticorax,,144,Nycticorax nycticorax,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVCommon_Night_Heron.jpg
+,plegadis-falcinellus.webp,,,Glossy Ibis,,plegadis-falcinellus,,145,Plegadis falcinellus,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVGlossy_Ibis.jpg
+,,,,White-faced Ibis,,plegadis-chihi,,146,Plegadis chihi,,missing-source,
+,,,,Wood Stork,,mycteria-americana,,147,Mycteria americana,,missing-source,
+,,,,Fulvous Whistling-Duck,,dendrocygna-bicolor,,148,Dendrocygna bicolor,,missing-source,
+,anser-albifrons.webp,,,Greater White-fronted Goose,,anser-albifrons,,149,Anser albifrons,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVWhite-fronted_Goose.jpg
+,anser-caerulescens.webp,,,Snow Goose,,anser-caerulescens,,150,Anser caerulescens,gould,existing,https://commons.wikimedia.org/wiki/File:The_birds_of_Europe_(1837)_(14563947840).jpg
+,,,,Ross's Goose,,anser-rossii,,151,Anser rossii,,missing-source,
+,branta-canadensis.webp,,,Canada Goose,,branta-canadensis,,152,Branta canadensis,morris,existing,https://commons.wikimedia.org/wiki/File:British_game_birds_and_wildfowl_(Plate_32)_(8093637854).jpg
+,spatula-cyanoptera.webp,,,Cinnamon Teal,,spatula-cyanoptera,,153,Spatula cyanoptera,vonwright,existing,https://commons.wikimedia.org/wiki/File:Bird_illustration_from_Svenska_F%C3%A5glar_(Swedish_Birds)_by_the_von_Wright_brothers_from_rawpixel%27s_original_edition_of_the_publication_00158.jpg
+,anas-acuta.webp,,,Northern Pintail,,anas-acuta,,154,Anas acuta,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVPintail_Duck.jpg
+,,,,Canvasback,,aythya-valisineria,,155,Aythya valisineria,,missing-source,
+,,,,Redhead,,aythya-americana,,156,Aythya americana,,missing-source,
+,,,,Ring-necked Duck,,aythya-collaris,,157,Aythya collaris,,missing-source,
+,,,,Lesser Scaup,,aythya-affinis,,158,Aythya affinis,,missing-source,
+,aythya-marila.webp,,,Greater Scaup,,aythya-marila,,159,Aythya marila,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVScaup_Pochard.jpg
+,melanitta-perspicillata.webp,,,Surf Scoter,,melanitta-perspicillata,,160,Melanitta perspicillata,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVSurf_Scoter.jpg
+,,,,Black Scoter,,melanitta-americana,,162,Melanitta americana,,missing-source,
+,clangula-hyemalis.webp,,,Long-tailed Duck,,clangula-hyemalis,,163,Clangula hyemalis,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVLong-tailed_Duck.jpg
+,,,,Bufflehead,,bucephala-albeola,,164,Bucephala albeola,,missing-source,
+,bucephala-clangula.webp,,,Common Goldeneye,,bucephala-clangula,,165,Bucephala clangula,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVGoldeneye.jpg
+,bucephala-islandica.webp,,,Barrow's Goldeneye,,bucephala-islandica,,166,Bucephala islandica,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVBarrows_Duck.jpg
+,lophodytes-cucullatus.webp,,,Hooded Merganser,,lophodytes-cucullatus,,167,Lophodytes cucullatus,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVHooded_Merganser.jpg
+,mergus-serrator.webp,,,Red-breasted Merganser,,mergus-serrator,,168,Mergus serrator,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVRed-breasted_Merganser.jpg
+,mergus-merganser.webp,,,Common Merganser,,mergus-merganser,,169,Mergus merganser,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVGoosander.jpg
+,,,,Ruddy Duck,,oxyura-jamaicensis,,170,Oxyura jamaicensis,,missing-source,
+,pandion-haliaetus.webp,,,Osprey,,pandion-haliaetus,,171,Pandion haliaetus,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIOsprey.jpg
+,elanoides-forficatus.webp,,,Swallow-tailed Kite,,elanoides-forficatus,,172,Elanoides forficatus,gould,existing,https://commons.wikimedia.org/wiki/File:The_birds_of_Europe_(9398548273).jpg
+,,,,White-tailed Kite,,elanus-leucurus,,173,Elanus leucurus,,missing-source,
+,haliaeetus-leucocephalus.webp,,,Bald Eagle,,haliaeetus-leucocephalus,,174,Haliaeetus leucocephalus,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIWhite-headed_Eagle.jpg
+,,,,Northern Harrier,,circus-hudsonius,,175,Circus hudsonius,,missing-source,
+,,,,Sharp-shinned Hawk,,accipiter-striatus,,176,Accipiter striatus,,missing-source,
+,,,,Broad-winged Hawk,,buteo-platypterus,,177,Buteo platypterus,,missing-source,
+,,,,White-tailed Hawk,,geranoaetus-albicaudatus,,178,Geranoaetus albicaudatus,,missing-source,
+,,,,Zone-tailed Hawk,,buteo-albonotatus,,179,Buteo albonotatus,,missing-source,
+,,,,Ferruginous Hawk,,buteo-regalis,,180,Buteo regalis,,missing-source,
+,buteo-lagopus.webp,,,Rough-legged Hawk,,buteo-lagopus,,181,Buteo lagopus,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIRough-legged_Buzzard.jpg
+,aquila-chrysaetos.webp,,,Golden Eagle,,aquila-chrysaetos,,182,Aquila chrysaetos,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIGolden_Eagle.jpg
+,falco-columbarius.webp,,,Merlin,,falco-columbarius,,183,Falco columbarius,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIMerlin.jpg
+,falco-peregrinus.webp,,,Peregrine Falcon,,falco-peregrinus,,184,Falco peregrinus,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIPeregrine_Falcon.jpg
+,,,,Prairie Falcon,,falco-mexicanus,,185,Falco mexicanus,,missing-source,
+,,,,Wild Turkey,,meleagris-gallopavo,,186,Meleagris gallopavo,,missing-source,
+,,,,Northern Bobwhite,,colinus-virginianus,,187,Colinus virginianus,,missing-source,
+,,,,Sandhill Crane,,antigone-canadensis,,188,Antigone canadensis,,missing-source,
+,pluvialis-squatarola.webp,,,Black-bellied Plover,,pluvialis-squatarola,,189,Pluvialis squatarola,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVGrey_Plover.jpg
+,,,,American Golden-Plover,,pluvialis-dominica,,190,Pluvialis dominica,,missing-source,
+,,,,Snowy Plover,,anarhynchus-nivosus,,191,Anarhynchus nivosus,,missing-source,
+,,,,Wilson's Plover,,anarhynchus-wilsonia,,192,Anarhynchus wilsonia,,missing-source,
+,,,,Semipalmated Plover,,charadrius-semipalmatus,,193,Charadrius semipalmatus,,missing-source,
+,,,,Piping Plover,,charadrius-melodus,,194,Charadrius melodus,,missing-source,
+,,,,Black-necked Stilt,,himantopus-mexicanus,,195,Himantopus mexicanus,,missing-source,
+,,,,American Avocet,,recurvirostra-americana,,196,Recurvirostra americana,,missing-source,
+,,,,Greater Yellowlegs,,tringa-melanoleuca,,197,Tringa melanoleuca,,missing-source,
+,,,,Lesser Yellowlegs,,tringa-flavipes,,198,Tringa flavipes,,missing-source,
+,,,,Solitary Sandpiper,,tringa-solitaria,,199,Tringa solitaria,,missing-source,
+,,,,Willet,,tringa-semipalmata,,200,Tringa semipalmata,,missing-source,
+,bartramia-longicauda.webp,,,Upland Sandpiper,,bartramia-longicauda,,201,Bartramia longicauda,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVBartrams_Sandpiper.jpg
+,numenius-phaeopus.webp,,,Whimbrel,,numenius-phaeopus,,202,Numenius phaeopus,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVWhimbrel.jpg
+,,,,Long-billed Curlew,,numenius-americanus,,203,Numenius americanus,,missing-source,
+,,,,Hudsonian Godwit,,limosa-haemastica,,204,Limosa haemastica,,missing-source,
+,,,,Marbled Godwit,,limosa-fedoa,,205,Limosa fedoa,,missing-source,
+,arenaria-interpres.webp,,,Ruddy Turnstone,,arenaria-interpres,,206,Arenaria interpres,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVTurnstone.jpg
+,calidris-canutus.webp,,,Red Knot,,calidris-canutus,,207,Calidris canutus,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVKnot.jpg
+,calidris-alba.webp,,,Sanderling,,calidris-alba,,208,Calidris alba,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVSanderling.jpg
+,calidris-pusilla.webp,,,Semipalmated Sandpiper,,calidris-pusilla,,209,Calidris pusilla,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVSemipalmated_Sandpiper.jpg
+,,,,Western Sandpiper,,calidris-mauri,,210,Calidris mauri,,missing-source,
+,,,,Least Sandpiper,,calidris-minutilla,,211,Calidris minutilla,,missing-source,
+,,,,White-rumped Sandpiper,,calidris-fuscicollis,,212,Calidris fuscicollis,,missing-source,
+,,,,Baird's Sandpiper,,calidris-bairdii,,213,Calidris bairdii,,missing-source,
+,calidris-melanotos.webp,,,Pectoral Sandpiper,,calidris-melanotos,,214,Calidris melanotos,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVPectoral_Sandpiper.jpg
+,calidris-maritima.webp,,,Purple Sandpiper,,calidris-maritima,,215,Calidris maritima,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVPurple_Sandpiper.jpg
+,calidris-alpina.webp,,,Dunlin,,calidris-alpina,,216,Calidris alpina,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVSchinzs_Sandpiper.jpg
+,,,,Stilt Sandpiper,,calidris-himantopus,,217,Calidris himantopus,,missing-source,
+,calidris-subruficollis.webp,,,Buff-breasted Sandpiper,,calidris-subruficollis,,218,Calidris subruficollis,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVBuff-breasted_Sandpiper.jpg
+,calidris-pugnax.webp,,,Ruff,,calidris-pugnax,,219,Calidris pugnax,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVRuff.jpg
+,,,,Short-billed Dowitcher,,limnodromus-griseus,,220,Limnodromus griseus,,missing-source,
+,,,,Long-billed Dowitcher,,limnodromus-scolopaceus,,221,Limnodromus scolopaceus,,missing-source,
+,,,,Wilson's Snipe,,gallinago-delicata,,222,Gallinago delicata,,missing-source,
+,,,,American Woodcock,,scolopax-minor,,223,Scolopax minor,,missing-source,
+,,,,Wilson's Phalarope,,phalaropus-tricolor,,224,Phalaropus tricolor,,missing-source,
+,phalaropus-lobatus.webp,,,Red-necked Phalarope,,phalaropus-lobatus,,225,Phalaropus lobatus,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVRed-necked_Phalarope.jpg
+,phalaropus-fulicarius.webp,,,Red Phalarope,,phalaropus-fulicarius,,226,Phalaropus fulicarius,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVGrey_Phalarope.jpg
+,stercorarius-parasiticus.webp,,,Parasitic Jaeger,,stercorarius-parasiticus,,227,Stercorarius parasiticus,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVRichardsons_Lestris.jpg
+,stercorarius-longicaudus.webp,,,Long-tailed Jaeger,,stercorarius-longicaudus,,228,Stercorarius longicaudus,vonwright,existing,https://commons.wikimedia.org/wiki/File:Bird_illustration_from_Svenska_F%C3%A5glar_(Swedish_Birds)_by_the_von_Wright_brothers_from_rawpixel%27s_original_edition_of_the_publication_00043.jpg
+,,,,Laughing Gull,,leucophaeus-atricilla,,229,Leucophaeus atricilla,,missing-source,
+,,,,Franklin's Gull,,leucophaeus-pipixcan,,230,Leucophaeus pipixcan,,missing-source,
+,hydrocoloeus-minutus.webp,,,Little Gull,,hydrocoloeus-minutus,,231,Hydrocoloeus minutus,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVLittle_Gull.jpg
+,,,,Bonaparte's Gull,,chroicocephalus-philadelphia,,232,Chroicocephalus philadelphia,,missing-source,
+,,,,Ring-billed Gull,,larus-delawarensis,,233,Larus delawarensis,,missing-source,
+,,,,California Gull,,larus-californicus,,234,Larus californicus,,missing-source,
+,larus-argentatus.webp,,,Herring Gull,,larus-argentatus,,235,Larus argentatus,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVHerring_Gull.jpg
+,larus-fuscus.webp,,,Lesser Black-backed Gull,,larus-fuscus,,236,Larus fuscus,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVLesser_Black-backed_Gull.jpg
+,larus-hyperboreus.webp,,,Glaucous Gull,,larus-hyperboreus,,237,Larus hyperboreus,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVGlaucous_Gull.jpg
+,rissa-tridactyla.webp,,,Black-legged Kittiwake,,rissa-tridactyla,,238,Rissa tridactyla,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVKittiwake_Gull.jpg
+,xema-sabini.webp,,,Sabine's Gull,,xema-sabini,,239,Xema sabini,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVSabines_Gull.jpg
+,gelochelidon-nilotica.webp,,,Gull-billed Tern,,gelochelidon-nilotica,,240,Gelochelidon nilotica,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeV_Gull-billed_Tern.jpg
+,hydroprogne-caspia.webp,,,Caspian Tern,,hydroprogne-caspia,,241,Hydroprogne caspia,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVCaspian_Tern.jpg
+,,,,Royal Tern,,thalasseus-maximus,,242,Thalasseus maximus,,missing-source,
+,thalasseus-sandvicensis.webp,,,Sandwich Tern,,thalasseus-sandvicensis,,243,Thalasseus sandvicensis,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVSandwich_Tern.jpg
+,sterna-hirundo.webp,,,Common Tern,,sterna-hirundo,,244,Sterna hirundo,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVCommon_Tern.jpg
+,,,,Forster's Tern,,sterna-forsteri,,245,Sterna forsteri,,missing-source,
+,,,,Least Tern,,sternula-antillarum,,246,Sternula antillarum,,missing-source,
+,chlidonias-niger.webp,,,Black Tern,,chlidonias-niger,,247,Chlidonias niger,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVBlack_Tern.jpg
+,,,,Black Skimmer,,rynchops-niger,,248,Rynchops niger,,missing-source,
+,,,,Inca Dove,,columbina-inca,,249,Columbina inca,,missing-source,
+,,,,Common Ground-Dove,,columbina-passerina,,250,Columbina passerina,,missing-source,
+,,,,Black-billed Cuckoo,,coccyzus-erythropthalmus,,251,Coccyzus erythropthalmus,,missing-source,
+,,,,Groove-billed Ani,,crotophaga-sulcirostris,,252,Crotophaga sulcirostris,,missing-source,
+,tyto-alba.webp,,,Barn Owl,,tyto-alba,,253,Tyto alba,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIBarn_Owl.jpg
+,,,,Burrowing Owl,,athene-cunicularia,,254,Athene cunicularia,,missing-source,
+,asio-otus.webp,,,Long-eared Owl,,asio-otus,,255,Asio otus,gould,existing,https://commons.wikimedia.org/wiki/File:Asio_otus_by_John_Gould.jpg
+,asio-flammeus.webp,,,Short-eared Owl,,asio-flammeus,,256,Asio flammeus,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIShort-Eared_Owl.jpg
+,,,,Green Kingfisher,,chloroceryle-americana,,257,Chloroceryle americana,,missing-source,
+,,,,Red-headed Woodpecker,,melanerpes-erythrocephalus,,258,Melanerpes erythrocephalus,,missing-source,
+,,,,Acorn Woodpecker,,melanerpes-formicivorus,,259,Melanerpes formicivorus,,missing-source,
+,,,,Hairy Woodpecker,,leuconotopicus-villosus,,260,Leuconotopicus villosus,,missing-source,
+,,,,Olive-sided Flycatcher,,contopus-cooperi,,261,Contopus cooperi,,missing-source,
+,,,,Western Wood-Pewee,,contopus-sordidulus,,262,Contopus sordidulus,,missing-source,
+,,,,Yellow-bellied Flycatcher,,empidonax-flaviventris,,263,Empidonax flaviventris,,missing-source,
+,,,,Acadian Flycatcher,,empidonax-virescens,,264,Empidonax virescens,,missing-source,
+,,,,Alder Flycatcher,,empidonax-alnorum,,265,Empidonax alnorum,,missing-source,
+,,,,Willow Flycatcher,,empidonax-traillii,,266,Empidonax traillii,,missing-source,
+,,,,Least Flycatcher,,empidonax-minimus,,267,Empidonax minimus,,missing-source,
+,,,,Black Phoebe,,sayornis-nigricans,,269,Sayornis nigricans,,missing-source,
+,,,,Say's Phoebe,,sayornis-saya,,270,Sayornis saya,,missing-source,
+,,,,Ash-throated Flycatcher,,myiarchus-cinerascens,,271,Myiarchus cinerascens,,missing-source,
+,,,,Great Kiskadee,,pitangus-sulphuratus,,272,Pitangus sulphuratus,,missing-source,
+,,,,Couch's Kingbird,,tyrannus-couchii,,273,Tyrannus couchii,,missing-source,
+,,,,Cassin's Kingbird,,tyrannus-vociferans,,274,Tyrannus vociferans,,missing-source,
+,,,,Bell's Vireo,,vireo-bellii,,275,Vireo bellii,,missing-source,
+,,,,Plumbeous Vireo,,vireo-plumbeus,,276,Vireo plumbeus,,missing-source,
+,,,,Blue-headed Vireo,,vireo-solitarius,,277,Vireo solitarius,,missing-source,
+,,,,Warbling Vireo,,vireo-gilvus,,278,Vireo gilvus,,missing-source,
+,,,,Philadelphia Vireo,,vireo-philadelphicus,,279,Vireo philadelphicus,,missing-source,
+,,,,Green Jay,,cyanocorax-yncas,,280,Cyanocorax yncas,,missing-source,
+,,,,American Crow,,corvus-brachyrhynchos,,281,Corvus brachyrhynchos,,missing-source,
+,,,,Fish Crow,,corvus-ossifragus,,282,Corvus ossifragus,,missing-source,
+,,,,Chihuahuan Raven,,corvus-cryptoleucus,,283,Corvus cryptoleucus,,missing-source,
+,eremophila-alpestris.webp,,,Horned Lark,,eremophila-alpestris,,284,Eremophila alpestris,vonwright,existing,https://commons.wikimedia.org/wiki/File:Bird_illustration_from_Svenska_F%C3%A5glar_(Swedish_Birds)_by_the_von_Wright_brothers_from_rawpixel%27s_original_edition_of_the_publication_00139.jpg
+,riparia-riparia.webp,,,Bank Swallow,,riparia-riparia,,285,Riparia riparia,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIISand_Martin.jpg
+,,,,Red-breasted Nuthatch,,sitta-canadensis,,286,Sitta canadensis,,missing-source,
+,sitta-carolinensis.webp,,,White-breasted Nuthatch,,sitta-carolinensis,,287,Sitta carolinensis,audubon,existing,https://media.audubon.org/boa_illustration/plate-152-white-breasted-black-capped-nuthatch.jpg
+,,,,Brown-headed Nuthatch,,sitta-pusilla,,288,Sitta pusilla,,missing-source,
+,,,,Rock Wren,,salpinctes-obsoletus,,289,Salpinctes obsoletus,,missing-source,
+,,,,Winter Wren,,troglodytes-hiemalis,,290,Troglodytes hiemalis,,missing-source,
+,,,,Sedge Wren,,cistothorus-stellaris,,291,Cistothorus stellaris,,missing-source,
+,,,,Marsh Wren,,cistothorus-palustris,,292,Cistothorus palustris,,missing-source,
+,,,,Mountain Bluebird,,sialia-currucoides,,293,Sialia currucoides,,missing-source,
+,,,,Veery,,catharus-fuscescens,,294,Catharus fuscescens,,missing-source,
+,,,,Gray-cheeked Thrush,,catharus-minimus,,295,Catharus minimus,,missing-source,
+,,,,Swainson's Thrush,,catharus-ustulatus,,296,Catharus ustulatus,,missing-source,
+,,,,Hermit Thrush,,catharus-guttatus,,297,Catharus guttatus,,missing-source,
+,,,,Wood Thrush,,hylocichla-mustelina,,298,Hylocichla mustelina,,missing-source,
+,,,,Varied Thrush,,ixoreus-naevius,,299,Ixoreus naevius,,missing-source,
+,,,,American Pipit,,anthus-rubescens,,300,Anthus rubescens,,missing-source,
+,,,,Sprague's Pipit,,anthus-spragueii,,301,Anthus spragueii,,missing-source,
+,bombycilla-garrulus.webp,,,Bohemian Waxwing,,bombycilla-garrulus,,302,Bombycilla garrulus,gould,existing,https://commons.wikimedia.org/wiki/File:The_birds_of_Europe_(1837)_(14565285848).jpg
+,,,,Blue-winged Warbler,,vermivora-cyanoptera,,303,Vermivora cyanoptera,,missing-source,
+,,,,Golden-winged Warbler,,vermivora-chrysoptera,,304,Vermivora chrysoptera,,missing-source,
+,,,,Tennessee Warbler,,leiothlypis-peregrina,,305,Leiothlypis peregrina,,missing-source,
+,,,,Nashville Warbler,,leiothlypis-ruficapilla,,306,Leiothlypis ruficapilla,,missing-source,
+,,,,Chestnut-sided Warbler,,setophaga-pensylvanica,,307,Setophaga pensylvanica,,missing-source,
+,,,,Magnolia Warbler,,setophaga-magnolia,,308,Setophaga magnolia,,missing-source,
+,,,,Cape May Warbler,,setophaga-tigrina,,309,Setophaga tigrina,,missing-source,
+,,,,Black-throated Blue Warbler,,setophaga-caerulescens,,310,Setophaga caerulescens,,missing-source,
+,,,,Black-throated Gray Warbler,,setophaga-nigrescens,,311,Setophaga nigrescens,,missing-source,
+,,,,Golden-cheeked Warbler,,setophaga-chrysoparia,,312,Setophaga chrysoparia,,missing-source,
+,,,,Black-throated Green Warbler,,setophaga-virens,,313,Setophaga virens,,missing-source,
+,,,,Townsend's Warbler,,setophaga-townsendi,,314,Setophaga townsendi,,missing-source,
+,,,,Blackburnian Warbler,,setophaga-fusca,,315,Setophaga fusca,,missing-source,
+,,,,Prairie Warbler,,setophaga-discolor,,316,Setophaga discolor,,missing-source,
+,,,,Palm Warbler,,setophaga-palmarum,,317,Setophaga palmarum,,missing-source,
+,,,,Bay-breasted Warbler,,setophaga-castanea,,318,Setophaga castanea,,missing-source,
+,,,,Blackpoll Warbler,,setophaga-striata,,319,Setophaga striata,,missing-source,
+,,,,Cerulean Warbler,,setophaga-cerulea,,320,Setophaga cerulea,,missing-source,
+,,,,Prothonotary Warbler,,protonotaria-citrea,,321,Protonotaria citrea,,missing-source,
+,,,,Worm-eating Warbler,,helmitheros-vermivorum,,322,Helmitheros vermivorum,,missing-source,
+,,,,Swainson's Warbler,,limnothlypis-swainsonii,,323,Limnothlypis swainsonii,,missing-source,
+,,,,Ovenbird,,seiurus-aurocapilla,,324,Seiurus aurocapilla,,missing-source,
+,,,,Northern Waterthrush,,parkesia-noveboracensis,,325,Parkesia noveboracensis,,missing-source,
+,,,,Louisiana Waterthrush,,parkesia-motacilla,,326,Parkesia motacilla,,missing-source,
+,,,,Kentucky Warbler,,geothlypis-formosa,,327,Geothlypis formosa,,missing-source,
+,,,,Connecticut Warbler,,oporornis-agilis,,328,Oporornis agilis,,missing-source,
+,,,,Mourning Warbler,,geothlypis-philadelphia,,329,Geothlypis philadelphia,,missing-source,
+,,,,MacGillivray's Warbler,,geothlypis-tolmiei,,330,Geothlypis tolmiei,,missing-source,
+,,,,Hooded Warbler,,setophaga-citrina,,331,Setophaga citrina,,missing-source,
+,,,,Wilson's Warbler,,cardellina-pusilla,,332,Cardellina pusilla,,missing-source,
+,,,,Canada Warbler,,cardellina-canadensis,,333,Cardellina canadensis,,missing-source,
+,,,,Yellow-breasted Chat,,icteria-virens,,334,Icteria virens,,missing-source,
+,,,,Hepatic Tanager,,piranga-flava,,335,Piranga flava,,missing-source,
+,,,,Scarlet Tanager,,piranga-olivacea,,336,Piranga olivacea,,missing-source,
+,,,,Western Tanager,,piranga-ludoviciana,,337,Piranga ludoviciana,,missing-source,
+,,,,Green-tailed Towhee,,pipilo-chlorurus,,338,Pipilo chlorurus,,missing-source,
+,,,,Eastern Towhee,,pipilo-erythrophthalmus,,339,Pipilo erythrophthalmus,,missing-source,
+,,,,Spotted Towhee,,pipilo-maculatus,,340,Pipilo maculatus,,missing-source,
+,,,,Bachman's Sparrow,,peucaea-aestivalis,,341,Peucaea aestivalis,,missing-source,
+,,,,Cassin's Sparrow,,peucaea-cassinii,,342,Peucaea cassinii,,missing-source,
+,,,,Rufous-crowned Sparrow,,aimophila-ruficeps,,343,Aimophila ruficeps,,missing-source,
+,,,,Clay-colored Sparrow,,spizella-pallida,,344,Spizella pallida,,missing-source,
+,,,,Brewer's Sparrow,,spizella-breweri,,345,Spizella breweri,,missing-source,
+,,,,Field Sparrow,,spizella-pusilla,,346,Spizella pusilla,,missing-source,
+,,,,Vesper Sparrow,,pooecetes-gramineus,,347,Pooecetes gramineus,,missing-source,
+,,,,Black-throated Sparrow,,amphispiza-bilineata,,348,Amphispiza bilineata,,missing-source,
+,,,,Lark Bunting,,calamospiza-melanocorys,,349,Calamospiza melanocorys,,missing-source,
+,,,,Grasshopper Sparrow,,ammodramus-savannarum,,350,Ammodramus savannarum,,missing-source,
+,,,,Henslow's Sparrow,,centronyx-henslowii,,351,Centronyx henslowii,,missing-source,
+,,,,LeConte's Sparrow,,ammospiza-leconteii,,352,Ammospiza leconteii,,missing-source,
+,,,,Nelson's Sparrow,,ammospiza-nelsoni,,353,Ammospiza nelsoni,,missing-source,
+,,,,Fox Sparrow,,passerella-iliaca,,354,Passerella iliaca,,missing-source,
+,,,,Song Sparrow,,melospiza-melodia,,355,Melospiza melodia,,missing-source,
+,,,,Swamp Sparrow,,melospiza-georgiana,,356,Melospiza georgiana,,missing-source,
+,,,,Harris's Sparrow,,zonotrichia-querula,,357,Zonotrichia querula,,missing-source,
+,,,,White-crowned Sparrow,,zonotrichia-leucophrys,,358,Zonotrichia leucophrys,,missing-source,
+,,,,Dark-eyed Junco,,junco-hyemalis,,359,Junco hyemalis,,missing-source,
+,,,,McCown's Longspur,,rhynchophanes-mccownii,,360,Rhynchophanes mccownii,,missing-source,
+,calcarius-lapponicus.webp,,,Lapland Longspur,,calcarius-lapponicus,,361,Calcarius lapponicus,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIIILark-heeled_Bunting.jpg
+,,,,Smith's Longspur,,calcarius-pictus,,362,Calcarius pictus,,missing-source,
+,,,,Pyrrhuloxia,,cardinalis-sinuatus,,363,Cardinalis sinuatus,,missing-source,
+,,,,Rose-breasted Grosbeak,,pheucticus-ludovicianus,,364,Pheucticus ludovicianus,,missing-source,
+,,,,Black-headed Grosbeak,,pheucticus-melanocephalus,,365,Pheucticus melanocephalus,,missing-source,
+,,,,Lazuli Bunting,,passerina-amoena,,366,Passerina amoena,,missing-source,
+,,,,Bobolink,,dolichonyx-oryzivorus,,367,Dolichonyx oryzivorus,,missing-source,
+,,,,Western Meadowlark,,sturnella-neglecta,,368,Sturnella neglecta,,missing-source,
+,,,,Yellow-headed Blackbird,,xanthocephalus-xanthocephalus,,369,Xanthocephalus xanthocephalus,,missing-source,
+,,,,Rusty Blackbird,,euphagus-carolinus,,370,Euphagus carolinus,,missing-source,
+,,,,Brewer's Blackbird,,euphagus-cyanocephalus,,371,Euphagus cyanocephalus,,missing-source,
+,,,,Shiny Cowbird,,molothrus-bonariensis,,372,Molothrus bonariensis,,missing-source,
+,,,,Bronzed Cowbird,,molothrus-aeneus,,373,Molothrus aeneus,,missing-source,
+,,,,Hooded Oriole,,icterus-cucullatus,,374,Icterus cucullatus,,missing-source,
+,,,,Bullock's Oriole,,icterus-bullockii,,375,Icterus bullockii,,missing-source,
+,,,,Purple Finch,,haemorhous-purpureus,,376,Haemorhous purpureus,,missing-source,
+,loxia-curvirostra.webp,,,Red Crossbill,,loxia-curvirostra,,377,Loxia curvirostra,vonwright,existing,https://commons.wikimedia.org/wiki/File:Bird_illustration_from_Svenska_F%C3%A5glar_(Swedish_Birds)_by_the_von_Wright_brothers_from_rawpixel%27s_original_edition_of_the_publication_00143.jpg
+,,,,Pine Siskin,,spinus-pinus,,378,Spinus pinus,,missing-source,
+,,,,Evening Grosbeak,,hesperiphona-vespertina,,379,Hesperiphona vespertina,,missing-source,
+,gavia-stellata.webp,,,Red-throated Loon,,gavia-stellata,,380,Gavia stellata,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVRed-throated_Diver.jpg
+,podiceps-grisegena.webp,,,Red-necked Grebe,,podiceps-grisegena,,381,Podiceps grisegena,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVRed-necked_Grebe.jpg
+,,,,Blue-footed Booby,,sula-nebouxii,,382,Sula nebouxii,,missing-source,
+,branta-bernicla.webp,,,Brant,,branta-bernicla,,383,Branta bernicla,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVBrent_Goose.jpg
+,cygnus-columbianus.webp,,,Tundra Swan,,cygnus-columbianus,,384,Cygnus columbianus,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVBewicks_Swan.jpg
+,mareca-penelope.webp,,,Eurasian Wigeon,,mareca-penelope,,385,Mareca penelope,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVWidgeon.jpg
+,,,,American Black Duck,,anas-rubripes,,386,Anas rubripes,,missing-source,
+,astur-gentilis.webp,,,Northern Goshawk,,astur-gentilis,,388,Astur gentilis,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIGoshawk.jpg
+,,,,Harris's Hawk,,parabuteo-unicinctus,,389,Parabuteo unicinctus,,missing-source,
+,phasianus-colchicus.webp,,,Ring-necked Pheasant,,phasianus-colchicus,,390,Phasianus colchicus,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVCommon_Pheasant.jpg
+,,,,Scaled Quail,,callipepla-squamata,,391,Callipepla squamata,,missing-source,
+,,,,Yellow Rail,,coturnicops-noveboracensis,,392,Coturnicops noveboracensis,,missing-source,
+,,,,Black Rail,,laterallus-jamaicensis,,393,Laterallus jamaicensis,,missing-source,
+,,,,King Rail,,rallus-elegans,,394,Rallus elegans,,missing-source,
+,,,,Virginia Rail,,rallus-limicola,,395,Rallus limicola,,missing-source,
+,,,,Paint-billed Crake,,mustelirallus-erythrops,,396,Mustelirallus erythrops,,missing-source,
+,,,,Purple Gallinule,,porphyrio-martinica,,397,Porphyrio martinica,,missing-source,
+,,,,Whooping Crane,,grus-americana,,398,Grus americana,,missing-source,
+,,,,Mountain Plover,,anarhynchus-montanus,,399,Anarhynchus montanus,,missing-source,
+,,,,Northern Jacana,,jacana-spinosa,,400,Jacana spinosa,,missing-source,
+,tringa-erythropus.webp,,,Spotted Redshank,,tringa-erythropus,,401,Tringa erythropus,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVSpotted_Redshank.jpg
+,,,,Sharp-tailed Sandpiper,,calidris-acuminata,,402,Calidris acuminata,,missing-source,
+,calidris-ferruginea.webp,,,Curlew Sandpiper,,calidris-ferruginea,,403,Calidris ferruginea,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVPygmy_Curlew.jpg
+,stercorarius-pomarinus.webp,,,Pomarine Jaeger,,stercorarius-pomarinus,,404,Stercorarius pomarinus,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVPomarine_Gull.jpg
+,chroicocephalus-ridibundus.webp,,,Black-headed Gull,,chroicocephalus-ridibundus,,405,Chroicocephalus ridibundus,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVLaughing_Gull.jpg
+,larus-canus.webp,,,Mew Gull,,larus-canus,,406,Larus canus,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVCommon_Gull.jpg
+,larus-glaucoides.webp,,,Thayer's Gull,,larus-glaucoides,,407,Larus glaucoides,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVIceland_Gull.jpg
+,sterna-dougallii.webp,,,Roseate Tern,,sterna-dougallii,,408,Sterna dougallii,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVRoseate_Tern.jpg
+,,,,Sooty Tern,,onychoprion-fuscatus,,409,Onychoprion fuscatus,,missing-source,
+,,,,White-tipped Dove,,leptotila-verreauxi,,410,Leptotila verreauxi,,missing-source,
+,bubo-scandiacus.webp,,,Snowy Owl,,bubo-scandiacus,,411,Bubo scandiacus,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeISnowy_Owl.jpg
+,,,,Northern Saw-whet Owl,,aegolius-acadicus,,412,Aegolius acadicus,,missing-source,
+,,,,Lesser Nighthawk,,chordeiles-acutipennis,,413,Chordeiles acutipennis,,missing-source,
+,,,,Common Pauraque,,nyctidromus-albicollis,,414,Nyctidromus albicollis,,missing-source,
+,,,,Common Poorwill,,phalaenoptilus-nuttallii,,415,Phalaenoptilus nuttallii,,missing-source,
+,,,,White-throated Swift,,aeronautes-saxatalis,,416,Aeronautes saxatalis,,missing-source,
+,,,,Mexican Violetear,,colibri-thalassinus,,417,Colibri thalassinus,,missing-source,
+,,,,Broad-billed Hummingbird,,cynanthus-latirostris,,418,Cynanthus latirostris,,missing-source,
+,,,,Anna's Hummingbird,,calypte-anna,,420,Calypte anna,,missing-source,
+,,,,Calliope Hummingbird,,selasphorus-calliope,,421,Selasphorus calliope,,missing-source,
+,,,,Broad-tailed Hummingbird,,selasphorus-platycercus,,422,Selasphorus platycercus,,missing-source,
+,,,,Allen's Hummingbird,,selasphorus-sasin,,423,Selasphorus sasin,,missing-source,
+,,,,Ringed Kingfisher,,megaceryle-torquata,,424,Megaceryle torquata,,missing-source,
+,,,,Lewis's Woodpecker,,melanerpes-lewis,,425,Melanerpes lewis,,missing-source,
+,,,,Red-naped Sapsucker,,sphyrapicus-nuchalis,,426,Sphyrapicus nuchalis,,missing-source,
+,,,,Williamson's Sapsucker,,sphyrapicus-thyroideus,,427,Sphyrapicus thyroideus,,missing-source,
+,,,,Hammond's Flycatcher,,empidonax-hammondii,,428,Empidonax hammondii,,missing-source,
+,,,,Brown-crested Flycatcher,,myiarchus-tyrannulus,,429,Myiarchus tyrannulus,,missing-source,
+,,,,Fork-tailed Flycatcher,,tyrannus-savana,,430,Tyrannus savana,,missing-source,
+,,,,Northern Shrike,,lanius-borealis,,431,Lanius borealis,,missing-source,
+,,,,Black-capped Vireo,,vireo-atricapilla,,432,Vireo atricapilla,,missing-source,
+,,,,Hutton's Vireo,,vireo-huttoni,,433,Vireo huttoni,,missing-source,
+,,,,Yellow-green Vireo,,vireo-flavoviridis,,434,Vireo flavoviridis,,missing-source,
+,,,,Woodhouse's Scrub-Jay,,aphelocoma-woodhouseii,,435,Aphelocoma woodhouseii,,missing-source,
+,corvus-corax.webp,,,Common Raven,,corvus-corax,,436,Corvus corax,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIIIRaven.jpg
+,,,,Violet-green Swallow,,tachycineta-thalassina,,437,Tachycineta thalassina,,missing-source,
+,,,,Verdin,,auriparus-flaviceps,,438,Auriparus flaviceps,,missing-source,
+,,,,Bushtit,,psaltriparus-minimus,,439,Psaltriparus minimus,,missing-source,
+,,,,Pygmy Nuthatch,,sitta-pygmaea,,440,Sitta pygmaea,,missing-source,
+,,,,Cactus Wren,,campylorhynchus-brunneicapillus,,441,Campylorhynchus brunneicapillus,,missing-source,
+,,,,Canyon Wren,,catherpes-mexicanus,,442,Catherpes mexicanus,,missing-source,
+,,,,American Dipper,,cinclus-mexicanus,,443,Cinclus mexicanus,,missing-source,
+,,,,Western Bluebird,,sialia-mexicana,,444,Sialia mexicana,,missing-source,
+,,,,Townsend's Solitaire,,myadestes-townsendi,,445,Myadestes townsendi,,missing-source,
+,,,,Clay-colored Thrush,,turdus-grayi,,446,Turdus grayi,,missing-source,
+,,,,Sage Thrasher,,oreoscoptes-montanus,,447,Oreoscoptes montanus,,missing-source,
+,,,,Long-billed Thrasher,,toxostoma-longirostre,,448,Toxostoma longirostre,,missing-source,
+,,,,Curve-billed Thrasher,,toxostoma-curvirostre,,449,Toxostoma curvirostre,,missing-source,
+,,,,Phainopepla,,phainopepla-nitens,,450,Phainopepla nitens,,missing-source,
+,,,,Red-faced Warbler,,cardellina-rubrifrons,,451,Cardellina rubrifrons,,missing-source,
+,,,,Olive Sparrow,,arremonops-rufivirgatus,,452,Arremonops rufivirgatus,,missing-source,
+,,,,Canyon Towhee,,melozone-fusca,,453,Melozone fusca,,missing-source,
+,,,,American Tree Sparrow,,spizelloides-arborea,,454,Spizelloides arborea,,missing-source,
+,,,,Baird's Sparrow,,centronyx-bairdii,,455,Centronyx bairdii,,missing-source,
+,,,,Golden-crowned Sparrow,,zonotrichia-atricapilla,,456,Zonotrichia atricapilla,,missing-source,
+,,,,Chestnut-collared Longspur,,calcarius-ornatus,,457,Calcarius ornatus,,missing-source,
+,plectrophenax-nivalis.webp,,,Snow Bunting,,plectrophenax-nivalis,,458,Plectrophenax nivalis,vonwright,existing,https://commons.wikimedia.org/wiki/File:Plectrophenax_nivalis_2.jpg
+,,,,Audubon's Oriole,,icterus-graduacauda,,459,Icterus graduacauda,,missing-source,
+,,,,Scott's Oriole,,icterus-parisorum,,460,Icterus parisorum,,missing-source,
+,pinicola-enucleator.webp,,,Pine Grosbeak,,pinicola-enucleator,,461,Pinicola enucleator,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIIISiberian_Grosbeak.jpg
+,acanthis-flammea.webp,,,Common Redpoll,,acanthis-flammea,,462,Acanthis flammea,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIIIMealy_Redpole.jpg
+,,,,Swan Goose,,anser-cygnoides,,464,Anser cygnoides,,missing-source,
+,,,,Chiloe Wigeon,,mareca-sibilatrix,,465,Mareca sibilatrix,,missing-source,
+,,,,Band-tailed Pigeon,,patagioenas-fasciata,,466,Patagioenas fasciata,,missing-source,
+,,,,Clapper Rail,,rallus-crepitans,,467,Rallus crepitans,,missing-source,
+,larus-marinus.webp,,,Great Black-backed Gull,,larus-marinus,,468,Larus marinus,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVGreat_Black-backed_Gull.jpg
+,,,,Slaty-backed Gull,,larus-schistisagus,,470,Larus schistisagus,,missing-source,
+,larus-glaucoides.webp,,,Iceland Gull,,larus-glaucoides,,471,Larus glaucoides,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVIceland_Gull.jpg
+,,,,Boat-tailed Grackle,,quiscalus-major,,472,Quiscalus major,,missing-source,
+,,,,Cackling Goose,,branta-hutchinsii,,473,Branta hutchinsii,,missing-source,
+,cygnus-olor.webp,,,Mute Swan,,cygnus-olor,,474,Cygnus olor,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVDomestic_Swan.jpg
+,,,,Black Swan,,cygnus-atratus,,475,Cygnus atratus,,missing-source,
+,alopochen-aegyptiaca.webp,,,Egyptian Goose,,alopochen-aegyptiaca,,476,Alopochen aegyptiaca,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVEgyptian_Goose.jpg
+,,,,Muscovy Duck,,cairina-moschata,,477,Cairina moschata,,missing-source,
+,aix-galericulata.webp,,,Mandarin Duck,,aix-galericulata,,478,Aix galericulata,dorbigny,existing,https://commons.wikimedia.org/wiki/File%3AAix_galericulata%28Mandarin_duck%29%2C_Pelecanus_%28Pelican%29.jpg
+,,,,Falcated Duck,,mareca-falcata,,479,Mareca falcata,,missing-source,
+,,,,Mexican Duck,,anas-diazi,,480,Anas diazi,,missing-source,
+,,,,Helmeted Guineafowl,,numida-meleagris,,481,Numida meleagris,,missing-source,
+,,,,California Quail,,callipepla-californica,,482,Callipepla californica,,missing-source,
+,,,,Greater Prairie-Chicken,,tympanuchus-cupido,,483,Tympanuchus cupido,,missing-source,
+,,,,Golden Pheasant,,chrysolophus-pictus,,484,Chrysolophus pictus,,missing-source,
+,,,,Indian Peafowl,,pavo-cristatus,,485,Pavo cristatus,,missing-source,
+,,,,Red Junglefowl,,gallus-gallus,,486,Gallus gallus,,missing-source,
+,,,,Chukar,,alectoris-chukar,,487,Alectoris chukar,,missing-source,
+,,,,African Collared-Dove,,streptopelia-roseogrisea,,488,Streptopelia roseogrisea,,missing-source,
+,,,,Mangrove Cuckoo,,coccyzus-minor,,489,Coccyzus minor,,missing-source,
+,,,,Limpkin,,aramus-guarauna,,490,Aramus guarauna,,missing-source,
+,,,,American Oystercatcher,,haematopus-palliatus,,491,Haematopus palliatus,,missing-source,
+,,,,American Flamingo,,phoenicopterus-ruber,,492,Phoenicopterus ruber,,missing-source,
+,,,,Red-billed Tropicbird,,phaethon-aethereus,,493,Phaethon aethereus,,missing-source,
+,,,,Jabiru,,jabiru-mycteria,,494,Jabiru mycteria,,missing-source,
+,,,,Brown Booby,,sula-leucogaster,,495,Sula leucogaster,,missing-source,
+,,,,Snail Kite,,rostrhamus-sociabilis,,496,Rostrhamus sociabilis,,missing-source,
+,,,,Flammulated Owl,,psiloscops-flammeolus,,497,Psiloscops flammeolus,,missing-source,
+,,,,Western Red-billed Hornbill,,tockus-kempi,,498,Tockus kempi,,missing-source,
+,,,,Red-cockaded Woodpecker,,leuconotopicus-borealis,,499,Leuconotopicus borealis,,missing-source,
+,,,,Yellow-headed Caracara,,daptrius-chimachima,,501,Daptrius chimachima,,missing-source,
+,,,,Cockatiel,,nymphicus-hollandicus,,502,Nymphicus hollandicus,,missing-source,
+,psittacula-krameri.webp,,,Rose-ringed Parakeet,,psittacula-krameri,,503,Psittacula krameri,keulemans,existing,https://upload.wikimedia.org/wikipedia/commons/3/38/Keulemans_Onze_vogels_3_09.jpg
+,,,,Budgerigar,,melopsittacus-undulatus,,504,Melopsittacus undulatus,,missing-source,
+,,,,Rosy-faced Lovebird,,agapornis-roseicollis,,505,Agapornis roseicollis,,missing-source,
+,,,,White-winged Parakeet,,brotogeris-versicolurus,,507,Brotogeris versicolurus,,missing-source,
+,,,,Yellow-chevroned Parakeet,,brotogeris-chiriri,,508,Brotogeris chiriri,,missing-source,
+,,,,Hyacinth Macaw,,anodorhynchus-hyacinthinus,,510,Anodorhynchus hyacinthinus,,missing-source,
+,,,,Nanday Parakeet,,aratinga-nenday,,511,Aratinga nenday,,missing-source,
+,,,,Blue-and-yellow Macaw,,ara-ararauna,,512,Ara ararauna,,missing-source,
+,,,,Blue-crowned Parakeet,,thectocercus-acuticaudatus,,513,Thectocercus acuticaudatus,,missing-source,
+,,,,Green Parakeet,,psittacara-holochlorus,,514,Psittacara holochlorus,,missing-source,
+,,,,Mitred Parakeet,,psittacara-mitratus,,515,Psittacara mitratus,,missing-source,
+,,,,Red-masked Parakeet,,psittacara-erythrogenys,,516,Psittacara erythrogenys,,missing-source,
+,,,,Greater Pewee,,contopus-pertinax,,517,Contopus pertinax,,missing-source,
+,,,,Piratic Flycatcher,,legatus-leucophaius,,518,Legatus leucophaius,,missing-source,
+,,,,Tropical Kingbird,,tyrannus-melancholicus,,519,Tyrannus melancholicus,,missing-source,
+,,,,Cassin's Vireo,,vireo-cassinii,,520,Vireo cassinii,,missing-source,
+,,,,Black-whiskered Vireo,,vireo-altiloquus,,521,Vireo altiloquus,,missing-source,
+,,,,Red-whiskered Bulbul,,pycnonotus-jocosus,,522,Pycnonotus jocosus,,missing-source,
+,,,,Northern Red Bishop,,euplectes-franciscanus,,523,Euplectes franciscanus,,missing-source,
+,,,,Bronze Mannikin,,spermestes-cucullata,,524,Spermestes cucullata,,missing-source,
+,,,,Indian Silverbill,,euodice-malabarica,,525,Euodice malabarica,,missing-source,
+,,,,Orange-cheeked Waxbill,,estrilda-melpoda,,526,Estrilda melpoda,,missing-source,
+,,,,Black-rumped Waxbill,,estrilda-troglodytes,,527,Estrilda troglodytes,,missing-source,
+,,,,Pin-tailed Whydah,,vidua-macroura,,528,Vidua macroura,,missing-source,
+,carduelis-carduelis.webp,,,European Goldfinch,,carduelis-carduelis,,529,Carduelis carduelis,gould,existing,https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIIIGoldfinch.jpg
+,,,,Island Canary,,serinus-canaria,,530,Serinus canaria,,missing-source,
+,,,,Seaside Sparrow,,ammospiza-maritima,,531,Ammospiza maritima,,missing-source,
+,,,,Tropical Parula,,setophaga-pitiayumi,,532,Setophaga pitiayumi,,missing-source,
+John Gerrard Keulemans,setophaga-graciae.webp,File:Setophaga graciae decora 1902.jpg,310,Grace's Warbler,Biologia Centrali-Americana,setophaga-graciae,Public domain,533,Setophaga graciae,keulemans,generated,https://commons.wikimedia.org/wiki/File:Setophaga_graciae_decora_1902.jpg
+R. Bruce Horsfall,myioborus-pictus.webp,File:Bird-Lore-5-6 0203.png,260,Painted Redstart,The Internet Archive,myioborus-pictus,Public domain,534,Myioborus pictus,commons-pd,generated,https://commons.wikimedia.org/wiki/File:Bird-Lore-5-6_0203.png

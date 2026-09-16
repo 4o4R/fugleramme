@@ -447,6 +447,10 @@
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVWhite-eyed_Duck.jpg"
   },
+  "birds/baeolophus-bicolor.webp": {
+    "source": "commons-pd",
+    "url": "https://commons.wikimedia.org/wiki/File:39_Crested_Titmouse.jpg"
+  },
   "birds/bartramia-longicauda.webp": {
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVBartrams_Sandpiper.jpg"
@@ -738,6 +742,10 @@
   "birds/caprimulgus-ruficollis.webp": {
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIIRed-collared_Goatsucker.jpg"
+  },
+  "birds/cardinalis-cardinalis.webp": {
+    "source": "commons-pd",
+    "url": "https://commons.wikimedia.org/wiki/File:159_Cardinal_Grosbeak.jpg"
   },
   "birds/carduelis-carduelis-2.webp": {
     "source": "vonwright",
@@ -2167,6 +2175,10 @@
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIKite.jpg"
   },
+  "birds/mimus-polyglottos.webp": {
+    "source": "commons-pd",
+    "url": "https://commons.wikimedia.org/wiki/File:21_Mocking_Bird.jpg"
+  },
   "birds/monticola-solitarius.webp": {
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIIBlue_Thrush.jpg"
@@ -2242,6 +2254,10 @@
   "birds/muscicapa-striata.webp": {
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIISpotted_Flycatcher.jpg"
+  },
+  "birds/myioborus-pictus.webp": {
+    "source": "commons-pd",
+    "url": "https://commons.wikimedia.org/wiki/File:Bird-Lore-5-6_0203.png"
   },
   "birds/myiopsitta-monachus.webp": {
     "source": "greene",
@@ -2843,6 +2859,10 @@
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIIISerin_Finch.jpg"
   },
+  "birds/setophaga-graciae.webp": {
+    "source": "commons-pd",
+    "url": "https://commons.wikimedia.org/wiki/File:Setophaga_graciae_decora_1902.jpg"
+  },
   "birds/sitta-carolinensis.webp": {
     "source": "audubon",
     "url": "https://media.audubon.org/boa_illustration/plate-152-white-breasted-black-capped-nuthatch.jpg"
@@ -3155,6 +3175,14 @@
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVLittle_Ring-Dottrell.jpg"
   },
+  "birds/thryomanes-bewickii.webp": {
+    "source": "commons-pd",
+    "url": "https://commons.wikimedia.org/wiki/File:18_Bewick's_Wren.jpg"
+  },
+  "birds/thryothorus-ludovicianus.webp": {
+    "source": "commons-pd",
+    "url": "https://commons.wikimedia.org/wiki/File:78_Great_Carolina_Wren.jpg"
+  },
   "birds/tringa-erythropus-2.webp": {
     "source": "vonwright",
     "url": "https://commons.wikimedia.org/wiki/File:Bird_illustration_from_Svenska_F%C3%A5glar_(Swedish_Birds)_by_the_von_Wright_brothers_from_rawpixel%27s_original_edition_of_the_publication_00323.jpg"
@@ -3206,6 +3234,10 @@
   "birds/tringa-totanus.webp": {
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVRedshank.jpg"
+  },
+  "birds/troglodytes-aedon.webp": {
+    "source": "commons-pd",
+    "url": "https://commons.wikimedia.org/wiki/File:83_House_Wren.jpg"
   },
   "birds/troglodytes-troglodytes-2.webp": {
     "source": "vonwright",
@@ -3354,6 +3386,14 @@
   "birds/zapornia-pusilla.webp": {
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIVBaillons_Crake.jpg"
+  },
+  "birds/zenaida-asiatica.webp": {
+    "source": "commons-pd",
+    "url": "https://commons.wikimedia.org/wiki/File:Heilmann_fig140.jpg"
+  },
+  "birds/zenaida-macroura.webp": {
+    "source": "commons-pd",
+    "url": "https://commons.wikimedia.org/wiki/File:Zenaida_macrouraAWP17AA.jpg"
   },
   "birds/zoothera-aurea.webp": {
     "source": "gould",
