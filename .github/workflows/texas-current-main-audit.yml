@@ -1,0 +1,51 @@
+name: Audit current regional artwork coverage on fork main
+on:
+  push:
+    branches: [texas-artwork-coverage]
+    paths: [.github/workflows/texas-current-main-audit.yml]
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: texas-artwork-coverage
+          path: curation
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          path: project
+      - name: Count exact planning-list coverage
+        run: |
+          python - <<'PY'
+          import csv, json, re
+          from pathlib import Path
+          inv = list(csv.DictReader(Path('curation/.texas-curation/output/inventory.csv').open()))
+          files = list(Path('project/assets/artwork/classic/birds').glob('*.webp'))
+          shipped = {re.sub(r'-\d+$','',p.stem) for p in files}
+          covered = [r for r in inv if r.get('key') and r['key'] in shipped]
+          unresolved = [r for r in inv if not r.get('key')]
+          uncovered = [r for r in inv if r.get('key') and r['key'] not in shipped]
+          out = {
+            'requested_rows': len(inv),
+            'resolved_rows': sum(bool(r.get('key')) for r in inv),
+            'covered_rows': len(covered),
+            'uncovered_resolved_rows': len(uncovered),
+            'unresolved_rows': len(unresolved),
+            'covered_unique_keys': len({r['key'] for r in covered}),
+            'uncovered_unique_keys': len({r['key'] for r in uncovered}),
+            'unresolved_requested': [r['requested'] for r in unresolved],
+          }
+          Path('audit-output').mkdir()
+          Path('audit-output/summary.json').write_text(json.dumps(out,indent=2)+'\n')
+          with Path('audit-output/uncovered.csv').open('w',newline='') as f:
+            w=csv.DictWriter(f,fieldnames=inv[0].keys()); w.writeheader(); w.writerows(uncovered)
+          print(json.dumps(out,indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: texas-current-main-audit-${{ github.run_number }}
+          path: audit-output/
+          retention-days: 30
