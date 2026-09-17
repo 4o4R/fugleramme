@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "batch": "guided-finish-20260917-a",
+  "attributions": {
+    "game-birds-california": "**Game Birds of California** - historical illustrations from *The Game Birds of California* (1918), via Biodiversity Heritage Library scans on Wikimedia Commons. Public domain. Exact file pages are linked in the manifest. Manifest key: `game-birds-california`."
+  },
+  "reviewed_rows": [
+    {"rank":2,"key":"mimus-polyglottos","source_key":"audubon-pittsburgh","mask_sha256":"654ee58666b13ca919cdbaa92e41a5ef2cafae91d2576e370526fe27657b8ff6","selection":{"variant":2,"close":3}},
+    {"rank":8,"key":"poecile-carolinensis","source_key":"audubon-octavo","mask_sha256":"22905153a4e5aca2249cd106ed428419a50eeb8ae2b451628c5beb9140e2baec","selection":{"variants":[1,2],"close":3}},
+    {"rank":15,"key":"quiscalus-quiscula","source_key":"audubon-pittsburgh","mask_sha256":"f6358c78c435a022cbbfbc50a06cb873a99cbb7fe65b88e9570cb3a9f57466f1","selection":{"variant":0,"close":3}},
+    {"rank":19,"key":"haemorhous-mexicanus","source_key":"audubon-pittsburgh","mask_sha256":"dfa964b333b9376a7f7f3b4145f13402e9983a2ce91f5760d38c687efab61c31","selection":{"variant":1,"close":3},"identity_evidence":"https://data.fitzmuseum.cam.ac.uk/id/object/300753"},
+    {"rank":21,"key":"spinus-psaltria","source_key":"audubon-pittsburgh","mask_sha256":"900af8bc9c35874e8e925787a077b251c251b78bd6b4337373460b9510b4f364","selection":{"variant":1,"close":3}},
+    {"rank":32,"key":"buteo-swainsoni","source_key":"audubon-pittsburgh","mask_sha256":"4992a9dce75fa0cecb8b37d18ab2595f92043afa9b089ebe363f8e1e631d01f0","selection":{"variant":2,"close":3},"identity_evidence":"https://www.audubon.org/art/birds-of-america/common-buzzard"},
+    {"rank":34,"key":"falco-sparverius","source_key":"audubon-pittsburgh","mask_sha256":"e409d31d49a50347e9e0a3b37dc9e45a5b99b18e520c5c2f0f2e26bfe3723596","selection":{"variant":1,"close":3}},
+    {"rank":39,"key":"progne-subis","source_key":"audubon-pittsburgh","mask_sha256":"4466d76075ce2526fc261ef1e899193068d0cf0474a05bef341f52fd8c65e0c6","selection":{"variant":2,"close":3}},
+    {"rank":52,"key":"antrostomus-carolinensis","source_key":"audubon-pittsburgh","mask_sha256":"c140534fa4d11aa2c02bd87fa42bbee06a55ac4abb55f72e95a0c0d1b83001fd","selection":{"variant":2,"close":3}},
+    {"rank":53,"key":"antrostomus-vociferus","source_key":"audubon-pittsburgh","mask_sha256":"08c98aab88fd3ce6a7368ef0e1ceae2ab78e28543077d3f3cdb6660d39a97292","selection":{"variant":2,"close":3}},
+    {"rank":58,"key":"dryocopus-pileatus","source_key":"audubon-pittsburgh","mask_sha256":"763c99f0d8fdf251433a9ff71d667777d11ebe60cb7d1263733e08ae74d0e4ac","selection":{"variant":2,"close":3}},
+    {"rank":92,"key":"chondestes-grammacus","source_key":"audubon-pittsburgh","mask_sha256":"b341cb923456c5267725b54bf47911c948a7f0fdced6e11b9101566950fd0429","selection":{"variant":2,"close":3}},
+    {"rank":148,"key":"dendrocygna-bicolor","source_key":"game-birds-california","mask_sha256":"d425432bdc9c33c16e94bd7b8aea7cd4c005b64b3900b7fcda281d2e013d3501","selection":{"variant":2,"close":3}},
+    {"rank":157,"key":"aythya-collaris","source_key":"audubon-pittsburgh","mask_sha256":"6b4a23d9b285fcbf4e47080ba68e3eb22169c72d388c0e534a4f6219129999aa","selection":{"variant":1,"close":3}},
+    {"rank":164,"key":"bucephala-albeola","source_key":"audubon-pittsburgh","mask_sha256":"8f2ca37c72ae4adcfd1dbfad888fab9218ad28c09d28e7971b3920ef634b26be","selection":{"variant":2,"close":3}},
+    {"rank":177,"key":"buteo-platypterus","source_key":"audubon-pittsburgh","mask_sha256":"0766b7bd6cf8ffe873ae99f006a18d502061c0dde3510123ad2c0d4ae0b40dd2","selection":{"variant":1,"close":3}},
+    {"rank":188,"key":"antigone-canadensis","source_key":"audubon-pittsburgh","mask_sha256":"6b85aaf7e8c81cf7f75b3cf767ca97322039369ac540e479c6d72e7053c8e31e","selection":{"variant":1,"close":3},"identity_evidence":"https://www.audubon.org/art/birds-of-america/hooping-crane-0"}
+  ]
+}
