@@ -131,3 +131,7 @@ Public domain (PD-scan / PD-old-70-expired). Manifest key: `greene`.
 **Bailey (village and field)** - *Birds of Village and Field* by **Florence Merriam Bailey**, from the public-domain Biodiversity Heritage Library scan linked through Wikimedia Commons. Manifest key: `bailey-village-field`.
 
 **Leverian Museum** - plates from *Musei Leveriani explicatio, anglica et latina* by **George Shaw**, with illustrations by artists including **Sarah Stone**, **Sydenham Edwards**, **Philip Reinagle**, and **Charles R. Ryley**, from public-domain Biodiversity Heritage Library / Smithsonian Libraries scans on Wikimedia Commons. Exact file pages are linked in the manifest. Manifest key: `leverian-museum`.
+
+**Iconographia Zoologica (University of Amsterdam)** - historical zoological bird prints from the University of Amsterdam Special Collections *Iconographia Zoologica*, via the exact Wikimedia Commons records linked in the manifest. Public domain. Manifest key: `iconographia-zoologica`.
+
+**Library of Congress Popular Graphic Arts** - historical bird print from the Library of Congress Popular Graphic Arts collection, via the exact Wikimedia Commons record linked in the manifest. Public domain. Manifest key: `loc-popular-graphic-arts`.

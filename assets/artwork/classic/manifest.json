@@ -1343,6 +1343,10 @@
     "source": "audubon",
     "url": "https://media.audubon.org/boa_illustration/plate-102-blue-jay.jpg"
   },
+  "birds/cyanocorax-yncas.webp": {
+    "source": "cassin-illustrations",
+    "url": "https://commons.wikimedia.org/wiki/File:Illustrations_of_the_birds_of_California,_Texas,_Oregon,_British_and_Russian_America_(Plate_1)_(6306529250).jpg"
+  },
   "birds/cyanopica-cyanus.webp": {
     "source": "bree",
     "url": "https://commons.wikimedia.org/wiki/File:A_history_of_the_birds_of_Europe_(Plate_2)_(8157820166).jpg"
@@ -2547,6 +2551,10 @@
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIKite.jpg"
   },
+  "birds/molothrus-bonariensis.webp": {
+    "source": "iconographia-zoologica",
+    "url": "https://commons.wikimedia.org/wiki/File:Molothrus_bonariensis_-_1700-1880_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-_UBA01_IZ15800297.tif"
+  },
   "birds/monticola-solitarius.webp": {
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeIIBlue_Thrush.jpg"
@@ -2646,6 +2654,10 @@
   "birds/nannopterum-auritum.webp": {
     "source": "audubon-pittsburgh",
     "url": "https://commons.wikimedia.org/wiki/File:257_Double-crested_Cormorant.jpg"
+  },
+  "birds/nannopterum-brasilianum.webp": {
+    "source": "loc-popular-graphic-arts",
+    "url": "https://commons.wikimedia.org/wiki/File:Phalacrocorax_brasilianus_(GM)_LCCN2003662380.jpg"
   },
   "birds/neophron-percnopterus.webp": {
     "source": "gould",
@@ -3818,6 +3830,10 @@
   "birds/thryothorus-ludovicianus.webp": {
     "source": "audubon-pittsburgh",
     "url": "https://commons.wikimedia.org/wiki/File:78_Great_Carolina_Wren.jpg"
+  },
+  "birds/toxostoma-curvirostre.webp": {
+    "source": "iconographia-zoologica",
+    "url": "https://commons.wikimedia.org/wiki/File:Mimus_curvirostris_-_1700-1880_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-_UBA01_IZ16300341.tif"
   },
   "birds/toxostoma-longirostre.webp": {
     "source": "pretre-magasin",
