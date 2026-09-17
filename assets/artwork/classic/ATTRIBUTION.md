@@ -135,3 +135,5 @@ Public domain (PD-scan / PD-old-70-expired). Manifest key: `greene`.
 **Iconographia Zoologica (University of Amsterdam)** - historical zoological bird prints from the University of Amsterdam Special Collections *Iconographia Zoologica*, via the exact Wikimedia Commons records linked in the manifest. Public domain. Manifest key: `iconographia-zoologica`.
 
 **Library of Congress Popular Graphic Arts** - historical bird print from the Library of Congress Popular Graphic Arts collection, via the exact Wikimedia Commons record linked in the manifest. Public domain. Manifest key: `loc-popular-graphic-arts`.
+
+**Game Birds of California** - historical illustrations from *The Game Birds of California* (1918), via Biodiversity Heritage Library scans on Wikimedia Commons. Public domain. Exact file pages are linked in the manifest. Manifest key: `game-birds-california`.
