@@ -1,0 +1,21 @@
+[
+  {"part":0,"rank":31,"variant":0,"key":"ictinia-mississippiensis","source_key":"audubon-pittsburgh"},
+  {"part":0,"rank":66,"variant":0,"key":"tyrannus-tyrannus","source_key":"audubon-pittsburgh"},
+  {"part":0,"rank":100,"variant":0,"key":"aix-sponsa","source_key":"audubon-pittsburgh"},
+  {"part":0,"rank":106,"variant":1,"key":"mareca-americana","source_key":"audubon-pittsburgh"},
+  {"part":0,"rank":126,"variant":0,"key":"lanius-ludovicianus","source_key":"audubon-pittsburgh"},
+  {"part":0,"rank":156,"variant":1,"key":"aythya-americana","source_key":"audubon-pittsburgh"},
+  {"part":0,"rank":170,"variant":1,"key":"oxyura-jamaicensis","source_key":"audubon-pittsburgh"},
+  {"part":0,"rank":192,"variant":1,"key":"anarhynchus-wilsonia","source_key":"audubon-pittsburgh"},
+  {"part":0,"rank":193,"variant":1,"key":"charadrius-semipalmatus","source_key":"audubon-pittsburgh"},
+  {"part":0,"rank":198,"variant":2,"key":"tringa-flavipes","source_key":"audubon-pittsburgh"},
+  {"part":0,"rank":203,"variant":1,"key":"numenius-americanus","source_key":"audubon-pittsburgh"},
+  {"part":0,"rank":320,"variant":0,"key":"setophaga-cerulea","source_key":"audubon-pittsburgh"},
+  {"part":0,"rank":339,"variant":0,"key":"pipilo-erythrophthalmus","source_key":"audubon-pittsburgh"},
+  {"part":0,"rank":370,"variant":0,"key":"euphagus-carolinus","source_key":"audubon-pittsburgh"},
+  {"part":0,"rank":467,"variant":0,"key":"rallus-crepitans","source_key":"audubon-pittsburgh"},
+  {"part":0,"rank":472,"variant":0,"key":"quiscalus-major","source_key":"audubon-pittsburgh"},
+  {"part":0,"rank":483,"variant":0,"key":"tympanuchus-cupido","source_key":"audubon-pittsburgh"},
+  {"part":0,"rank":491,"variant":0,"key":"haematopus-palliatus","source_key":"audubon-pittsburgh"},
+  {"part":0,"rank":498,"variant":0,"key":"tockus-kempi","source_key":"martinet-planches"}
+]
