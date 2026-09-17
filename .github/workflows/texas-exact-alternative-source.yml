@@ -1,0 +1,46 @@
+# .github/workflows/texas-exact-alternative-source.yml
+# Read-only retrieval of an explicitly selected alternative historical source.
+name: Retrieve exact alternative bird source
+on:
+  push:
+    branches: [texas-artwork-coverage]
+    paths: [.github/workflows/texas-exact-alternative-source.yml]
+permissions:
+  contents: read
+jobs:
+  source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.13'}
+      - run: python -m pip install requests pillow==12.3.0
+      - name: Retrieve exact Commons metadata and original source pixels
+        run: |
+          python - <<'PY'
+          import hashlib, html, io, json, re
+          from pathlib import Path
+          import requests
+          from PIL import Image
+          out=Path('source-output'); out.mkdir()
+          session=requests.Session()
+          session.headers['User-Agent']='Fugleramme-Exact-Source/1.0 (https://github.com/4o4R/fugleramme)'
+          title='File:Mourner the Dove.jpg'
+          response=session.get('https://commons.wikimedia.org/w/api.php',params={'action':'query','titles':title,'prop':'imageinfo','iiprop':'url|size|sha1|extmetadata','format':'json','formatversion':2},timeout=45)
+          response.raise_for_status(); data=response.json(); page=data['query']['pages'][0]; info=page['imageinfo'][0]
+          def field(name):
+              return html.unescape(re.sub('<[^>]+>',' ',info.get('extmetadata',{}).get(name,{}).get('value',''))).strip()
+          license=field('LicenseShortName')
+          if license not in {'Public domain','CC0'}: raise RuntimeError('Source terms require review: '+license)
+          r=session.get(info['url'],timeout=60); r.raise_for_status()
+          original=r.content; image=Image.open(io.BytesIO(original)).convert('RGB');image.thumbnail((2400,2400),Image.Resampling.LANCZOS)
+          path=out/(str(page['pageid'])+'.png');image.save(path)
+          metadata={'rank':4,'key':'zenaida-macroura','scientific':'Zenaida macroura','common':'Mourning Dove','source_key':'fuertes-burgess','source':{'pageid':page['pageid'],'file_title':page['title'],'source_page':info['descriptionurl'],'original_url':info['url'],'original_sha1':info['sha1'],'original_sha256':hashlib.sha256(original).hexdigest(),'normalized_sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'license':license,'license_url':field('LicenseUrl'),'artist':field('Artist'),'credit':field('Credit'),'date':field('DateTimeOriginal'),'width':image.width,'height':image.height},'source_sha256':hashlib.sha256(path.read_bytes()).hexdigest()}
+          (out/'metadata.json').write_text(json.dumps(metadata,indent=2)+'\n');(out/'commons-response.json').write_text(json.dumps(data,indent=2)+'\n');print(json.dumps(metadata,indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: texas-exact-alternative-source-${{ github.run_number }}
+          path: source-output/
+          retention-days: 30
+          if-no-files-found: error
