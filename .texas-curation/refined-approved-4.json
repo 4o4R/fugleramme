@@ -1,0 +1,18 @@
+[
+  {"part":2,"rank":34,"variant":1,"key":"falco-sparverius","source_key":"audubon-pittsburgh"},
+  {"part":2,"rank":39,"variant":1,"key":"progne-subis","source_key":"audubon-pittsburgh"},
+  {"part":2,"rank":58,"variant":1,"key":"dryocopus-pileatus","source_key":"audubon-pittsburgh"},
+  {"part":2,"rank":61,"variant":0,"key":"sayornis-phoebe","source_key":"audubon-pittsburgh"},
+  {"part":2,"rank":114,"variant":0,"key":"butorides-virescens","source_key":"audubon-pittsburgh"},
+  {"part":2,"rank":194,"variant":0,"key":"charadrius-melodus","source_key":"audubon-pittsburgh"},
+  {"part":2,"rank":197,"variant":1,"key":"tringa-melanoleuca","source_key":"audubon-pittsburgh"},
+  {"part":2,"rank":200,"variant":1,"key":"tringa-semipalmata","source_key":"audubon-pittsburgh"},
+  {"part":2,"rank":211,"variant":2,"key":"calidris-minutilla","source_key":"audubon-pittsburgh"},
+  {"part":2,"rank":264,"variant":0,"key":"empidonax-virescens","source_key":"audubon-pittsburgh"},
+  {"part":2,"rank":291,"variant":0,"key":"cistothorus-stellaris","source_key":"audubon-pittsburgh"},
+  {"part":2,"rank":317,"variant":0,"key":"setophaga-palmarum","source_key":"audubon-pittsburgh"},
+  {"part":2,"rank":321,"variant":0,"key":"protonotaria-citrea","source_key":"audubon-pittsburgh"},
+  {"part":2,"rank":324,"variant":0,"key":"seiurus-aurocapilla","source_key":"audubon-pittsburgh"},
+  {"part":2,"rank":359,"variant":1,"key":"junco-hyemalis","source_key":"audubon-pittsburgh"},
+  {"part":2,"rank":431,"variant":2,"key":"lanius-borealis","source_key":"audubon-pittsburgh"}
+]
