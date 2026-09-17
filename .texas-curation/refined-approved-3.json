@@ -1,0 +1,19 @@
+[
+  {"part":1,"rank":52,"variant":0,"key":"antrostomus-carolinensis","source_key":"audubon-pittsburgh"},
+  {"part":1,"rank":53,"variant":1,"key":"antrostomus-vociferus","source_key":"audubon-pittsburgh"},
+  {"part":1,"rank":59,"variant":0,"key":"colaptes-auratus","source_key":"audubon-pittsburgh"},
+  {"part":1,"rank":98,"variant":0,"key":"icterus-galbula","source_key":"audubon-pittsburgh"},
+  {"part":1,"rank":116,"variant":1,"key":"eudocimus-albus","source_key":"audubon-pittsburgh"},
+  {"part":1,"rank":124,"variant":0,"key":"porzana-carolina","source_key":"audubon-pittsburgh"},
+  {"part":1,"rank":162,"variant":1,"key":"melanitta-americana","source_key":"audubon-pittsburgh"},
+  {"part":1,"rank":164,"variant":1,"key":"bucephala-albeola","source_key":"audubon-pittsburgh"},
+  {"part":1,"rank":220,"variant":0,"key":"limnodromus-griseus","source_key":"audubon-pittsburgh"},
+  {"part":1,"rank":223,"variant":0,"key":"scolopax-minor","source_key":"audubon-pittsburgh"},
+  {"part":1,"rank":232,"variant":0,"key":"chroicocephalus-philadelphia","source_key":"audubon-pittsburgh"},
+  {"part":1,"rank":246,"variant":2,"key":"sternula-antillarum","source_key":"audubon-pittsburgh"},
+  {"part":1,"rank":288,"variant":0,"key":"sitta-pusilla","source_key":"audubon-pittsburgh"},
+  {"part":1,"rank":300,"variant":0,"key":"anthus-rubescens","source_key":"audubon-pittsburgh"},
+  {"part":1,"rank":319,"variant":0,"key":"setophaga-striata","source_key":"audubon-pittsburgh"},
+  {"part":1,"rank":327,"variant":0,"key":"geothlypis-formosa","source_key":"audubon-pittsburgh"},
+  {"part":1,"rank":435,"variant":0,"key":"aphelocoma-woodhouseii","source_key":"bailey-handbook"}
+]
