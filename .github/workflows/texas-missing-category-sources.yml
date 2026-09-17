@@ -1,0 +1,33 @@
+name: Discover illustration-category sources for remaining gaps
+on:
+  push:
+    branches: [texas-artwork-coverage]
+    paths:
+      - .github/workflows/texas-missing-category-sources.yml
+      - .texas-curation/missing_category_sources.py
+permissions:
+  contents: read
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: texas-artwork-coverage
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install source-harvest dependencies
+        run: python -m pip install pillow
+      - name: Discover and download public-domain historical candidates
+        run: python .texas-curation/missing_category_sources.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: texas-missing-category-sources-${{ github.run_number }}
+          path: .texas-curation/missing-category-sources/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30
+          compression-level: 2
