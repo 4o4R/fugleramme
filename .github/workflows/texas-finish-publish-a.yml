@@ -1,0 +1,81 @@
+# .github/workflows/texas-finish-publish-a.yml
+# Only this fork's main can be written. No pull requests or upstream writes.
+name: Publish exact reviewed Texas artwork A
+on:
+  push:
+    branches: [texas-artwork-coverage]
+    paths: [.github/workflows/texas-finish-publish-a.yml]
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: fork-main-publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.repository == '4o4R/fugleramme'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          path: curation
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          path: project
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.13'}
+      - uses: astral-sh/setup-uv@v6
+      - uses: actions/download-artifact@v4
+        with:
+          name: texas-guided-alpha-1
+          run-id: 35178370005
+          github-token: ${{ github.token }}
+          path: inputs/guided
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: texas-source-images-*-1
+          run-id: 35131216249
+          github-token: ${{ github.token }}
+          path: inputs/sources
+      - name: Prepare pinned curation and project environments
+        run: |
+          python -m pip install numpy==2.3.5 pillow==12.3.0 opencv-python-headless==4.13.0.92 scipy==1.17.0
+          cd project
+          uv sync --locked
+      - name: Rebuild only the exact visually approved selections
+        run: |
+          python curation/.texas-curation/publish_exact_masks.py \
+            --repo project --guided inputs/guided --sources inputs/sources \
+            --approved curation/.texas-curation/finish-approved-a.json \
+            --inventory curation/.texas-curation/output/inventory.csv \
+            --output final-output
+      - name: Validate actual main candidate
+        working-directory: project
+        run: |
+          uv run ruff format --check
+          uv run ruff check
+          uv run mypy
+          uv run pytest -q --junitxml=../final-output/pytest.xml
+          shellcheck install.sh run.sh
+      - name: Commit approved artwork and durable coverage records
+        working-directory: project
+        run: |
+          git config user.name '4o4R'
+          git config user.email '120294988+4o4R@users.noreply.github.com'
+          git add assets/artwork/classic/manifest.json assets/artwork/classic/ATTRIBUTION.md assets/artwork/classic/birds docs/texas-coverage
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore(assets): add 17 reviewed source-pixel bird cutouts and coverage ledger'
+            git push origin HEAD:main
+          fi
+          git rev-parse HEAD > ../final-output/published-main-commit.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: texas-exact-published-a-${{ github.run_number }}
+          path: final-output/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30
