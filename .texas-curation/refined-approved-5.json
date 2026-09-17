@@ -1,0 +1,23 @@
+[
+  {"part":3,"rank":15,"variant":0,"key":"quiscalus-quiscula","source_key":"audubon-pittsburgh"},
+  {"part":3,"rank":48,"variant":0,"key":"selasphorus-rufus","source_key":"audubon-pittsburgh"},
+  {"part":3,"rank":77,"variant":0,"key":"leiothlypis-celata","source_key":"audubon-pittsburgh"},
+  {"part":3,"rank":115,"variant":0,"key":"nyctanassa-violacea","source_key":"audubon-pittsburgh"},
+  {"part":3,"rank":186,"variant":0,"key":"meleagris-gallopavo","source_key":"audubon-pittsburgh"},
+  {"part":3,"rank":187,"variant":1,"key":"colinus-virginianus","source_key":"audubon-pittsburgh"},
+  {"part":3,"rank":204,"variant":0,"key":"limosa-haemastica","source_key":"audubon-pittsburgh"},
+  {"part":3,"rank":205,"variant":1,"key":"limosa-fedoa","source_key":"audubon-pittsburgh"},
+  {"part":3,"rank":229,"variant":0,"key":"leucophaeus-atricilla","source_key":"audubon-pittsburgh"},
+  {"part":3,"rank":250,"variant":1,"key":"columbina-passerina","source_key":"audubon-pittsburgh"},
+  {"part":3,"rank":266,"variant":0,"key":"empidonax-traillii","source_key":"audubon-pittsburgh"},
+  {"part":3,"rank":308,"variant":0,"key":"setophaga-magnolia","source_key":"audubon-pittsburgh"},
+  {"part":3,"rank":364,"variant":0,"key":"pheucticus-ludovicianus","source_key":"audubon-pittsburgh"},
+  {"part":3,"rank":376,"variant":0,"key":"haemorhous-purpureus","source_key":"audubon-pittsburgh"},
+  {"part":3,"rank":392,"variant":1,"key":"coturnicops-noveboracensis","source_key":"audubon-pittsburgh"},
+  {"part":3,"rank":400,"variant":2,"key":"jacana-spinosa","source_key":"desmurs"},
+  {"part":3,"rank":410,"variant":0,"key":"leptotila-verreauxi","source_key":"gronvold-south-america"},
+  {"part":3,"rank":412,"variant":0,"key":"aegolius-acadicus","source_key":"audubon-pittsburgh"},
+  {"part":3,"rank":466,"variant":0,"key":"patagioenas-fasciata","source_key":"audubon-pittsburgh"},
+  {"part":3,"rank":499,"variant":0,"key":"leuconotopicus-borealis","source_key":"audubon-pittsburgh"},
+  {"part":3,"rank":527,"variant":0,"key":"estrilda-troglodytes","source_key":"martinet-planches"}
+]
