@@ -1,0 +1,97 @@
+name: Publish refined regional artwork to fork main
+on:
+  push:
+    branches: [texas-artwork-coverage]
+    paths:
+      - .github/workflows/texas-refined-main-batch.yml
+      - .texas-curation/refined-approved-1.json
+      - .texas-curation/finalize_refined_approved.py
+permissions:
+  actions: read
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: texas-artwork-coverage
+          path: curation
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          path: project
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: astral-sh/setup-uv@v6
+      - uses: actions/download-artifact@v4
+        with:
+          name: texas-full-refine-0-1
+          run-id: 35164752750
+          github-token: ${{ github.token }}
+          path: inputs/0
+      - uses: actions/download-artifact@v4
+        with:
+          name: texas-full-refine-1-1
+          run-id: 35164752750
+          github-token: ${{ github.token }}
+          path: inputs/1
+      - uses: actions/download-artifact@v4
+        with:
+          name: texas-full-refine-2-1
+          run-id: 35164752750
+          github-token: ${{ github.token }}
+          path: inputs/2
+      - uses: actions/download-artifact@v4
+        with:
+          name: texas-full-refine-3-1
+          run-id: 35164752750
+          github-token: ${{ github.token }}
+          path: inputs/3
+      - name: Install project environment
+        working-directory: project
+        run: uv sync --locked
+      - name: Add only visually approved refined artwork
+        run: |
+          project/.venv/bin/python curation/.texas-curation/finalize_refined_approved.py \
+            --repo project --inputs inputs \
+            --approved curation/.texas-curation/refined-approved-1.json \
+            --output final-output
+      - name: Validate fork main candidate
+        working-directory: project
+        run: |
+          uv run ruff format --check
+          uv run ruff check
+          uv run mypy
+          uv run pytest -q --junitxml=../final-output/pytest.xml
+          shellcheck install.sh run.sh
+      - name: Commit directly to fork main
+        working-directory: project
+        run: |
+          git config user.name '4o4R'
+          git config user.email '120294988+4o4R@users.noreply.github.com'
+          git add assets/artwork/classic/manifest.json assets/artwork/classic/birds
+          if git diff --cached --quiet; then
+            echo 'Nothing new to publish.'
+            exit 0
+          fi
+          COUNT=$(python - <<'PY'
+          import json
+          from pathlib import Path
+          print(len(json.loads(Path('../final-output/asset-provenance.json').read_text())))
+          PY
+          )
+          git commit -m "chore(assets): add ${COUNT} refined regional bird illustrations"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: texas-refined-main-batch-${{ github.run_number }}
+          path: final-output/
+          if-no-files-found: warn
+          retention-days: 30
