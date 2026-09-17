@@ -1,0 +1,85 @@
+name: Publish reviewed Nelson's Sparrow artwork to fork main
+on:
+  push:
+    branches: [texas-artwork-coverage]
+    paths: [.github/workflows/texas-nelson-main.yml]
+permissions:
+  actions: read
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          path: project
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.13'}
+      - uses: astral-sh/setup-uv@v6
+      - uses: actions/download-artifact@v4
+        with:
+          name: texas-nelson-candidates-1
+          run-id: 35165289347
+          github-token: ${{ github.token }}
+          path: nelson
+      - name: Install project environment
+        working-directory: project
+        run: uv sync --locked
+      - name: Add reviewed Nelson's Sparrow cut
+        run: |
+          project/.venv/bin/python - <<'PY'
+          import json, re
+          from pathlib import Path
+          import sys
+          repo=Path('project').resolve(); sys.path[:0]=[str(repo),str(repo/'src')]
+          from fugleramme.names import normalize
+          from tools.add_bird import prepare, write_plate
+          key='ammospiza-nelsoni'
+          assert normalize('Ammospiza nelsoni') == key
+          birds=repo/'assets/artwork/classic/birds'
+          existing={re.sub(r'-\\d+$','',p.stem) for p in birds.glob('*.webp')}
+          out=Path('final-output'); out.mkdir()
+          if key in existing:
+              (out/'summary.json').write_text(json.dumps({'shipped':0,'skipped_existing':1},indent=2)+'\\n')
+          else:
+              dest=birds/f'{key}.webp'
+              write_plate(prepare(Path('nelson/nelson-v0.png')), dest)
+              mp=repo/'assets/artwork/classic/manifest.json'
+              manifest=json.loads(mp.read_text())
+              manifest[f'birds/{dest.name}']={
+                  'source':'eaton-birds-ny',
+                  'url':'https://commons.wikimedia.org/wiki/File:Birds_of_New_York_(Plate_81)_(6901492502).jpg'
+              }
+              mp.write_text(json.dumps(dict(sorted(manifest.items())),indent=2)+'\\n')
+              (out/'summary.json').write_text(json.dumps({'shipped':1,'key':key,'source':'Eaton, Birds of New York, 1914, Plate 81','license':'Public domain'},indent=2)+'\\n')
+          print((out/'summary.json').read_text())
+          PY
+      - name: Validate fork main candidate
+        working-directory: project
+        run: |
+          uv run ruff format --check
+          uv run ruff check
+          uv run mypy
+          uv run pytest -q --junitxml=../final-output/pytest.xml
+          shellcheck install.sh run.sh
+      - name: Commit directly to fork main
+        working-directory: project
+        run: |
+          git config user.name '4o4R'
+          git config user.email '120294988+4o4R@users.noreply.github.com'
+          git add assets/artwork/classic/manifest.json assets/artwork/classic/birds/ammospiza-nelsoni.webp
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "chore(assets): add reviewed Nelson's Sparrow illustration"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: texas-nelson-main-${{ github.run_number }}
+          path: final-output/
+          if-no-files-found: warn
+          retention-days: 30
