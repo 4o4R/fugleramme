@@ -1,0 +1,49 @@
+# .github/workflows/texas-resume-snapshot.yml
+# Fork-only, read-only snapshot for continued specimen-level artwork review.
+name: Export current Texas curation baseline
+on:
+  push:
+    branches: [texas-artwork-coverage]
+    paths: [.github/workflows/texas-resume-snapshot.yml]
+permissions:
+  contents: read
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: curation
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          path: project
+      - name: Export code, manifests and prior review decisions
+        run: |
+          python - <<'PY'
+          import csv, json, re, shutil, subprocess
+          from pathlib import Path
+          out=Path('/tmp/texas-resume'); out.mkdir()
+          for name in ['project','curation']:
+              root=Path(name)
+              for file in subprocess.check_output(['git','-C',name,'ls-files'],text=True).splitlines():
+                  p=root/file
+                  if p.suffix not in {'.py','.toml','.lock','.json','.csv','.txt','.md','.yml','.sh'} or 'fonts' in p.parts:
+                      continue
+                  q=out/name/file; q.parent.mkdir(parents=True,exist_ok=True); shutil.copy2(p,q)
+              (out/(name+'-commit.txt')).write_text(subprocess.check_output(['git','-C',name,'rev-parse','HEAD'],text=True))
+          files=list(Path('project/assets/artwork/classic/birds').glob('*.webp'))
+          keys={re.sub(r'-\d+$','',p.stem) for p in files}
+          inv=list(csv.DictReader(Path('curation/.texas-curation/output/inventory.csv').open()))
+          summary={'main_commit':(out/'project-commit.txt').read_text().strip(),'requested':len(inv),'covered':sum(bool(r['key']) and r['key'] in keys for r in inv),'uncovered_resolved':sum(bool(r['key']) and r['key'] not in keys for r in inv),'unresolved':sum(not r['key'] for r in inv),'shipped_species_keys':sorted(keys)}
+          (out/'coverage-baseline.json').write_text(json.dumps(summary,indent=2)+'\n')
+          print(json.dumps({k:v for k,v in summary.items() if k!='shipped_species_keys'},indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: texas-resume-baseline-${{ github.run_number }}
+          path: /tmp/texas-resume/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30
