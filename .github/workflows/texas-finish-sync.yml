@@ -1,0 +1,120 @@
+# .github/workflows/texas-finish-sync.yml
+# Fork-only integration; never creates a pull request or writes to upstream.
+name: Sync fork main and export exact curation checkpoint
+on:
+  push:
+    branches: [texas-artwork-coverage]
+    paths: [.github/workflows/texas-finish-sync.yml]
+permissions:
+  contents: write
+concurrency:
+  group: fork-main-publish
+  cancel-in-progress: false
+jobs:
+  sync:
+    if: github.repository == '4o4R/fugleramme'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 50
+          path: project
+      - uses: actions/checkout@v4
+        with:
+          ref: texas-artwork-coverage
+          path: curation
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.13'}
+      - uses: astral-sh/setup-uv@v6
+      - name: Integrate pinned upstream without discarding fork artwork
+        working-directory: project
+        run: |
+          set -eu
+          mkdir -p ../checkpoint
+          git config user.name '4o4R'
+          git config user.email '120294988+4o4R@users.noreply.github.com'
+          git rev-parse HEAD > ../checkpoint/before.txt
+          git fetch --depth=50 https://github.com/arnegiacomo/fugleramme.git 347476fd298846545ac8876295df7b4e3d860e26
+          if ! git merge-base --is-ancestor FETCH_HEAD HEAD; then
+            if ! git merge --no-commit --no-ff FETCH_HEAD; then
+              python - <<'PY'
+          import json, subprocess
+          from pathlib import Path
+          conflicts = subprocess.check_output(['git','diff','--name-only','--diff-filter=U'],text=True).splitlines()
+          allowed = {'assets/artwork/classic/manifest.json', 'assets/artwork/classic/birds/dryobates-pubescens.webp', 'assets/artwork/classic/birds/pheucticus-ludovicianus.webp'}
+          if not conflicts or set(conflicts) - allowed:
+              raise RuntimeError('Unexpected merge conflicts: ' + repr(conflicts))
+          decisions = []
+          for name in conflicts:
+              if name.endswith('manifest.json'):
+                  ours=json.loads(subprocess.check_output(['git','show',':2:'+name]))
+                  theirs=json.loads(subprocess.check_output(['git','show',':3:'+name]))
+                  collisions=[k for k in ours.keys() & theirs.keys() if ours[k] != theirs[k]]
+                  unexpected=set(collisions)-{'birds/dryobates-pubescens.webp','birds/pheucticus-ludovicianus.webp'}
+                  if unexpected: raise RuntimeError('Unexpected provenance conflict: '+repr(unexpected))
+                  Path(name).write_text(json.dumps({**theirs,**ours},sort_keys=True,indent=2)+'\n')
+                  decisions.append({'file':name,'retained_existing_provenance':collisions})
+              else:
+                  subprocess.run(['git','checkout','--ours','--',name],check=True)
+                  decisions.append({'file':name,'decision':'retain previously reviewed fork image'})
+              subprocess.run(['git','add','--',name],check=True)
+          Path('../checkpoint/merge-decisions.json').write_text(json.dumps(decisions,indent=2)+'\n')
+          PY
+            fi
+          fi
+      - name: Validate merged project
+        working-directory: project
+        run: |
+          uv sync --locked
+          uv run ruff format --check
+          uv run ruff check
+          uv run mypy
+          uv run pytest -q --junitxml=../checkpoint/pytest.xml
+          shellcheck install.sh run.sh
+      - name: Publish fast-forward only to own main
+        working-directory: project
+        run: |
+          if git rev-parse -q --verify MERGE_HEAD >/dev/null; then
+            git commit -m 'chore: integrate upstream artwork updates while preserving fork additions'
+            git push origin HEAD:main
+          fi
+          git rev-parse HEAD > ../checkpoint/main-commit.txt
+          git merge-base --is-ancestor 347476fd298846545ac8876295df7b4e3d860e26 HEAD
+      - name: Export exact text and coverage checkpoint
+        run: |
+          python - <<'PY'
+          import csv, hashlib, json, re, shutil, subprocess
+          from pathlib import Path
+          repo=Path('project'); out=Path('checkpoint'); text=out/'project'
+          extensions={'.py','.json','.md','.txt','.toml','.lock','.yml','.yaml','.sh','.html','.css','.js','.svg'}
+          tracked=subprocess.check_output(['git','-C',str(repo),'ls-files'],text=True).splitlines()
+          image_files=[]
+          for name in tracked:
+              src=repo/name
+              if name.startswith('assets/artwork/') and src.suffix=='.webp':
+                  image_files.append({'path':name,'sha256':hashlib.sha256(src.read_bytes()).hexdigest(),'bytes':src.stat().st_size})
+              if src.suffix in extensions:
+                  dest=text/name; dest.parent.mkdir(parents=True,exist_ok=True); shutil.copy2(src,dest)
+          (out/'artwork-files.json').write_text(json.dumps(image_files,indent=2)+'\n')
+          inv=list(csv.DictReader(Path('curation/.texas-curation/output/inventory.csv').open()))
+          keys={re.sub(r'-\d+$','',Path(r['path']).stem) for r in image_files if '/classic/birds/' in r['path']}
+          covered=[r for r in inv if r.get('key') and r['key'] in keys]
+          pending=[r for r in inv if r.get('key') and r['key'] not in keys]
+          unresolved=[r for r in inv if not r.get('key')]
+          report={'main_commit':(out/'main-commit.txt').read_text().strip(),'upstream_commit':'347476fd298846545ac8876295df7b4e3d860e26','rows':len(inv),'covered':len(covered),'artwork_gaps':len(pending),'taxonomy_cases':len(unresolved)}
+          (out/'coverage.json').write_text(json.dumps(report,indent=2)+'\n')
+          for name,rows in [('inventory',inv),('uncovered',pending),('taxonomy-cases',unresolved)]:
+              with (out/(name+'.csv')).open('w',newline='') as f:
+                  w=csv.DictWriter(f,fieldnames=inv[0].keys());w.writeheader();w.writerows(rows)
+          print(json.dumps(report,indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: texas-finish-checkpoint-${{ github.run_number }}
+          path: checkpoint/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30
