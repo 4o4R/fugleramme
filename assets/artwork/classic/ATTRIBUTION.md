@@ -127,3 +127,7 @@ Public domain (PD-scan / PD-old-70-expired). Manifest key: `greene`.
 **Gould (Voyage of the Beagle)** - bird plate by **John Gould** from the zoological results of **Charles Darwin's** voyage of H.M.S. *Beagle* (19th century), via the exact public-domain Wikimedia Commons file page linked in the manifest. Manifest key: `gould-beagle`.
 
 **Smit (British Museum catalogue)** - bird plate by **Joseph Smit** from the *Catalogue of the Birds in the British Museum*, via the exact public-domain Wikimedia Commons file page linked in the manifest. Manifest key: `smit-british-museum`.
+
+**Bailey (village and field)** - *Birds of Village and Field* by **Florence Merriam Bailey**, from the public-domain Biodiversity Heritage Library scan linked through Wikimedia Commons. Manifest key: `bailey-village-field`.
+
+**Leverian Museum** - plates from *Musei Leveriani explicatio, anglica et latina* by **George Shaw**, with illustrations by artists including **Sarah Stone**, **Sydenham Edwards**, **Philip Reinagle**, and **Charles R. Ryley**, from public-domain Biodiversity Heritage Library / Smithsonian Libraries scans on Wikimedia Commons. Exact file pages are linked in the manifest. Manifest key: `leverian-museum`.

@@ -207,6 +207,10 @@
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVCommon_Wild_Duck.jpg"
   },
+  "birds/anodorhynchus-hyacinthinus.webp": {
+    "source": "leverian-museum",
+    "url": "https://commons.wikimedia.org/wiki/File:Musei_Leveriani_explicatio,_anglica_et_latina_BHL29568424.jpg"
+  },
   "birds/anous-stolidus.webp": {
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:GouldBirdsEuropeVNoddy_Tern.jpg"
@@ -1471,6 +1475,10 @@
     "source": "eaton-birds-ny",
     "url": "https://commons.wikimedia.org/wiki/File:Birds_of_New_York_(Plate_68)_(7047586155).jpg"
   },
+  "birds/empidonax-minimus.webp": {
+    "source": "bailey-village-field",
+    "url": "https://commons.wikimedia.org/wiki/File:Birds_of_village_and_field_(Plate_V)_BHL7288727.jpg"
+  },
   "birds/eremophila-alpestris.webp": {
     "source": "vonwright",
     "url": "https://commons.wikimedia.org/wiki/File:Bird_illustration_from_Svenska_F%C3%A5glar_(Swedish_Birds)_by_the_von_Wright_brothers_from_rawpixel%27s_original_edition_of_the_publication_00139.jpg"
@@ -1634,6 +1642,10 @@
   "birds/fratercula-arctica.webp": {
     "source": "gould",
     "url": "https://commons.wikimedia.org/wiki/File:The_birds_of_Europe_(1837)_(14750694965).jpg"
+  },
+  "birds/fregata-magnificens.webp": {
+    "source": "leverian-museum",
+    "url": "https://commons.wikimedia.org/wiki/File:271_Frigate_Pelican.jpg"
   },
   "birds/fringilla-coelebs-2.webp": {
     "source": "vonwright",
