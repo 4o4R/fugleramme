@@ -1,0 +1,46 @@
+# .github/workflows/texas-delivery-snapshot.yml
+# Read-only snapshot for curation. No artwork is approved or published here.
+name: Export final artwork workbench
+on:
+  push:
+    branches: [texas-artwork-coverage]
+    paths: [.github/workflows/texas-delivery-snapshot.yml]
+permissions:
+  contents: read
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with: {path: curation}
+      - uses: actions/checkout@v4
+        with: {ref: main, path: project}
+      - name: Preserve current scripts, metadata and file inventory
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json, shutil, subprocess
+          out=Path('/tmp/texas-delivery-snapshot')
+          allowed={'.py','.json','.csv','.txt','.md','.toml','.lock','.yml','.yaml','.sh','.html','.css','.js'}
+          for base in ('curation','project'):
+              root=Path(base)
+              names=subprocess.check_output(['git','-C',base,'ls-files'],text=True).splitlines()
+              for name in names:
+                  source=root/name
+                  if source.suffix not in allowed or 'fonts' in source.parts:
+                      continue
+                  target=out/base/name
+                  target.parent.mkdir(parents=True,exist_ok=True)
+                  shutil.copy2(source,target)
+              (out/(base+'-commit.txt')).write_text(subprocess.check_output(['git','-C',base,'rev-parse','HEAD'],text=True))
+              (out/(base+'-files.json')).write_text(json.dumps(names,indent=2))
+          print((out/'project/docs/texas-coverage/summary.json').read_text())
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: texas-delivery-snapshot
+          path: /tmp/texas-delivery-snapshot/
+          include-hidden-files: true
+          retention-days: 30
+          if-no-files-found: error
