@@ -40,10 +40,10 @@ jobs:
           key='ammospiza-nelsoni'
           assert normalize('Ammospiza nelsoni') == key
           birds=repo/'assets/artwork/classic/birds'
-          existing={re.sub(r'-\\d+$','',p.stem) for p in birds.glob('*.webp')}
+          existing={re.sub(r'-\d+$','',p.stem) for p in birds.glob('*.webp')}
           out=Path('final-output'); out.mkdir()
           if key in existing:
-              (out/'summary.json').write_text(json.dumps({'shipped':0,'skipped_existing':1},indent=2)+'\\n')
+              (out/'summary.json').write_text(json.dumps({'shipped':0,'skipped_existing':1},indent=2)+chr(10))
           else:
               dest=birds/f'{key}.webp'
               write_plate(prepare(Path('nelson/nelson-v0.png')), dest)
@@ -53,8 +53,8 @@ jobs:
                   'source':'eaton-birds-ny',
                   'url':'https://commons.wikimedia.org/wiki/File:Birds_of_New_York_(Plate_81)_(6901492502).jpg'
               }
-              mp.write_text(json.dumps(dict(sorted(manifest.items())),indent=2)+'\\n')
-              (out/'summary.json').write_text(json.dumps({'shipped':1,'key':key,'source':'Eaton, Birds of New York, 1914, Plate 81','license':'Public domain'},indent=2)+'\\n')
+              mp.write_text(json.dumps(dict(sorted(manifest.items())),indent=2)+chr(10))
+              (out/'summary.json').write_text(json.dumps({'shipped':1,'key':key,'source':'Eaton, Birds of New York, 1914, Plate 81','license':'Public domain'},indent=2)+chr(10))
           print((out/'summary.json').read_text())
           PY
       - name: Validate fork main candidate
