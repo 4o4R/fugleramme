@@ -44,7 +44,7 @@ jobs:
         run: uv sync --locked
       - name: Build and add four visually reviewed cuts
         run: |
-          project/.venv/bin/python curation/.texas-curation/publish_source_gap4.py \
+          python curation/.texas-curation/publish_source_gap4.py \
             --repo project --sources sources --mask-tools mask-tools --output final-output
       - name: Validate fork main candidate
         working-directory: project
