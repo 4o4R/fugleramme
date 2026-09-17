@@ -4,7 +4,7 @@ on:
     branches: [texas-artwork-coverage]
     paths:
       - .github/workflows/texas-approved-main-batch.yml
-      - .texas-curation/mass-approved-1.json
+      - .texas-curation/mass-approved-2.json
       - .texas-curation/finalize_mass_approved.py
 permissions:
   actions: read
@@ -58,7 +58,7 @@ jobs:
         run: |
           project/.venv/bin/python curation/.texas-curation/finalize_mass_approved.py \
             --repo project --inputs inputs \
-            --approved curation/.texas-curation/mass-approved-1.json \
+            --approved curation/.texas-curation/mass-approved-2.json \
             --output final-output
       - name: Validate fork main candidate
         working-directory: project
