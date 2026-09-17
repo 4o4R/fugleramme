@@ -1,0 +1,54 @@
+# .github/workflows/texas-guided-alternatives-b.yml
+# Retrieve exact public-domain plates for visual selection; never publish candidates.
+name: Retrieve guided bird source alternatives
+on:
+  push:
+    branches: [texas-artwork-coverage]
+    paths: [.github/workflows/texas-guided-alternatives-b.yml]
+permissions:
+  contents: read
+jobs:
+  retrieve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.13'}
+      - run: python -m pip install pillow requests
+      - name: Preserve exact source pixels and per-file license evidence
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import importlib.util,json
+          spec=importlib.util.spec_from_file_location('harvest',Path('.texas-curation/harvest_sources.py'))
+          h=importlib.util.module_from_spec(spec);spec.loader.exec_module(h)
+          h.OUT=Path('/tmp/guided-alternatives');h.OUT.mkdir(parents=True)
+          targets=[
+            (4,'File:Mourner the Dove.jpg'),
+            (20,'File:Chicoree the Goldfinch.jpg'),
+            (22,'File:The first book of birds; (1899) (14568904320).jpg'),
+            (22,'File:Birds of village and field- a bird book for beginners (1898) (14752994214).jpg'),
+            (22,'File:A year with the birds (1917) (14563510077).jpg')
+          ]
+          f=h.helpers.Fetcher();rows=[];metadata=[]
+          for rank,title in targets:
+              pages=h.query(f,titles=title)
+              for p in pages:
+                  metadata.append(p)
+                  if h.field(p,'LicenseShortName') not in ('Public domain','CC0'):
+                      raise RuntimeError('Terms need review: '+title)
+                  meta=h.download(f,p)
+                  rows.append({'rank':rank,'source':meta})
+                  print(rank,title,meta['pageid'],meta['license'])
+          (h.OUT/'choices.json').write_text(json.dumps(rows,indent=2))
+          (h.OUT/'metadata.json').write_text(json.dumps(metadata,indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: texas-guided-alternatives-b
+          path: /tmp/guided-alternatives/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30
